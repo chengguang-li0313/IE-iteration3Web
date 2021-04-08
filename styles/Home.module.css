@@ -1,122 +1,134 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('/photo-1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
+.nav {
   display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(117, 117, 117, 0.2);
+  height: 6rem;
+  width: 100%
+}
+
+.nav a {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+.intro {
+  height: 40rem;
+  color: white;
+}
+
+.introText {
+  height: 15rem;
+  background-color:rgba(15, 15, 15, 0.4);
+  padding: 1rem 3rem;
+  margin: 10rem;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.introText a {
+  background-color:rgba(15, 15, 15, 0.4);
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
+  border: none;
   font-size: 1.5rem;
+  color: white;
+  padding: 1rem 1.5rem
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.desc {  background-color:rgba(3, 96, 172, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem
 }
 
-.logo {
-  height: 1em;
+.desc p {
+  font-size: 2rem;
+  padding: 1rem
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.descImg1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 /2;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText1 {
+  grid-column: 2 / span 2;
+  grid-row: 1 /2
+}
+
+.descImg2 {
+  grid-column: 3 / span 1;
+  grid-row: 2 /3;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText2 {
+  grid-column: 1 / span 2;
+  grid-row: 2 /2
+}
+
+.descImg3 {
+  grid-column: 1 / span 1;
+  grid-row: 3 /3;
+  height: 20rem;
+  padding: 1rem;
+
+}
+
+.descText3 {
+  grid-column: 2 / span 2;
+  grid-row: 3 /3
+}
+
+.descImg4 {
+  grid-column: 3 / span 1;
+  grid-row: 4 /4;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText4 {
+  grid-column: 1 / span 2;
+  grid-row: 4 /4
+}
+
+.descImg5 {
+  grid-column: 1 / span 1;
+  grid-row: 5 /5;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText5 {
+  grid-column: 2 / span 2;
+  grid-row: 5 /5
+}
+
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    display: none
+  }
+
+  .desc { 
+    
   }
 }
