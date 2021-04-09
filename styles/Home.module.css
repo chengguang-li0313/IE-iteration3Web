@@ -24,13 +24,17 @@
   color: white;
 }
 
+.nav a:hover {
+  color:rgb(94, 94, 94)
+}
+
 .intro {
   height: 40rem;
   color: white;
 }
 
 .introText {
-  height: 15rem;
+  height: 18rem;
   background-color:rgba(15, 15, 15, 0.4);
   padding: 1rem 3rem;
   margin: 10rem;
@@ -50,15 +54,113 @@
   padding: 1rem 1.5rem
 }
 
-.desc {  background-color:rgba(3, 96, 172, 0.2);
+.introText a:hover {
+  color:rgb(94, 94, 94)
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex-direction: column;
+}
+
+.heading p {
+  font-size:1.5rem;
+}
+
+.cardSection {
+  display:flex;
+  overflow-x: auto;
+  padding: 1rem;
+  height: 40rem;
+  align-items: flex-start;
+}
+
+.cardFront {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width:400px;
+  margin: 1rem;
+}
+
+.cardFront button{
+  background-color:rgba(15, 15, 15, 0.623);
+  text-decoration: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  width: 150px;
+  padding: 1rem 1.5rem;
+}
+
+.cardFront p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.cardFront img{
+  height: 280px;
+  width: 400px;
+}
+
+.cardBack {
+  display:flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width:400px;
+  margin: 1rem;
+}
+
+.cardBack button{
+  background-color:rgba(15, 15, 15, 0.726);
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  width: 150px;
+  padding: 1rem 1.5rem;
+}
+
+.heading2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color:rgb(66, 66, 66);
+  color: white;
+}
+
+.desc {  
+  background-color:rgba(206, 206, 206, 0.2);
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 1rem
+  padding: 1rem;
+}
+
+.desc img {
+  width: auto;
 }
 
 .desc p {
   font-size: 2rem;
-  padding: 1rem
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: rgba(117, 117, 117, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:rgb(94, 94, 94)
 }
 
 .descImg1 {
@@ -70,7 +172,7 @@
 
 .descText1 {
   grid-column: 2 / span 2;
-  grid-row: 1 /2
+  grid-row: 1 /2;
 }
 
 .descImg2 {
@@ -129,6 +231,12 @@
   }
 
   .desc { 
-    
+    display:flex;
+    flex-direction: column;
+  }
+
+  .cardSection {
+    display:flex;
+    flex-direction: column;
   }
 }
