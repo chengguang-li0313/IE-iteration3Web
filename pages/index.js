@@ -13,7 +13,6 @@ export default function Home() {
         <title>Feral Animals</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <img className={styles.introImg} src='/carousel-0.jpeg'></img> */}
       <Nav></Nav>
 
       <Intro></Intro>
