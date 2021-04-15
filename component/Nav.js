@@ -9,6 +9,7 @@ export const Nav = () => {
         <nav className={styles.nav}>
             <Link href='/'><img src='/logo.png'></img></Link>
             <div className={styles.navItem}>
+                <Link href='/'>Home</Link>
                 <Link href='/animals'>Animals</Link>
                 <Link href='/about'>About Us</Link>
             </div>
