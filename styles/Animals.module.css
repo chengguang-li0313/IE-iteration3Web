@@ -77,6 +77,7 @@
     padding: 1rem;
     margin-left: 1rem;
     background-color: rgba(15, 15, 15, 0.2);
+    width: 100%;
 }
 
 .infoCard p {
