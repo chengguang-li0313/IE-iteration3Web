@@ -1,0 +1,16 @@
+.controlSection {
+    display:flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.controlCards {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.bioControlSection {
+    display:flex;
+    flex-direction: column;
+    padding: 2rem;
+}

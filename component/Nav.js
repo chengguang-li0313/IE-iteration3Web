@@ -10,6 +10,7 @@ export const Nav = () => {
             <Link href='/'><img src='/logo.png'></img></Link>
             <div className={styles.navItem}>
                 <Link href='/'>Home</Link>
+                <Link href='/control'>Control Techniques</Link>
                 <Link href='/animals'>Animals</Link>
                 <Link href='/about'>About Us</Link>
             </div>

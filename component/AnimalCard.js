@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import styles from "../styles/Animals.module.css";
 
 export const AnimalCard = (props) => {

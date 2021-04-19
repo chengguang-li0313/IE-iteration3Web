@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 export const Desc = () => {
     return (
         <>
-        <h1 id='desc' className={styles.heading2}>Established Pest Animals</h1>
+        <h1 id='desc' className={styles.heading2}>Established Pest Animals in Victoria</h1>
         <div className={styles.desc}>
             <img src='/fox.png' className={styles.descImg1}></img>
             <p className={styles.descText1}>Foxes are an established pest animal in the state of Victoria</p>
