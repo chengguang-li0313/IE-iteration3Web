@@ -6,7 +6,8 @@ export const Intro = () => {
     return (
         <div className={styles.intro}>
             <div className={styles.introText}>
-                <h1>Australia Feral Animals Pose Significant Problems to Agriculture</h1>
+                <h1>Pest Animals have significant impact on Agriculture in Victoria</h1>
+                <p>We help secure your farm from Pest Animals</p>
                 <a href='#desc'><BiDownArrowCircle size={40} color={'lightgreen'}/></a>
             </div>
         </div>

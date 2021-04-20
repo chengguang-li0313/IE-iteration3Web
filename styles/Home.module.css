@@ -13,7 +13,7 @@
   padding: 0.5rem 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color:rgba(117, 117, 117, 0.295);
+  background-color:rgba(117, 117, 117, 0);
   height: 6rem;
   width: 100%
 }
@@ -45,6 +45,15 @@
   font-family: Nunito;
   animation-duration: 3s;
   animation-name: slidein;
+}
+
+.introText h1 {
+  margin-bottom: 0rem;
+}
+
+.introText p {
+  font-size:1.2rem;
+  color: rgb(182, 182, 182);
 }
 
 .introText a {
