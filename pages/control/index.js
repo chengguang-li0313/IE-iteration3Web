@@ -8,48 +8,32 @@ export default function Control() {
     <>
         <Nav></Nav>
         <div className={styles.controlSection}>
-            <h1>Conventional Control Techniques</h1>
+            <h1>Control Methods by Animals</h1>
             <div className={styles.controlCards}>
                 <ControlCard 
-                    title={"Hunting"}
-                    img={'/hunting.jpeg'}
-                    href={'/control/hunting'}
+                    title={"Fox"}
+                    img={'/fox.png'}
+                    href={'/control/fox'}
                 ></ControlCard>
                 <ControlCard 
-                    title={"Fencing"}
-                    img={'/fencing.jpeg'}
-                    href={'/control/fencing'}
+                    title={"Goat"}
+                    img={'/goat.png'}
+                    href={'/control/goat'}
                 ></ControlCard>
                 <ControlCard 
-                    title={"Trapping"}
-                    img={'/trapping.jpeg'}
-                    href={'/control/trapping'}
+                    title={"Dog"}
+                    img={'/dog.jpeg'}
+                    href={'/control/dog'}
                 ></ControlCard>
                 <ControlCard 
-                    title={"Baiting"}
-                    img={'/baiting.jpeg'}
-                    href={'/control/baiting'}
-                ></ControlCard>
-            </div>
-        </div>
-
-        <div className={styles.bioControlSection}>
-            <h1>Biological Control</h1>
-            <div className={styles.controlCards}>
-                <ControlCard 
-                    title={"Natural Predators"}
-                    img={'/predator.jpeg'}
-                    href={'/control/predator'}
+                    title={"Pig"}
+                    img={'/pig.png'}
+                    href={'/control/pig'}
                 ></ControlCard>
                 <ControlCard 
-                    title={"Parasites"}
-                    img={'/parasites.jpeg'}
-                    href={'/control/parasite'}
-                ></ControlCard>
-                <ControlCard 
-                    title={"Disease-carrying Bacteria/Viruses"}
-                    img={'/bacteria.jpeg'}
-                    href={'/control/bacteria'}
+                    title={"Rabbit"}
+                    img={'/rabbit.png'}
+                    href={'/control/rabbit'}
                 ></ControlCard>
             </div>
         </div>

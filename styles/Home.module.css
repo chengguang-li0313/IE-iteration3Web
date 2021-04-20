@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/photo-1.jpeg');
+  background-image: url('/hero.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -29,13 +29,12 @@
 }
 
 .intro {
-  height: 40rem;
+  height: 65rem;
   color: white;
 }
 
 .introText {
   height: 18rem;
-  background-color:rgba(15, 15, 15, 0.4);
   padding: 1rem 3rem;
   margin: 10rem;
   display:flex;
@@ -43,15 +42,34 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: Nunito;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 .introText a {
-  background-color:rgba(15, 15, 15, 0.4);
-  text-decoration: none;
-  border: none;
-  font-size: 1.5rem;
-  color: white;
-  padding: 1rem 1.5rem
+  animation-duration: 3s;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-top: 10%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 0%;
+  }
+
+  to {
+    margin-top: 18%;
+  }
 }
 
 .introText a:hover {
@@ -81,7 +99,40 @@
   align-items: flex-start;
 }
 
-.cardFront {
+.impactCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 28rem;
+    width: 300px;
+    padding: 2rem;
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.impactCard img {
+    border-radius: 15px;
+    margin-top: 1rem;
+    width: 220px;
+    height: 150px;
+}
+
+.impactCard p {
+  font-size: .9rem;
+  color: rgb(102, 101, 101)
+}
+
+.impactCard h2 {
+  color:rgb(75, 75, 75);
+  margin-bottom: 1rem;
+}
+
+.impactCard:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+/* .cardFront {
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +192,7 @@
   color: white;
   width: 150px;
   padding: 1rem 1.5rem;
-}
+} */
 
 .heading2 {
   display: flex;
