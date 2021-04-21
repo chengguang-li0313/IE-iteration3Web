@@ -1,0 +1,310 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(117, 161, 223, 0);
+  height: 6rem;
+  width: 100%;
+}
+
+.nav a {
+  font-size: 1rem;
+  padding: 1rem;
+  color: gray;
+}
+
+.nav a:hover {
+  color: rgb(94, 94, 94);
+}
+
+.intro {
+  height: 65rem;
+  color: white;
+}
+
+.introText {
+  height: 18rem;
+  padding: 1rem 3rem;
+  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Nunito;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.introText h1 {
+  margin-bottom: 0rem;
+}
+
+.introText p {
+  font-size: 1.2rem;
+  color: rgb(182, 182, 182);
+}
+
+.introText a {
+  animation-duration: 3s;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-top: 10%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 0%;
+  }
+
+  to {
+    margin-top: 18%;
+  }
+}
+
+.introText a:hover {
+  color: rgb(94, 94, 94);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex-direction: column;
+}
+
+.heading p {
+  font-size: 1.5rem;
+}
+
+.cardSection {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  height: 40rem;
+  align-items: flex-start;
+}
+
+.impactCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 28rem;
+  width: 250px;
+  padding: 2rem;
+  margin: 1rem;
+  justify-content: flex-end;
+}
+
+.impactCard img {
+  border-radius: 15px;
+  margin-top: 1rem;
+  width: 200px;
+  height: 120px;
+}
+
+.impactCard p {
+  font-size: 0.9rem;
+  color: rgb(102, 101, 101);
+}
+
+.impactCard h2 {
+  color: rgb(75, 75, 75);
+  margin-bottom: 1rem;
+}
+
+.impactCard:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+/* .cardFront {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width:400px;
+  margin: 1rem;
+}
+
+.cardFront button{
+  background-color:rgba(15, 15, 15, 0.623);
+  text-decoration: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  width: 150px;
+  padding: 1rem 1.5rem;
+}
+
+.cardFront a{
+  background-color:rgba(15, 15, 15, 0.623);
+  text-decoration: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  width: 150px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.cardFront p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.cardFront img{
+  height: 280px;
+  width: 400px;
+}
+
+.cardBack {
+  display:flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width:400px;
+  margin: 1rem;
+}
+
+.cardBack button{
+  background-color:rgba(15, 15, 15, 0.726);
+  text-decoration: none;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  width: 150px;
+  padding: 1rem 1.5rem;
+} */
+
+.heading2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+.desc {
+  background-color: rgba(206, 206, 206, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+}
+
+.desc img {
+  width: auto;
+}
+
+.desc p {
+  font-size: 2rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: rgba(117, 117, 117, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(94, 94, 94);
+}
+
+.descImg1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 /2;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText1 {
+  grid-column: 2 / span 2;
+  grid-row: 1 /2;
+}
+
+.descImg2 {
+  grid-column: 3 / span 1;
+  grid-row: 2 /3;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText2 {
+  grid-column: 1 / span 2;
+  grid-row: 2 /2;
+}
+
+.descImg3 {
+  grid-column: 1 / span 1;
+  grid-row: 3 /3;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText3 {
+  grid-column: 2 / span 2;
+  grid-row: 3 /3;
+}
+
+.descImg4 {
+  grid-column: 3 / span 1;
+  grid-row: 4 /4;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText4 {
+  grid-column: 1 / span 2;
+  grid-row: 4 /4;
+}
+
+.descImg5 {
+  grid-column: 1 / span 1;
+  grid-row: 5 /5;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.descText5 {
+  grid-column: 2 / span 2;
+  grid-row: 5 /5;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    display: none;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
