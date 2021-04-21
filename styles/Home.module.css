@@ -113,7 +113,7 @@
     flex-direction: column;
     border-radius: 15px;
     height: 28rem;
-    width: 300px;
+    width: 250px;
     padding: 2rem;
     margin: 1rem;
     justify-content: flex-end;
@@ -123,8 +123,8 @@
 .impactCard img {
     border-radius: 15px;
     margin-top: 1rem;
-    width: 220px;
-    height: 150px;
+    width: 200px;
+    height: 120px;
 }
 
 .impactCard p {
