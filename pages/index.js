@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import { Nav } from '../component/Nav'
 import { Intro } from '../component/Intro'
 import { CardSection } from '../component/CardSection'
-import { Desc } from '../component/Desc'
+import  Desc  from '../component/Desc'
 import { useState }from 'react'
 
 export default function Home() {

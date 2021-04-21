@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('/hero.jpeg');
+  background-image: url("/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13,19 +13,19 @@
   padding: 0.5rem 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color:rgba(117, 117, 117, 0);
+  background-color: rgba(255, 255, 255, 0);
   height: 6rem;
-  width: 100%
+  width: 100%;
 }
 
 .nav a {
   font-size: 1rem;
   padding: 1rem;
-  color: gray;
+  color: rgb(190, 190, 190);
 }
 
 .nav a:hover {
-  color:rgb(94, 94, 94)
+  color: rgb(94, 94, 94);
 }
 
 .intro {
@@ -37,7 +37,7 @@
   height: 18rem;
   padding: 1rem 3rem;
   margin: 10rem;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
 }
 
 .introText p {
-  font-size:1.2rem;
+  font-size: 1.2rem;
   color: rgb(182, 182, 182);
 }
 
@@ -82,7 +82,7 @@
 }
 
 .introText a:hover {
-  color:rgb(94, 94, 94)
+  color: rgb(94, 94, 94);
 }
 
 .heading {
@@ -97,11 +97,11 @@
 }
 
 .heading p {
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 .cardSection {
-  display:flex;
+  display: flex;
   overflow-x: auto;
   padding: 1rem;
   height: 40rem;
@@ -109,30 +109,30 @@
 }
 
 .impactCard {
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    height: 28rem;
-    width: 250px;
-    padding: 2rem;
-    margin: 1rem;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 28rem;
+  width: 250px;
+  padding: 2rem;
+  margin: 1rem;
+  justify-content: flex-end;
 }
 
 .impactCard img {
-    border-radius: 15px;
-    margin-top: 1rem;
-    width: 200px;
-    height: 120px;
+  border-radius: 15px;
+  margin-top: 1rem;
+  width: 200px;
+  height: 120px;
 }
 
 .impactCard p {
-  font-size: .9rem;
-  color: rgb(102, 101, 101)
+  font-size: 0.9rem;
+  color: rgb(102, 101, 101);
 }
 
 .impactCard h2 {
-  color:rgb(75, 75, 75);
+  color: rgb(75, 75, 75);
   margin-bottom: 1rem;
 }
 
@@ -206,12 +206,12 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
-  background-color:rgb(66, 66, 66);
+  background-color: rgb(66, 66, 66);
   color: white;
 }
 
-.desc {  
-  background-color:rgba(206, 206, 206, 0.2);
+.desc {
+  background-color: rgba(206, 206, 206, 0.2);
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 1rem;
@@ -230,7 +230,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color:rgb(94, 94, 94)
+  color: rgb(94, 94, 94);
 }
 
 .descImg1 {
@@ -254,7 +254,7 @@
 
 .descText2 {
   grid-column: 1 / span 2;
-  grid-row: 2 /2
+  grid-row: 2 /2;
 }
 
 .descImg3 {
@@ -262,12 +262,11 @@
   grid-row: 3 /3;
   height: 20rem;
   padding: 1rem;
-
 }
 
 .descText3 {
   grid-column: 2 / span 2;
-  grid-row: 3 /3
+  grid-row: 3 /3;
 }
 
 .descImg4 {
@@ -279,7 +278,7 @@
 
 .descText4 {
   grid-column: 1 / span 2;
-  grid-row: 4 /4
+  grid-row: 4 /4;
 }
 
 .descImg5 {
@@ -291,22 +290,21 @@
 
 .descText5 {
   grid-column: 2 / span 2;
-  grid-row: 5 /5
+  grid-row: 5 /5;
 }
-
 
 @media only screen and (max-width: 600px) {
   .intro {
-    display: none
+    display: none;
   }
 
-  .desc { 
-    display:flex;
+  .desc {
+    display: flex;
     flex-direction: column;
   }
 
   .cardSection {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
 }

@@ -70,47 +70,43 @@ return (
       </div>
     </div>
 
-    <div className={styles.biology}>
-        <h1>{data.commonName}</h1>
-        <p>{data.scientificName}</p>
-    </div>
+  
 
     <div className={styles.bioInfo}>
-        <img src={data.appearanceImage}></img>
+        <div className={styles.biology}>
+            <h1>{data.commonName}</h1>
+            <p>{data.scientificName}</p>
+        </div>
+          <img src={data.appearanceImage}></img>
         <div className={styles.infoCard}>
             <p>Origin</p>{data.originPlace}
             <p>Distribution</p>{data.distribution}
         </div>
     </div>
 
-    <div className={styles.biology}>
-        <h1>Biology</h1>
-        <p></p>
-    </div>
-
     <div className={styles.infoGrid}>
       <div className={styles.grid1}>
         <h2>Appearance</h2>
-        {data.appearance}
+        <p>{data.appearance}</p>
       </div>
       <div className={styles.grid3}>
         <h2>Diet</h2>
-        {data.diet}
+        <p>{data.diet}</p>
       </div>
 
       <div className={styles.grid5}>
         <h2>Behavior</h2>
-        {data.behaviour}
+        <p>{data.behaviour}</p>
       </div>
 
       <div className={styles.grid7}>
         <h2>Preffered Habitat</h2>
-        {data.habits}
+        <p>{data.habits}</p>
       </div>
 
       <div className={styles.grid9}>
         <h2>Predation</h2>
-        {data.prey}
+        <p>{data.prey}</p>
       </div>
     </div>
 

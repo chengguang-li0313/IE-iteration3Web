@@ -48,12 +48,14 @@
 .biology {
     display: flex;
     flex-direction: column;
-    background-color:rgba(15, 15, 15, 0.2);
+    background-color:rgba(167, 121, 68, 0.363);
+    width:200px
 }
 
 .biology h1 {
     margin-left: 1rem;
-    margin-bottom: 0rem;;
+    margin-bottom: 0rem;
+    color:rgb(85, 85, 85);
 }
 
 .biology p {
@@ -65,19 +67,21 @@
 
 .bioInfo {
     display: flex;
-    padding: 1rem;
+    padding: 2.5rem;
 }
 
 .bioInfo img {
-    height: 300px;
+    height: 250px;
     width: 300px;
 }
 
 .infoCard {
     padding: 1rem;
     margin-left: 1rem;
-    background-color: rgba(15, 15, 15, 0.2);
-    width: 100%;
+    background-color: rgba(167, 121, 68, 0.363);
+    width: 80%;
+    color:rgb(85, 85, 85);
+
 }
 
 .infoCard p {
@@ -94,41 +98,51 @@
 .grid1 {
     grid-column: 1/ span 1;
     grid-row: 1/ 1; 
-    background-color: rgba(15, 15, 15, 0.2);
+    background-color: rgba(167, 121, 68, 0.363);
     padding: 1rem;
     margin: 1rem;
+    color:rgb(85, 85, 85);
+    font-size: 1.2rem;
 }
 
 .grid3 {
     grid-column: 3/ span 1;
     grid-row: 1/ 1; 
-    background-color: rgba(15, 15, 15, 0.2);
+    background-color: rgba(167, 121, 68, 0.363);
     padding: 1rem;
     margin: 1rem;
+    color:rgb(85, 85, 85);
+    font-size: 1.2rem;
 }
 
 .grid5 {
     grid-column: 2/ span 1;
     grid-row: 2/ 2; 
-    background-color: rgba(15, 15, 15, 0.2);
+    background-color: rgba(167, 121, 68, 0.363);
     padding: 1rem;
     margin: 1rem;
+    color:rgb(85, 85, 85);
+    font-size: 1.2rem;
 }
 
 .grid7 {
     grid-column: 1/ span 1;
     grid-row: 3/ 3; 
-    background-color: rgba(15, 15, 15, 0.2);
+    background-color: rgba(167, 121, 68, 0.363);
     padding: 1rem;
     margin: 1rem;
+    color:rgb(85, 85, 85);
+    font-size: 1.2rem;
 }
 
 .grid9 {
     grid-column: 3/ span 1;
     grid-row: 3/ 3; 
-    background-color: rgba(15, 15, 15, 0.2);
+    background-color: rgba(167, 121, 68, 0.363);
     padding: 1rem;
     margin: 1rem;
+    color:rgb(85, 85, 85);
+    font-size: 1.2rem;
 }
 
 .card {
