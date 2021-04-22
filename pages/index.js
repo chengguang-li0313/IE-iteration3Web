@@ -5,6 +5,7 @@ import { Intro } from '../component/Intro'
 import { CardSection } from '../component/CardSection'
 import  Desc  from '../component/Desc'
 import { useState }from 'react'
+import { HomeControlSection } from '../component/HomeControlSection'
 
 export default function Home() {
 
@@ -24,6 +25,7 @@ export default function Home() {
 
     <Desc></Desc>
 
+    <HomeControlSection></HomeControlSection>
     </>
   )
 }
