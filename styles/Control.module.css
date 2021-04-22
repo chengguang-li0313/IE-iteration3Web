@@ -1,3 +1,16 @@
+.controlHeroInfo {
+    height: 200px;
+    background-color:rgba(109, 109, 109, 0.589);
+    position: relative;
+    bottom: 600px;
+    left: 45rem;
+    width: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .controlSection {
     display:flex;
     flex-direction: column;
@@ -10,26 +23,66 @@
     justify-content: center;
 }
 
+.controlCard {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+}
+
 .controlCard img{
-    height:400px;
+    height:300px;
     width: 400px;
     object-fit: cover;
-    position: absolute;
-    left: 20px;
-    bottom: 50px;
+    position: relative;
+    right: 160px;
+    bottom: 220px;
     box-shadow: 0 .2em 1.2em hsla(20, 20, 20, 10%);
 }
 
 .controlCardContainer {
     display: flex;
     flex-direction: column;
+    height: 400px;
     padding: 2rem;
+    width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .controlCardInfo {
     width: 50%;
-    
+    position: relative;
+    left: 50%;
+    top: 20%;
+}
+
+.conventionalContainer {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.conventionalInfo {
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(83, 54, 0, 0.767);
+    height: 400px;
+    width: 400px;
+    margin-left: 1rem;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.conventionalInfo ul li{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.controlMethodCardSection {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 750px) {
