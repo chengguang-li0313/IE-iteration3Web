@@ -30,7 +30,7 @@ export default function Conventional() {
         </div>
 
         <div className={styles.conventionalContainer}>
-            <h1>Some Common Biological Methods</h1>
+            <h1>Some of the most commonly used Biological Control Methods</h1>
         </div>
         <div className={styles.controlMethodCardSection}>
             <AnimalImpactCard

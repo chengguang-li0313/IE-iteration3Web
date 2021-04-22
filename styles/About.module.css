@@ -1,0 +1,28 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.aboutContainer p{
+    font-size:1.5rem;
+    max-width: 1000px;
+}
+
+.missionSection {
+    display: flex;
+    padding: 3rem;
+    overflow-x: auto;
+}
+
+.aboutCard {
+    width:350px;
+    margin:3rem;
+}
+
+.aboutCard img{
+    height: 400px;
+    width: 350px;
+}
