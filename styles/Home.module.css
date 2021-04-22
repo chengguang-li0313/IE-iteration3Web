@@ -106,6 +106,7 @@
   padding: 1rem;
   height: 40rem;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .impactCard {
