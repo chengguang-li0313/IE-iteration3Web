@@ -51,9 +51,9 @@
   margin-bottom: 0rem;
 }
 
-.introText p {
+.introText h4 {
   font-size: 1.2rem;
-  color: rgb(182, 182, 182);
+  color: rgb(245, 247, 241);
 }
 
 .introText a {
