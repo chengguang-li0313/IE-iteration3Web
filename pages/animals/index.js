@@ -17,20 +17,26 @@ export default function Animals() {
     const result = await axios.get(
       "https://ie-iteration1.herokuapp.com/api/fox"
     );
+
+    const controlResult = await axios.get(
+      `https://ie-iteration2.herokuapp.com/api2/fox`
+    )
+
     setData(result.data);
+    setControlData(controlResult.data)
   }, []);
 
   const handleClick = async (e, { name }) => {
     const result = await axios.get(
       `https://ie-iteration1.herokuapp.com/api/${name}`
     );
+
+    axios.get(
+        `https://ie-iteration2.herokuapp.com/api2/${name}`
+    ).then((result) => {
+        setControlData(result.data)
+    })
     setData(result.data);
-
-    const controlResult = await axios.get(
-      `https://ie-iteration2.herokuapp.com/api2/${name}`
-    );
-
-    setControlData(controlResult.data)
   };
 
   return (
@@ -57,10 +63,10 @@ export default function Animals() {
       <h1 className={homeStyles.heading2}>{data.commonName}'s Impact</h1>
       <AnimalImpactSection data={data}></AnimalImpactSection>
 
-      <h1 className={homeStyles.heading2}>{data.commonName}'s Control Method</h1>
+      {/* <h1 className={homeStyles.heading2}>{data.commonName}'s Control Method</h1>
       <AnimalControlSection
       data={controlData}
-      ></AnimalControlSection>
+      ></AnimalControlSection> */}
     </>
   );
 }

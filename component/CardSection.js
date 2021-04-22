@@ -1,7 +1,28 @@
 import { ImpactCard } from "../component/ImpactCard";
 import styles from "../styles/Home.module.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 export const CardSection = () => {
+    const responsive = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 4
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 3
+      },
+      mobile: {
+        breakpoint: { max: 600, min: 0 },
+        items: 1
+      }
+    };
     return (
       <>
         <div className={styles.heading}>
@@ -10,7 +31,10 @@ export const CardSection = () => {
           <h1>$743.5 million via</h1>
         </div>
 
-        <div className={styles.cardSection}>
+        <Carousel 
+        responsive={responsive}
+        showDots={true}
+        >
             <ImpactCard
               title={"Contribution To Erosion"}
               img={"/carousel-1.jpeg"}
@@ -37,7 +61,7 @@ export const CardSection = () => {
               img={"/carousel-5.jpeg"}
               desc={`Without control on farmlands, these animals become pests and injure the land and water causing them to degrade – thereby reducing the overall productivity of Agriculture`}
             ></ImpactCard>
-        </div>
+          </Carousel>
       </>
     );
 };
