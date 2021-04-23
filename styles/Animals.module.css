@@ -241,6 +241,12 @@
     font-size: 1.1rem;
 }
 
+.controlContainer {
+    width: 85%;
+    position: relative;
+    left: 15%;
+}
+
 .controlSection {
     display:flex;
 }
