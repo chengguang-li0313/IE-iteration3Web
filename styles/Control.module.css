@@ -1,14 +1,23 @@
+.controlHero {
+    display: flex;
+    background-image: url('/controlHero.jpeg');
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
 .controlHeroInfo {
     height: 200px;
     background-color:rgba(109, 109, 109, 0.589);
     position: relative;
-    bottom: 600px;
-    left: 45rem;
     width: 500px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .controlSection {

@@ -48,7 +48,7 @@ export default function Animals() {
         </div>
       </div>
 
-      <Menu pointing secondary vertical>
+      <Menu pointing secondary vertical className={styles.menu}>
         <Menu.Item name="fox" onClick={handleClick} />
         <Menu.Item name="pig" onClick={handleClick} />
         <Menu.Item name="goat" onClick={handleClick} />

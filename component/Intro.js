@@ -1,7 +1,5 @@
-import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import { BiDownArrowCircle } from 'react-icons/bi'
-import Link from 'next/link'
 
 export const Intro = () => {
     return (
@@ -11,7 +9,7 @@ export const Intro = () => {
                 <h4>We help secure your farm from Pest Animals</h4>
 
                 
-                <a href='#desc'><BiDownArrowCircle size={40} color={'lightgreen'}/></a> 
+                <a href='#impact'><BiDownArrowCircle size={40} color={'orange'}/></a> 
             </div>
         </div>
     )

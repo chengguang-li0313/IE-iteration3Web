@@ -197,6 +197,17 @@
     margin: 1rem;
 }
 
+.animalImpactCard button {
+    border: 1px solid rgba(167, 121, 68, 0.363);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    width: 93%;
+    color:rgb(85, 85, 85);
+    background-color: rgba(167, 121, 68, 0.363);
+}
+
 .animalImpactCard img {
     background-position: center center;
     background-repeat: no-repeat;
@@ -230,6 +241,10 @@
 
 .controlSection {
     display:flex;
+}
+
+.menu {
+    position: fixed;
 }
 
 @media only screen and (max-width: 750px) {
