@@ -1,13 +1,12 @@
 import styles from '../../styles/Control.module.css'
-import { Nav } from "../../component/Nav";
+import { Layout } from "../../component/Layout";
 import { ControlCard } from '../../component/ControlCard'
 import { ControlHero } from '../../component/ControlHero'
  
 export default function Control() {
 
   return (
-    <>
-        <Nav></Nav>
+    <Layout>
         <ControlHero></ControlHero>
 
         <div className={styles.controlSection}>
@@ -36,6 +35,6 @@ export default function Control() {
                 ></ControlCard>
             </div>
         </div>
-    </>
+    </Layout>
   )
 }

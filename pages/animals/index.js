@@ -1,4 +1,4 @@
-import { Nav } from "../../component/Nav";
+import { Layout } from "../../component/Layout";
 import styles from "../../styles/Animals.module.css";
 import homeStyles from "../../styles/Home.module.css";
 import axios from "axios";
@@ -39,16 +39,15 @@ export default function Animals() {
     setData(result.data);
   };
 
-  return (
-    <>
-      <Nav></Nav>
+  return ( 
+    <Layout>
       <div className={styles.container}>
         <div className={styles.animalText}>
           <h1>How Are Feral Animals Harming Farmland?</h1>
         </div>
       </div>
 
-      <Menu pointing secondary vertical className={styles.menu}>
+      <Menu vertical className={styles.menu}>
         <Menu.Item name="fox" onClick={handleClick} />
         <Menu.Item name="pig" onClick={handleClick} />
         <Menu.Item name="goat" onClick={handleClick} />
@@ -64,9 +63,9 @@ export default function Animals() {
       <AnimalImpactSection data={data}></AnimalImpactSection>
 
       <h1 className={homeStyles.heading2}>{data.commonName}'s Control Method</h1>
-      <AnimalControlSection
+      {/* <AnimalControlSection
       data={controlData}
-      ></AnimalControlSection>
-    </>
+      ></AnimalControlSection> */}
+    </Layout>
   );
 }

@@ -4,8 +4,8 @@ import { Nav } from '../component/Nav'
 import { Intro } from '../component/Intro'
 import { CardSection } from '../component/CardSection'
 import  Desc  from '../component/Desc'
-import { useState }from 'react'
 import { HomeControlSection } from '../component/HomeControlSection'
+import { Footer } from '../component/Footer' 
 
 export default function Home() {
 
@@ -26,6 +26,8 @@ export default function Home() {
     <Desc></Desc>
 
     <HomeControlSection></HomeControlSection>
+
+    <Footer></Footer>
     </>
   )
 }

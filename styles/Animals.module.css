@@ -195,6 +195,8 @@
     flex-direction: column;
     width: 400px;
     margin: 1rem;
+    height: 500px;
+    justify-content: flex-start;
 }
 
 .animalImpactCard button {

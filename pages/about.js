@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/About.module.css'
-import { Nav } from '../component/Nav'
+import { Layout } from '../component/Layout'
 
 export default function Home() {
 
   return (
-    <>
-        <Nav></Nav>
-
+    <Layout>
         <div className={styles.aboutContainer}>
             <img src='/logo.png'></img>
             <h1>Our Vision</h1>
@@ -31,6 +29,6 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </>
+    </Layout>
   )
 }

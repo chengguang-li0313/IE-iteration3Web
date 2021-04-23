@@ -1,15 +1,15 @@
 import styles from '../../styles/Control.module.css'
-import { Nav } from "../../component/Nav";
+import { Layout } from "../../component/Layout";
 import { ControlHero } from '../../component/ControlHero'
+import { ControlCard } from '../../component/ControlCard'
 import { YoutubePlayer } from "reactjs-media";
 import { AnimalImpactCard } from '../../component/AnimalImpactCard'
 
 export default function Conventional() {
 
   return (
-    <>
-        <Nav></Nav>
-        <ControlHero></ControlHero>  
+    <Layout>
+      <ControlHero></ControlHero>  
         <a href='/control' className={styles.backButton}>«Back</a>
         <div className={styles.conventionalContainer}>
             <h1>Biological Control Methods</h1>
@@ -45,6 +45,26 @@ export default function Conventional() {
                 img={'/mxy.jpeg'}
             ></AnimalImpactCard>
         </div>
-    </>
+        <div className={styles.conventionalContainer}>
+        <h1>Also Check Out These Methods</h1>
+      </div>
+
+      <div className={styles.conventionalContainer}>
+        <ControlCard
+          title={"Conventional control methods"}
+          sub={
+            "Conventional control methods for feral animals include trapping, baiting, fencing and shooting."
+          }
+          img={"/conventional.jpeg"}
+          url={"/control/conventional"}
+        ></ControlCard>
+        <ControlCard
+                    title={'Control Services'}
+                    sub={' There are various services available in Victoria that offer professional animal trapping services using modern and humane methods of capture for wild animal population reduction programs'}
+                    img={'/controlService.jpeg'}
+                    url={'/control/services'}
+        ></ControlCard>
+      </div>
+    </Layout>
   )
 }

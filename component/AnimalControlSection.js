@@ -28,9 +28,9 @@ export const AnimalControlSection = (props) => {
         },
     };
 
-    const controlMethods = data.map((controlMethod) => {
-        <ControlCard title={controlMethod.eradication.name}></ControlCard>;
-    });
+    // const controlMethods = data.map((controlMethod) => {
+    //     <ControlCard title={controlMethod.eradication.name}></ControlCard>;
+    // });
 
     return (
         <>
@@ -41,7 +41,7 @@ export const AnimalControlSection = (props) => {
             responsive={responsive} 
             showDots={true}
             > */}
-            {controlMethods}
+            {/* {controlMethods} */}
         {/* </Carousel> */}
         </>
     );
