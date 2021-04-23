@@ -63,10 +63,10 @@ export default function Animals() {
       <h1 className={homeStyles.heading2}>{data.commonName}'s Impact</h1>
       <AnimalImpactSection data={data}></AnimalImpactSection>
 
-      {/* <h1 className={homeStyles.heading2}>{data.commonName}'s Control Method</h1>
+      <h1 className={homeStyles.heading2}>{data.commonName}'s Control Method</h1>
       <AnimalControlSection
       data={controlData}
-      ></AnimalControlSection> */}
+      ></AnimalControlSection>
     </>
   );
 }

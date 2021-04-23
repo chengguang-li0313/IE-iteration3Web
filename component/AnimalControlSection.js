@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useState, useEffect } from 'react'
 import axios from "axios";
+import { ControlCard } from '../component/ControlCard'
 
 export const AnimalControlSection = (props) => {
     const { data } = props
@@ -27,9 +28,9 @@ export const AnimalControlSection = (props) => {
         },
     };
 
-    // const controlMethods = data && data.map((controlMethod) => {
-    //     <ControlCard title={controlMethod.eradication.name}></ControlCard>;
-    // });
+    const controlMethods = data.map((controlMethod) => {
+        <ControlCard title={controlMethod.eradication.name}></ControlCard>;
+    });
 
     return (
         <>
