@@ -1,47 +1,43 @@
 import styles from "../styles/Animals.module.css";
+import cardStyles from '../styles/AnimalGrid.module.scss'
+import { AnimalGridCard } from "./AnimalGridCard";
 
 export const AnimalGridSection = (props) => {
   const { data } = props;
 
   return (
-    <div className={styles.infoGrid}>
-      <div className={styles.grid1}>
-        <h2>Appearance</h2>
-        <p>{data.appearance}</p>
-      </div>
-      <div className={styles.grid2}>
-        <img src={data.image1}></img>
-      </div>
-      <div className={styles.grid3}>
-        <h2>Diet</h2>
-        <p>{data.diet}</p>
-      </div>
-      <div className={styles.grid4}>
-        <img src={data.image2}></img>
-      </div>
+    <>
+      <div className={styles.infoSection}>
+        <AnimalGridCard
+          title={"Appearance"}
+          desc={data.appearance}
+        ></AnimalGridCard>
 
-      <div className={styles.grid5}>
-        <h2>Behavior</h2>
-        <p>{data.behaviour}</p>
-      </div>
+        <AnimalGridCard
+          title={"Diet"}
+          desc={data.diet}
 
-      <div className={styles.grid6}>
-        <img src={data.image3}></img>
-      </div>
+        ></AnimalGridCard>
 
-      <div className={styles.grid7}>
-        <h2>Preffered Habitat</h2>
-        <p>{data.habits}</p>
-      </div>
+        <AnimalGridCard
+          title={"Behaviour"}
+          desc={data.behaviour}
 
-      <div className={styles.grid8}>
-        <img src={data.image4}></img>
+        ></AnimalGridCard>
       </div>
+      <div className={styles.infoSection}>
+        <AnimalGridCard
+          title={"Preffered Habitat"}
+          desc={data.habitat}
 
-      <div className={styles.grid9}>
-        <h2>Predation</h2>
-        <p>{data.prey}</p>
+        ></AnimalGridCard>
+
+        <AnimalGridCard
+          title={"Predation"}
+          desc={data.prey}
+
+        ></AnimalGridCard>
       </div>
-    </div>
+    </>
   );
 };

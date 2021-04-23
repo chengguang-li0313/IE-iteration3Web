@@ -84,100 +84,12 @@
     font-size:1.3rem;
 }
 
-.infoGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.infoSection {
+    display: flex;
+    height: 40rem;
     padding: 1rem;
     overflow: auto;
-}
-
-.infoGrid img {
-    height: 350px;
-    width: 550px;
-}
-
-.grid1 {
-    grid-column: 1/ span 1;
-    grid-row: 1/ 1; 
-    background-color: rgba(167, 121, 68, 0.363);
-    padding: 1rem;
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-.grid2 {
-    grid-column: 2/ span 1;
-    grid-row: 1/ 1; 
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-.grid3 {
-    grid-column: 3/ span 1;
-    grid-row: 1/ 1; 
-    background-color: rgba(167, 121, 68, 0.363);
-    padding: 1rem;
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-.grid4 {
-    grid-column: 1/ span 1;
-    grid-row: 2/ 2; 
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-.grid5 {
-    grid-column: 2/ span 1;
-    grid-row: 2/ 2; 
-    background-color: rgba(167, 121, 68, 0.363);
-    padding: 1rem;
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-.grid6 {
-    grid-column: 3/ span 1;
-    grid-row: 2/ 2; 
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-.grid7 {
-    grid-column: 1/ span 1;
-    grid-row: 3/ 3; 
-    background-color: rgba(167, 121, 68, 0.363);
-    padding: 1rem;
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-.grid8 {
-    grid-column: 2/ span 1;
-    grid-row: 3/ 3; 
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
-}
-
-
-.grid9 {
-    grid-column: 3/ span 1;
-    grid-row: 3/ 3; 
-    background-color: rgba(167, 121, 68, 0.363);
-    padding: 1rem;
-    margin: 1rem;
-    color:rgb(85, 85, 85);
-    font-size: 1.2rem;
+    justify-content: center;
 }
 
 .animalImpactSection {
