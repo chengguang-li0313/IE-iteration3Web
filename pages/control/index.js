@@ -11,6 +11,7 @@ export default function Control() {
         <ControlHero></ControlHero>
 
         <div className={styles.controlSection}>
+            <h1>Control Methods Available in Victoria</h1>
             <div className={styles.controlCards}>
                 <ControlCard
                     title={'Conventional control methods'}

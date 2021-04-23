@@ -10,6 +10,7 @@ export default function Conventional() {
     <>
         <Nav></Nav>
         <ControlHero></ControlHero>  
+        <a href='/control' className={styles.backButton}>«Back</a>
         <div className={styles.conventionalContainer}>
             <h1>Conventional Control Method</h1>
         </div>

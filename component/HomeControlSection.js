@@ -28,7 +28,7 @@ export const HomeControlSection = () => {
           }
           img={"/controlService.jpeg"}
           href={'/control/services'}
-        ></CardWithButtonig>
+        ></CardWithButton>
       </div>
     );
 }
