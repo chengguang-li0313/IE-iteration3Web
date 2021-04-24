@@ -73,8 +73,13 @@ function Desc() {
                 
               </h1>
               <p>
+                
                 These animals not only caused serious damage to the local ecological environment but also to the farmer’s economy. 
+                
               </p>
+
+
+
               <div className={styles.btnrow}>
 
               <Link href='/animals'> 
@@ -91,23 +96,23 @@ function Desc() {
             <div ref={el => images = el}  className={styles.heroimagesinner}>
 
               <div className={styles.heroimage + " " + styles.pig}>
-                <img src="/pig2.jpg" alt="pig"/>
+              <div className={styles.containerInfo + " " + styles.containerLocation}> Pig </div> 
               </div>
 
               <div className={styles.heroimage + " " + styles.fox}>
-                <img src="/fox2.jpg" alt="fox" />
+              <div className={styles.containerInfo + " " + styles.containerLocation}> Fox </div> 
               </div>
 
               <div className={styles.heroimage + " " + styles.rabbit}>
-                <img src="/rabbit2.jpg" alt="rabbit" />
+              <div className={styles.containerInfo + " " + styles.containerLocation}> Rabbit </div> 
               </div>
               
               <div className={styles.heroimage + " " + styles.goat}>
-                <img src="/goat2.jpg" alt="goat" />
+              <div className={styles.containerInfo + " " + styles.containerLocation}> Goat </div> 
               </div>
               
               <div className={styles.heroimage + " " + styles.dog}>
-                <img src="/dog2.jpg" alt="dog" />
+              <div className={styles.containerInfo + " " + styles.containerLocation}> Dog </div>               
               </div>
             </div>
           </div>
