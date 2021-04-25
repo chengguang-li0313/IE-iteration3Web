@@ -20,8 +20,9 @@ export default function Control() {
             <p>This video describes the best practices to keep in mind while developing and implementing a pest control plan:</p>
             <YoutubePlayer
             src="https://www.youtube.com/watch?v=JJEMr2pM4U0&t=102s&ab_channel=CentreforInvasiveSpeciesSolutions" // Reqiured
-            width={650}
+            width={700}
             height={400}
+            className={styles.invasion}
             />
             <p>In order to reduce the impact caused by these animals, it is best to prevent them from occurring in the first place. As farmers, you can help stop the introduction and spread of invasive species by using the following methods:</p>
         </div>

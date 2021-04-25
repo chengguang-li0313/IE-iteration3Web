@@ -30,9 +30,6 @@
     display:flex;
     flex-direction: column;
     padding: 3rem;
-}
-
-.controlSection {
     font-size: 1.2rem
 }
 
@@ -112,6 +109,7 @@
 
 .invasion {
   width: 700px;
+  align-self: center;
 }
 
 @media only screen and (max-width: 750px) {

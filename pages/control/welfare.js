@@ -7,7 +7,6 @@ export default function Welfare() {
         <div className={styles.container}>
           <h1>Animal Welfare</h1>
           <div className={styles.section}>
-            <img src="/welfare1.jpeg"></img>
             <div className={styles.text}>
               <p>
                 While controlling and eradicating pest animals from your farm is
@@ -26,11 +25,11 @@ export default function Welfare() {
                 vertebrate pest control programs.
               </p>
             </div>
+            <img src="/welfare1.jpeg"></img>
           </div>
 
           <h1>Latest News about Animal Welfare Legislation</h1>
           <div className={styles.section}>
-            <img src="/welfare2.jpeg"></img>
             <div className={styles.text}>
               <p>
                 The Victorian Government has committed to modernising Victoria’s
@@ -39,17 +38,18 @@ export default function Welfare() {
                 to be released in about the first half of 2021.
               </p>
             </div>
+            <img src="/welfare2.jpeg"></img>
           </div>
 
           <h1>Code of Practice for Welfare of Animals in Hunting</h1>
           <div className={styles.section}>
-            <img src="/welfare3.png"></img>
             <div className={styles.text}>
               <p>
                 This Code aims to prevent cruelty and encourage the considerate
                 treatment of animals that are hunted or used for hunting.
               </p>
             </div>
+            <img src="/welfare3.png"></img>
           </div>
 
           <h1>Introduction</h1>
@@ -65,7 +65,6 @@ export default function Welfare() {
 
           <h1>1. Hunter Conduct : Minimum Standards</h1>
           <div className={styles.section}>
-            <img src="/welfare4.png"></img>
             <div className={styles.text}>
               <p>
                 1. Hunted animals must at all times be free and unrestricted in
@@ -90,6 +89,7 @@ export default function Welfare() {
               </p>
               <p>5. A hunter must shoot to cause a quick and painless death.</p>
             </div>
+            <img src="/welfare4.png"></img>
           </div>
 
           <h1>Recommended Best Practices</h1>

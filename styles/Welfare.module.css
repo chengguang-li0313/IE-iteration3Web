@@ -5,7 +5,7 @@
 }
 
 .container img {
-    width: 600px;
+    width: 400px;
 }
 
 .container p {
@@ -20,7 +20,7 @@
 .text {
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
+    padding-right: 1rem;
     justify-content: center;
 }
 
