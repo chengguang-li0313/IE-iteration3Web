@@ -110,6 +110,10 @@
     overflow-x: scroll;
 }
 
+.invasion {
+  width: 700:px;
+}
+
 @media only screen and (max-width: 750px) {
   .controlInfo {
     display: flex;

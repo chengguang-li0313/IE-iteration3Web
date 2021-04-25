@@ -13,10 +13,10 @@ export default function Control() {
         <div className={styles.controlSection}>
             <h1>Why is it Important to Control These Species?</h1>
             <p>Established Pest Animals are a serious threat to primary production, crown land, the environment and/or human health in Victoria. Depending on the level of invasion threat posed by these animals, the intervention/management effectiveness and the cost vary which can be depicted from the figure given:</p>
-            <img src='/invasion.png'></img>
+            <img src='/invasion.png' className={styles.invasion}></img>
             <p>Under the Catchment and Land Protection Act, 1994 all landowners, farmers have a legal duty to prevent the spread of – and as far as possible eradicate – established pest animals. The recommended management of established pest animals is to minimise their impact on selected high-value agriculture and environmental assets. </p>
             <h1>Managing Established Pest Animals: What Can You Do</h1>
-            <img src='/pestAnimalQuote.png'/>
+            <img src='/pestAnimalQuote.png' className={styles.invasion}/>
             <p>This video describes the best practices to keep in mind while developing and implementing a pest control plan:</p>
             <YoutubePlayer
             src="https://www.youtube.com/watch?v=JJEMr2pM4U0&t=102s&ab_channel=CentreforInvasiveSpeciesSolutions" // Reqiured
