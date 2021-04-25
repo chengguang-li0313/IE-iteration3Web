@@ -15,7 +15,7 @@ export default function Regulation() {
 
       <div className={styles.band}>
         <div className={styles.item1}>
-          <a href="https://www.legislation.gov.au/Details/C2016C00999" className={styles.card}>
+          <a href="https://www.legislation.gov.au/Details/C2016C00999" className={styles.card}  target="blank">
             <div className={styles.thumb + " " +styles.regulation1}></div>
             <div className={styles.article}>
               <h1>Agricultural and Veterinary Chemicals Code Act 1994</h1>
@@ -24,7 +24,7 @@ export default function Regulation() {
           </a>         
         </div>
         <div className={styles.item2}>
-          <a href="https://www.legislation.gov.au/Details/C2021C00182" className={styles.card}>
+          <a href="https://www.legislation.gov.au/Details/C2021C00182" className={styles.card} target="blank">
             <div className={styles.thumb + " " +styles.regulation2}></div>
             <div className={styles.article}>
             <h1>Environment Protection and Biodiversity Conservation Act 1999</h1>
@@ -33,7 +33,7 @@ export default function Regulation() {
           </a>
         </div>
         <div className={styles.item3}>
-          <a href="https://content.legislation.vic.gov.au/sites/default/files/2020-04/86-46aa096%20authorised.pdf" className={styles.card}>
+          <a href="https://content.legislation.vic.gov.au/sites/default/files/2020-04/86-46aa096%20authorised.pdf" className={styles.card} target="blank">
             <div className={styles.thumb + " " +styles.regulation3}></div>
             <div className={styles.article}>
             <h1>Prevention of Cruelty to Animals Act 1986</h1>
@@ -42,7 +42,7 @@ export default function Regulation() {
           </a>
         </div>
         <div className={styles.item4}>
-          <a href="https://content.legislation.vic.gov.au/sites/default/files/2020-12/94-52aa066%20authorised.pdf" className={styles.card}>
+          <a href="https://content.legislation.vic.gov.au/sites/default/files/2020-12/94-52aa066%20authorised.pdf" className={styles.card} target="blank">
             <div className={styles.thumb + " " +styles.regulation4}></div>
             <div className={styles.article}>
             <h1>Catchment and Land Protection Act 1994</h1>
@@ -51,7 +51,7 @@ export default function Regulation() {
           </a>
         </div>
         <div className={styles.item5}>
-          <a href="https://content.legislation.vic.gov.au/sites/default/files/209b5659-079e-37fd-a7c8-3b32d5b899b0_92-46aa056%20authorised.pdf" className={styles.card}>
+          <a href="https://content.legislation.vic.gov.au/sites/default/files/209b5659-079e-37fd-a7c8-3b32d5b899b0_92-46aa056%20authorised.pdf" className={styles.card} target="blank">
             <div className={styles.thumb + " " +styles.regulation5}></div>
             <div className={styles.article}>
             <h1>Agriculture and Veterinary Chemicals (Control of Use) Act 1992</h1>
@@ -60,7 +60,7 @@ export default function Regulation() {
           </a>
         </div>
         <div className={styles.item6}>
-          <a href="https://content.legislation.vic.gov.au/sites/default/files/85877eed-1917-39a0-9f5e-3dd3948be0a8_81-9719aa128%20authorised.pdf" className={styles.card}>
+          <a href="https://content.legislation.vic.gov.au/sites/default/files/85877eed-1917-39a0-9f5e-3dd3948be0a8_81-9719aa128%20authorised.pdf" className={styles.card} target="blank">
             <div className={styles.thumb + " " +styles.regulation6}></div>
             <div className={styles.article}>
             <h1>Drugs, Poisons and Controlled Substances Act 1981</h1>
@@ -69,7 +69,7 @@ export default function Regulation() {
           </a>
         </div>
         <div className={styles.item7}>
-          <a href="https://content.legislation.vic.gov.au/sites/default/files/2020-12/75-8699aa125%20authorised.pdf" className={styles.card}>
+          <a href="https://content.legislation.vic.gov.au/sites/default/files/2020-12/75-8699aa125%20authorised.pdf" className={styles.card} target="blank">
             <div className={styles.thumb + " " +styles.regulation7}></div>
             <div className={styles.article}>
             <h1>Wildlife Act 1975</h1>
