@@ -34,12 +34,12 @@
   }
 }
 
-.divb {
+.di::before {
   content: attr(title);
   position: absolute;
   left: 0;
 }
-.diva {
+.div::after {
   content: attr(title);
   position: absolute;
   left: 0;

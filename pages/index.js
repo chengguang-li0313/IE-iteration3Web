@@ -6,7 +6,7 @@ import { CardSection } from '../component/CardSection'
 import  Desc  from '../component/Desc'
 import { HomeControlSection } from '../component/HomeControlSection'
 import { Footer } from '../component/Footer' 
-import {Regulation} from '../component/Regulation';
+import Regulation from '../component/Regulation';
 export default function Home() {
 
   return (
@@ -27,7 +27,7 @@ export default function Home() {
 
     <h1 className={styles.homeControlTitle}>Generic Control Methods</h1>
     <HomeControlSection></HomeControlSection>
-    
+    <Regulation> </Regulation>
 
     <Footer></Footer>
     </>
