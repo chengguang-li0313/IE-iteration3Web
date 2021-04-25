@@ -143,10 +143,11 @@
 
 .footer {
   display: flex;
-  height: 300px;
+  height: 100px;
   background-color: rgba(167, 121, 68, 0.363);
   padding: 2rem;
   align-items: center;
+  justify-content: space-around;
 }
 
 .footer img {
