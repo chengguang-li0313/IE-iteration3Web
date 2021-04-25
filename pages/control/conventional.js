@@ -12,8 +12,10 @@ export default function Conventional() {
         <a href="/control" className={styles.backButton}>
             «Back
         </a>
-        <div className={styles.conventionalContainer}>
-            <h1>Conventional Control Method</h1>
+        <div className={styles.conventionalText}>
+            <h1>What are Conventional Control Methods?</h1>
+            <p>This includes digging, flooding, destruction and removal of nests, hand-pulling, burning and general destruction of the invasive species by hand. This is most useful for small infestations and is the most environmentally friendly, yet is the most labour intensive and least effective for larger populations.</p>
+            <p>Watch the video below to get more information:</p>
         </div>
         <div className={styles.conventionalContainer}>
             <YoutubePlayer

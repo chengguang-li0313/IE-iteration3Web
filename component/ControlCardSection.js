@@ -30,7 +30,7 @@ export const ControlCardSection = () => {
                 <ControlCard
                     title={'Animal Welfare'}
                     sub={' There are various services available in Victoria that offer professional animal trapping services using modern and humane methods of capture for wild animal population reduction programs'}
-                    img={'/controlService.jpeg'}
+                    img={'/welfare0.jpeg'}
                     url={'/control/welfare'}
                 ></ControlCard>
             </div>

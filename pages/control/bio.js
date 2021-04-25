@@ -11,8 +11,9 @@ export default function Conventional() {
     <Layout>
       <ControlHero></ControlHero>  
         <a href='/control' className={styles.backButton}>«Back</a>
-        <div className={styles.conventionalContainer}>
+        <div className={styles.conventionalText}>
             <h1>Biological Control Methods</h1>
+            <p>Biological methods to control pests include the use of natural predators, parasites and disease-carrying bacteria or viruses. Myxomatosis and rabbit calicivirus disease are examples of biological controls that have been used in Australia to control feral rabbits.</p>
         </div>
         <div className={styles.conventionalContainer}>
             <YoutubePlayer
