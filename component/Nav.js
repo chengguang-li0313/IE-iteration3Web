@@ -7,11 +7,10 @@ export const Nav = () => {
 
     return (
         <nav className={styles.nav}>
-            <Link href='/'><img src='/logo.png'></img></Link>
             <div className={styles.navItem}>
                 <Link href='/'>Home</Link>
-                <Link href='/control'>Control Methods</Link>
                 <Link href='/animals'>Animals</Link>
+                <Link href='/control'>Control Methods</Link>
                 <Link href='/about'>About Us</Link>
             </div>
         </nav>

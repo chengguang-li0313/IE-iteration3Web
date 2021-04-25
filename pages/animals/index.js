@@ -43,7 +43,7 @@ export default function Animals() {
     <Layout>
       <div className={styles.container}>
         <div className={styles.animalText}>
-          <h1>How Are Feral Animals Harming Farmland?</h1>
+          <h1>Learn About Pest Animals</h1>
         </div>
       </div>
 

@@ -30,8 +30,13 @@
 .controlSection {
     display:flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 3rem;
 }
+
+.controlSection {
+    font-size: 1.2rem
+}
+
 
 .controlCards {
     display: flex;
@@ -99,6 +104,11 @@
     display: flex;
     overflow-x: auto;
     padding: 1rem;
+}
+
+.programCardSection {
+    display: flex;
+    overflow-x: scroll;
 }
 
 @media only screen and (max-width: 750px) {
