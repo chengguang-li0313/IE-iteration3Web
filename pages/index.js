@@ -25,6 +25,7 @@ export default function Home() {
 
     <Desc></Desc>
 
+    <h1 className={styles.homeControlTitle}>Generic Control Methods</h1>
     <HomeControlSection></HomeControlSection>
     
 

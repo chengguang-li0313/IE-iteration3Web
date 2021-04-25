@@ -108,7 +108,7 @@
     width: 400px;
     margin: 1rem;
     height: 500px;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .animalImpactCard button {
@@ -120,6 +120,22 @@
     width: 93%;
     color:rgb(85, 85, 85);
     background-color: rgba(167, 121, 68, 0.363);
+}
+
+.controlHeader {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    height: 250px;
+    width: 100%;
+    filter: contrast(60%);
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+}
+
+.animalImpactCard img:hover {
+    filter: contrast(100%);
 }
 
 .animalImpactCard img {

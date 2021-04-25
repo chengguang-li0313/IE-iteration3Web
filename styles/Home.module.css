@@ -11,7 +11,7 @@
 .nav {
   display: flex;
   padding: 0.5rem 1rem;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.349);
   height: 6rem;
@@ -151,6 +151,12 @@
 
 .footer img {
   height: 100px;
+}
+
+.homeControlTitle {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 /* .cardFront {
