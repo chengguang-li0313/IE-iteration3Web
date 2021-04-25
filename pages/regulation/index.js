@@ -9,7 +9,7 @@ export default function Regulation() {
       <RegulationHero> </RegulationHero>
       <div className={textStyle.body}>
           <div className={textStyle.div}>               
-                    Regulation 
+                    Regulations 
           </div>
       </div>
 
