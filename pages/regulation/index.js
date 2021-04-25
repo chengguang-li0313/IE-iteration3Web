@@ -1,12 +1,16 @@
 import styles from "../../styles/Regulation.module.scss";
 import { RegulationHero } from '../../component/RegulationHero'
 import { Layout } from "../../component/Layout";
+import textStyle from "../../styles/Text.module.css";
+
 export default function Regulation() { 
     return ( 
         <Layout> 
       <RegulationHero> </RegulationHero>
-      <div>
-          <h1>Regulation Method</h1>
+      <div className={textStyle.body}>
+          <div className={textStyle.div}>               
+                    Regulation 
+          </div>
       </div>
 
       <div className={styles.band}>
