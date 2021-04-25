@@ -145,7 +145,7 @@
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     height: 250px;
-    filter: contrast(60%);
+    filter: contrast(95%);
     transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
 }
 
