@@ -8,35 +8,23 @@ export const Footer = () => {
     return (
         <div className={style.sitefooter}>         
          <div className={style.container}>
-
-                  {/* <Col sm="6" sm="6">
-                      <h6>About</h6>
-                         <p className="text-justify">Our team name is <i>5eral footprints </i> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-                     </Col> */}
-
-                     
                     <h6>Quick Links</h6>
                 <ul className={style.footerlinks}>
-                      <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                     <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                    <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                     <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                      <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-                 </ul>
-               
+                      <li><a href="/">Home</a></li>
+                     <li><a href="/animals">Animals</a></li>
+                    <li><a href="/control">Control Methods</a></li>
+                     <li><a href="/regulation">Regulations</a></li>
+                      <li><a href="/about">About Us</a></li>
+                 </ul>              
 
              {/* <hr> */}
             </div>
-          {/* <div className={style.container}>
-             <div className={style.row}>
-            <div className='col-md-8 col-sm-6 col-xs-12'>
-             <p className={style.copyrighttext}>Copyright &copy; 2017 All Rights Reserved by 
-                 <a href="#">Scanfcode</a>.
+            
+            <div className={style.container}>
+               <hr/>
+             <p className={style.copyrighttext}>Copyright &copy; 2021 All Rights Reserved by 5eral Footprints Team.               
                     </p>
                 </div>
-
-           </div>
-      </div> */}
         </div>
 
     )
