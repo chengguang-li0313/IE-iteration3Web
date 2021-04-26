@@ -162,6 +162,9 @@ const Regulation = () => {
               <div className={styles.text}>
                   Regulations
               </div>
+              <div className={styles.text1}>
+              All legislation you need to know about erdicating feral animals
+              </div>
               {/* button  */}
               <Link href='/regulation'> 
                 <button className={styleButton.button}>
