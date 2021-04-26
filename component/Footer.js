@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <div className={style.sitefooter}>         
          <div className={style.container}>
-                    <h6>Footer</h6>
+                    <h6>5eral Footprints</h6>
                 <ul className={style.footerlinks}>
                       <li><a href="/">Home</a></li>
                      <li><a href="/animals">Animals</a></li>
