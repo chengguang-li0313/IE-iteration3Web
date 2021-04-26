@@ -8,7 +8,7 @@ export default function Regulation() {
         <Layout> 
       <RegulationHero> </RegulationHero>
       <div className={textStyle.body}>
-          <div className={textStyle.div}>               
+          <div className={textStyle.div}>           
                     Regulations 
           </div>
       </div>
