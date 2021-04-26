@@ -1,14 +1,10 @@
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-import textStyle from '../styles/FooterText.module.css';
 import style from '../styles/Footer.module.css';
-import { Container, Row, Col } from "reactstrap";
 import React from "react";
 export const Footer = () => {
     return (
         <div className={style.sitefooter}>         
          <div className={style.container}>
-                    <h6>Quick Links</h6>
+                    <h6>Footer</h6>
                 <ul className={style.footerlinks}>
                       <li><a href="/">Home</a></li>
                      <li><a href="/animals">Animals</a></li>
