@@ -7,7 +7,7 @@ $slide-width: 30rem;
   font-family: "Oswald", sans-serif;
   font-size: xx-large;
   margin-bottom: 35px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .html {
@@ -57,7 +57,7 @@ $slide-width: 30rem;
 
 .carouselinner {
   //--------------------------------------------------------------------------------------
-  height: 48rem;
+  height: 49rem;
   position: relative;
   width: calc(#{30rem * 3});
 }
@@ -81,13 +81,14 @@ $slide-width: 30rem;
 }
 
 .carouselslideitem {
+  //-----------------------------------------------------card size
   display: inline-block;
-  height: 30rem;
+  height: 25rem;
   margin: 0;
   padding: 1rem;
   position: absolute;
   transition: all 0.3s;
-  width: 30rem;
+  width: 28rem;
 }
 
 .carouselslideitemimglink {
@@ -183,31 +184,29 @@ $slide-width: 30rem;
 
   &right {
     transform: rotate(-45deg);
-    margin-right: 0px;
-    margin-left: 1180px;
+    margin-left: 1175px;
   }
 }
 
 .carouseldots {
   display: inline-block;
   left: 50%;
-  margin-top: -11.5rem;
+  margin-top: -15rem;
   position: absolute;
   transform: translateX(-50%);
 
   .dot {
-    background: #ccc;
+    background: rgb(80, 82, 79);
     border: 0;
     border-radius: 50%;
     cursor: pointer;
-    height: 2rem;
+    height: 4rem;
     margin: 0 0.3rem;
     outline: none;
     transform: scale(0.5);
-    width: 2rem;
-
+    width: 4rem;
     &.active {
-      background: black;
+      background: rgb(101, 202, 51);
     }
   }
 }

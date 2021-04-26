@@ -153,12 +153,12 @@ const Regulation = () => {
                     <i className={styles.carouselbtnarrow + " " + styles.carouselbtnarrowleft} />
                 </button>
                  {/* add title in here  */}
-        {/* <div className={textStyle.body}>
+              {/* <div className={textStyle.body}>
                    
-           <div className={textStyle.div}>               
+                 <div className={textStyle.div}>               
                     Regulations 
-              </div>
-           </div> */}
+                  </div>
+                 </div> */}
               <div className={styles.text}>
                   Regulations
               </div>
@@ -189,7 +189,7 @@ const Regulation = () => {
                         <button
                             key={i}
                             onClick={() => handleDotClick(i)}
-                            className={i === activeIdx ? 'dot active' : 'dot'}
+                            className={i === activeIdx ? `styles.dot+" "+styles.active` : 'styles.dot'}
                         />
                     ))}
                 </div>
