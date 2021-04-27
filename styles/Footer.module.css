@@ -8,9 +8,9 @@
 .container {
   height: 100%;
   overflow: hidden;
-  width: 60%;
+  width: 80%;
   position: center;
-  margin-left: 300px;
+  margin-left: 250px;
 }
 
 .sitefooter hr {
@@ -69,7 +69,8 @@
 }
 .copyrighttext {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-left: 25rem;
 }
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {

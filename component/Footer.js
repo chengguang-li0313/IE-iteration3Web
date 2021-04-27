@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <div className={style.sitefooter}>         
          <div className={style.container}>
-                    <h6>5eral Footprints</h6>
+                    <h6>Feral Footprints</h6>
                 <ul className={style.footerlinks}>
                       <li><a href="/">Home</a></li>
                      <li><a href="/animals">Animals</a></li>
@@ -18,7 +18,7 @@ export const Footer = () => {
             
             <div className={style.container}>
                <hr/>
-             <p className={style.copyrighttext}>Copyright &copy; 2021 All Rights Reserved by 5eral Footprints Team.               
+             <p className={style.copyrighttext}>Copyright &copy; 2021 All Rights Reserved by Feral Footprints Team.               
                     </p>
                 </div>
         </div>
