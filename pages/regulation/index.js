@@ -7,6 +7,7 @@ export default function Regulation() {
     return ( 
         <Layout> 
       <RegulationHero> </RegulationHero>
+      <div className={styles.container}>
       <div className={textStyle.body}>
           <div className={textStyle.div}>           
                     Regulations 
@@ -77,7 +78,7 @@ export default function Regulation() {
             </div>
           </a>
         </div> 
-
+        </div> 
       </div>
       </Layout>
     );

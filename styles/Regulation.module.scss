@@ -48,16 +48,24 @@
   font-style: italic;
 }
 
+.container {
+  height: 100%;
+  overflow: hidden;
+  width: 90%;
+  position: center;
+  margin-left: 100px;
+}
+
 .header {
   width: 90%;
   max-width: 1240px;
   margin: 0 auto;
 }
 .band {
+  //-------------------------------------------container size
   width: 90%;
-  max-width: 1240px;
+  max-width: 1180px;
   margin: 0 auto;
-
   display: grid;
 
   grid-template-columns: 1fr;
@@ -149,7 +157,7 @@
 .regulation3 {
   background-image: url("https://i.loli.net/2021/04/25/sqV6nZRxHTe9cpM.jpg");
   background-size: cover;
-  width: 300px;
+  // width: 300px;
   height: 200px;
 }
 .regulation4 {
@@ -163,12 +171,12 @@
 .regulation6 {
   background-image: url("https://i.loli.net/2021/04/25/3DIzNOoUlmBxg57.jpg");
   background-size: cover;
-  width: 300px;
+  // width: 300px;
   height: 250px;
 }
 .regulation7 {
   background-image: url("https://i.loli.net/2021/04/25/WBeiRS2gvnqmxrM.jpg");
   background-size: cover;
-  width: 300px;
+  // width: 300px;
   height: 300px;
 }
