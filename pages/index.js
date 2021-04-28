@@ -11,15 +11,11 @@ export default function Home() {
 
   return (
     <>
-    <div className={styles.container}>
-      <Head>
-        <title>Feral Animals</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Nav></Nav>
+     
+       <Nav></Nav>
 
-      <Intro></Intro>
-    </div>
+       <Intro></Intro>
+     
 
     <CardSection></CardSection>
 

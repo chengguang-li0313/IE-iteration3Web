@@ -1,12 +1,13 @@
 import style from '../styles/Footer.module.css';
 import React from "react";
+import Link from 'next/link'
 export const Footer = () => {
     return (
         <div className={style.sitefooter}>         
          <div className={style.container}>
                     <h6>Feral Footprints</h6>
                 <ul className={style.footerlinks}>
-                      <li><a href="/">Home</a></li>
+                       <Link href='/'>Home</Link>
                      <li><a href="/animals">Animals</a></li>
                     <li><a href="/control">Control Methods</a></li>
                      <li><a href="/regulation">Regulations</a></li>

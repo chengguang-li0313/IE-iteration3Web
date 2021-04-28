@@ -25,6 +25,7 @@
     "sass": "^1.32.11",
     "scss": "^0.2.4",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.3"
+    "semantic-ui-react": "^2.0.3",
+    "styled-components": "^5.2.3"
   }
 }
