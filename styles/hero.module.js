@@ -7,7 +7,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 30px;
-height: 88vh;
+height: 99vh;
 position: relative;
 z-index: 1;
 
@@ -51,14 +51,27 @@ object-fit: cover;
 
 export const HeroContent = styled.div`
 z-index: 3;
-max-width: 1400px;
+max-width: 1700px;
+width: 100%;
 position: absolute;
 padding: 8px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
-
+top: 0%;
 `;
+export const TextContent = styled.div`
+z-index: 3;
+max-width: 1700px;
+width: 100%;
+position: absolute;
+padding: 8px 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+top: 210%;
+`;
+
 export const HeroTitle = styled.h1`
 font-size: 4.8rem;
 text-align: center;

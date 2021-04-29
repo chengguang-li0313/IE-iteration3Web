@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
      {/* <div className={styles.container}> */}
-       <Nav></Nav>
+       {/* <Nav></Nav> */}
 
        <Intro></Intro>
        {/* </div> */}

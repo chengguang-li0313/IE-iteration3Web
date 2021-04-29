@@ -13,9 +13,10 @@
   padding: 0.5rem 1rem;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgba(102, 99, 99, 0.349);
+  background-color: rgba(141, 139, 139, 0.349);
   height: 6rem;
-  width: 100%;
+  width: 100vw;
+  top: 0%;
 }
 
 .nav a {
@@ -25,7 +26,7 @@
 }
 
 .nav a:hover {
-  color: rgb(94, 94, 94);
+  color: rgb(7, 7, 7);
 }
 
 .intro {

@@ -11,7 +11,8 @@ import {
   HeroText,
   HeroBtn,
   ArrowForward,
-  ArrowRight
+  ArrowRight,
+  TextContent
 } from '../styles/hero.module.js'
 import {Button} from '../styles/button.module.js'
 
@@ -21,12 +22,14 @@ export const Intro = () => {
   const onHover = ()=> setHover(!hover);
   return (
     <div>
-      <HeroContainer id="homepage hero">  
-      {/* <Nav></Nav>          */}
+      <HeroContainer id="homepage hero">              
         <HeroBg>
           <VideoBg src='/video.mp4' autoPlay muted playsInline loop/>
         </HeroBg>
+
         <HeroContent>
+        <Nav></Nav>
+        <TextContent>
           <HeroTitle>We help secure your farm from Pest Animals</HeroTitle>
           <HeroText>
             Pest Animals have significant impact on Agriculture in Victoria.
@@ -37,8 +40,9 @@ export const Intro = () => {
             </Button> </a> 
           </HeroBtn>
           {/* <a href='#impact'><BiDownArrowCircle size={40} color={'green'}/></a>  */}
+          </TextContent>
         </HeroContent>
-
+        
       </HeroContainer>
       
     </div>
