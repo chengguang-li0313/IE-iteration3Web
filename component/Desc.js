@@ -36,15 +36,15 @@ function Desc() {
     TweenMax.to(app, 0, {css: {visibility: 'visible'}})
 
     //Images Animation
-    tl.from(pigImage, 2, {y: 1280, ease: Power3.easeOut},'Start')
+    tl.from(pigImage, 0.5, {y: 80, ease: Power3.easeOut},'Start')
     .from(pigImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(foxImage, 2, {y: 1280, ease: Power3.easeOut}, .2)
+    .from(foxImage, 0.6, {y: 100, ease: Power3.easeOut}, .2)
     .from(foxImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(rabbitImage, 4, {y: 1280, ease: Power3.easeOut}, .2)
+    .from(rabbitImage, 0.9, {y: 200, ease: Power3.easeOut}, .2)
     .from(rabbitImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(goatImage, 3.6, {y: 1280, ease: Power3.easeOut}, .2)
+    .from(goatImage, 1, {y: 170, ease: Power3.easeOut}, .2)
     .from(goatImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(dogImage, 3, {y: 1280, ease: Power3.easeOut}, .2)
+    .from(dogImage, 0.8, {y: 200, ease: Power3.easeOut}, .2)
     .from(dogImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
 
     //Content Animation
