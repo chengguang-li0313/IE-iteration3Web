@@ -7,15 +7,16 @@ import  Desc  from '../component/Desc'
 import { HomeControlSection } from '../component/HomeControlSection'
 import { Footer } from '../component/Footer' 
 import Regulation from '../component/Regulation';
+import { Layout } from '../component/Layout'
 export default function Home() {
 
   return (
     <>
-     
+     {/* <div className={styles.container}> */}
        <Nav></Nav>
 
        <Intro></Intro>
-     
+       {/* </div> */}
 
     <CardSection></CardSection>
 

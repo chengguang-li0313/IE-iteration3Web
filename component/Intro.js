@@ -1,6 +1,7 @@
 import styles from '../styles/Home.module.css'
 import { BiDownArrowCircle } from 'react-icons/bi'
 import React, { useState} from 'react'
+import { Nav } from '../component/Nav'
 import {
   HeroContainer,
   HeroBg,
@@ -20,7 +21,8 @@ export const Intro = () => {
   const onHover = ()=> setHover(!hover);
   return (
     <div>
-      <HeroContainer id="homepage hero">
+      <HeroContainer id="homepage hero">  
+      {/* <Nav></Nav>          */}
         <HeroBg>
           <VideoBg src='/video.mp4' autoPlay muted playsInline loop/>
         </HeroBg>

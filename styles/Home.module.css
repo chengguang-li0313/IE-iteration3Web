@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/photo-1.jpeg");
+  /* background-image: url("/photo-1.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13,7 +13,7 @@
   padding: 0.5rem 1rem;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.349);
+  background-color: rgba(102, 99, 99, 0.349);
   height: 6rem;
   width: 100%;
 }
