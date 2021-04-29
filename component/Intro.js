@@ -24,7 +24,7 @@ export const Intro = () => {
     <div>
       <HeroContainer id="homepage hero">              
         <HeroBg>
-          <video src='/video.mp4' type="video/mp4" autoPlay muted playsInline loop width="1600px"/>
+          <video playsInline muted autoPlay loop controls src='/video.mp4' type="video/mp4" width="1600px"/>
           {/* <VideoBg/> */}
         </HeroBg>
 
