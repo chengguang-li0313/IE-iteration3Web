@@ -9,6 +9,7 @@ padding: 0 30px;
 height: 100vh;
 position: relative;
 z-index: 1;
+background-image: url('https://i.loli.net/2021/05/01/jJyD3zo1R7sNmOc.png');
 
 &::before{
   content: "";

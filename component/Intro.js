@@ -22,7 +22,7 @@ export const Intro = () => {
   const onHover = ()=> setHover(!hover);
   return (
     <div>
-      <HeroContainer id="homepage hero" background-image="/pp.png">              
+      <HeroContainer id="homepage hero" >              
         <HeroBg>
           {/* <video playsInline muted autoPlay loop controls src='/video.mp4' type="video/mp4" width="1600px"/> */}
           <VideoBg autoPlay muted playsInline loop>     
