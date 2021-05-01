@@ -46,7 +46,7 @@ width: 100%;
 height: 100%;
 -o-object-fit: cover;
 object-fit: cover;
-background-image: url("https://i.loli.net/2021/05/01/ukA9RxrEnl2KIyZ.png");
+background-image: url("https://i.loli.net/2021/05/01/5LZNRpBg9qSFO8u.png");
 `;
 
 export const HeroContent = styled.div`
