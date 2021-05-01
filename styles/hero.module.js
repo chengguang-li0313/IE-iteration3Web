@@ -21,7 +21,7 @@ z-index: 1;
   background: linear-gradient( 
   100deg, 
   rgba(0,0,0,0.2) 0%, 
-  rgba(0,0,0,0.6) 100%),
+  rgba(0,0,0,0.1) 100%),
   linear-gradient(
   100deg, 
   rgba(0,0,0,0.2) 0%, 
