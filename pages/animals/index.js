@@ -8,10 +8,12 @@ import { AnimalGridSection } from "../../component/AnimalGridSection";
 import { Menu } from "semantic-ui-react";
 import { BioInfoSection } from "../../component/BioInfoSection";
 import { AnimalControlSection } from '../../component/AnimalControlSection'
+import { useLoading, Circles } from '@agney/react-loading';
 
 export default function Animals() {
   const [data, setData] = useState("");
   const [controlData, setControlData] = useState('')
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(async () => {
     const result = await axios.get(
@@ -24,6 +26,7 @@ export default function Animals() {
 
     setData(result.data);
     setControlData(controlResult.data)
+    setIsLoading(false)
     console.log(controlResult.data);
   }, []);
 
@@ -38,7 +41,13 @@ export default function Animals() {
         setControlData(result.data)
     })
     setData(result.data);
+    setIsLoading(false)
   };
+
+  const { containerProps, indicatorEl } = useLoading({
+    loading: true,
+    indicator: <Circles width="100" />,
+  });
 
   return (
     <Layout>
@@ -57,13 +66,21 @@ export default function Animals() {
       </Menu>
 
       <div className={styles.controlContainer}>
-        <BioInfoSection data={data}></BioInfoSection>
+        {
+          isLoading ? (
+          <section {...containerProps}>
+            {indicatorEl} {/* renders only while loading */}
+          </section>) : (
+            <>
+          <BioInfoSection data={data}></BioInfoSection>
 
-        <AnimalGridSection data={data}></AnimalGridSection>
+          <AnimalGridSection data={data}></AnimalGridSection>
 
-        <AnimalImpactSection data={data}></AnimalImpactSection>
+          <AnimalImpactSection data={data}></AnimalImpactSection>
 
-        <AnimalControlSection data={controlData}></AnimalControlSection>
+          <AnimalControlSection data={controlData}></AnimalControlSection>
+          </>)
+        }
       </div>
     </Layout>
   );

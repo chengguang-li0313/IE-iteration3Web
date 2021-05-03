@@ -6,7 +6,7 @@ export const AnimalImpactSection = (props) => {
     const {data} = props;
 
     return (
-      <Accordion title={'Impact'}>
+      <Accordion title={'How Does The Pest Impact You?'}>
         <div className={styles.animalImpactSection}>
         <AnimalImpactCard
           img={"ecosystem.jpeg"}
