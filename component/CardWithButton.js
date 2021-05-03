@@ -11,7 +11,7 @@ export const CardWithButton = (props) => {
         <p>{text}</p>
       </div>
       
-      <a href={href}><button>Learn More</button></a>
+      <a href={href} target="_blank"><button>Learn More</button></a>
     </div>
   );
 };

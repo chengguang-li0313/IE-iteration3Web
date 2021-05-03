@@ -13,7 +13,10 @@ export const BioCard = (props) => {
             <div className={styles["post_content"]}>
 
                 <h1>{title}</h1>
-                <p>{desc}</p>
+                {desc.split("•").map((i,key) => {
+                    return key === 0 ?  <div></div> :
+                     <div key={key}>•{i}</div>;
+                })}
             </div>
         </div>
     </div>

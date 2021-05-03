@@ -1,6 +1,4 @@
 import styles from "../styles/Animals.module.css";
-import cardStyles from '../styles/AnimalGrid.module.scss'
-import { AnimalGridCard } from "./AnimalGridCard";
 import { Accordion } from './Accordion'
 import { BioCard } from './BioCard'
 
@@ -21,7 +19,6 @@ export const AnimalGridSection = (props) => {
           title={"Diet"}
           desc={data.diet}
           img={data.image1}
-
         ></BioCard>
 
         <BioCard
