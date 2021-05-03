@@ -1,10 +1,12 @@
 import { AnimalImpactCard } from './AnimalImpactCard'
 import styles from '../styles/Animals.module.css'
+import { Accordion } from './Accordion'
 
 export const AnimalImpactSection = (props) => {
     const {data} = props;
 
     return (
+      <Accordion title={'Impact'}>
         <div className={styles.animalImpactSection}>
         <AnimalImpactCard
           img={"ecosystem.jpeg"}
@@ -27,5 +29,6 @@ export const AnimalImpactSection = (props) => {
           text={data.agricultureImpact}
         ></AnimalImpactCard>
       </div>
+      </Accordion>
     )
 };

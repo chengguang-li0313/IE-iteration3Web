@@ -2,6 +2,7 @@ import styles from "../styles/Animals.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { CardWithButton } from '../component/CardWithButton'
+import { Accordion } from './Accordion'
 
 export const AnimalControlSection = (props) => {
     const { data } = props
@@ -37,13 +38,13 @@ export const AnimalControlSection = (props) => {
 
     console.log(data)
     return (
-        <>
+        <Accordion title={'Control Methods'}>
         <Carousel 
             responsive={responsive} 
             showDots={true}
             > 
             {controlMethods}
          </Carousel>
-        </>
+        </Accordion>
     );
 };

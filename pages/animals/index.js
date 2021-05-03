@@ -39,7 +39,7 @@ export default function Animals() {
     setData(result.data);
   };
 
-  return ( 
+  return (
     <Layout>
       <div className={styles.container}>
         <div className={styles.animalText}>
@@ -55,19 +55,14 @@ export default function Animals() {
         <Menu.Item name="dog" onClick={handleClick} />
       </Menu>
 
-      <div className={styles.controlContainer}> 
+      <div className={styles.controlContainer}>
         <BioInfoSection data={data}></BioInfoSection>
 
         <AnimalGridSection data={data}></AnimalGridSection>
 
-        <h1 className={homeStyles.heading2}>{data.commonName}'s Impact</h1>
         <AnimalImpactSection data={data}></AnimalImpactSection>
 
-
-        <h1 className={homeStyles.heading2}>{data.commonName}'s Control Method</h1>
-        <AnimalControlSection
-        data={controlData}
-        ></AnimalControlSection>
+        <AnimalControlSection data={controlData}></AnimalControlSection>
       </div>
     </Layout>
   );
