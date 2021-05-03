@@ -7,7 +7,11 @@ import ReactMapGL, { Marker, Popup,NavigationControl,ScaleControl,GeolocateContr
 import styles from "../../styles/Map.module.css";
 import buttonStyle from "../../styles/MapButton.module.scss";
 import { Menu } from "semantic-ui-react";
-export default function map() {  
+import { Button, Icon } from 'semantic-ui-react'
+
+
+export default function map()  {  
+  //button style
 
       //fetch data from API
     //   API url = "https://ie-animal-api.herokuapp.com/api3/pig";
@@ -33,41 +37,67 @@ export default function map() {
     
         setData(result.data);
       };
-      const onSubmit = (e) => {
-        e.preventDefault();
-        var title = this.name;
-        console.log(title);
-    }
 
     return(
       <Layout>
-        {/* <Menu vertical className={styles.menu}>
-        <Menu.Item name="fox" onClick={handleClick} />
-        <Menu.Item name="pig" onClick={handleClick} />
-        <Menu.Item name="goat" onClick={handleClick} />
-        <Menu.Item name="rabbit" onClick={handleClick} />
-        <Menu.Item name="dog" onClick={handleClick} />
-      </Menu>  */}
-      
+      <p> 
+       <div className={buttonStyle.title}>
+         Distribution map of the five feral animals     
+       </div>  
+        
+      </p>  
+{/*       
+       
       <label className={buttonStyle.label}>
         <div className={buttonStyle.toggle}>
-          <input className={buttonStyle.togglestate} type="checkbox" name="pig" value="pig" />
+          <input className={buttonStyle.togglestate} id = "pig" type="checkbox" name="pig" value="pig" />
          <div class={buttonStyle.indicator}></div>
       </div>
       <div class={buttonStyle.labeltext}>Pig</div>
-     </label>
+     </label> */}
+     <div className={buttonStyle.container }> 
+       <Button animated  color="red" name="pig" onClick={handleClick}>
+      <Button.Content visible>Pig</Button.Content>
+      <Button.Content hidden>
+        <Icon name='arrow right' />
+      </Button.Content>
+    </Button>
+    <Button animated  color="twitter" name="fox" onClick={handleClick}>
+      <Button.Content visible>Fox</Button.Content>
+      <Button.Content hidden>
+        <Icon name='arrow right' />
+      </Button.Content>
+    </Button>
+    <Button animated  color="yellow" name="rabbit" onClick={handleClick}>
+      <Button.Content visible>Rabbit</Button.Content>
+      <Button.Content hidden>
+        <Icon name='arrow right' />
+      </Button.Content>
+    </Button>
+    <Button animated  color="green" name="goat" onClick={handleClick}>
+      <Button.Content visible>Goat</Button.Content>
+      <Button.Content hidden>
+        <Icon name='arrow right' />
+      </Button.Content>
+    </Button>
+    <Button animated  color="instagram" name="dog" onClick={handleClick}>
+      <Button.Content visible>Dog</Button.Content>
+      <Button.Content hidden>
+        <Icon name='arrow right' />
+      </Button.Content>
+    </Button>
+    </div>  
 
-
-
-      
+    
+       {/* map  */}
+       <div className={buttonStyle.containerMap}> 
        <MapSection data={data}>
        </MapSection> 
 
-
+       </div>
       </Layout>
 
     );
-
 
 } 
 

@@ -9,7 +9,7 @@ export const MapSection = (props) => {
         latitude: -38.04569,
         longitude: 145.40121,
         width: "100%",
-        height: "92vh",
+        height: "80vh",
         zoom: 8
       });
       //navigationControl style

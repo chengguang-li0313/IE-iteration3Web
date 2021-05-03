@@ -13,6 +13,7 @@
     "@zeit/next-sass": "^1.0.1",
     "axios": "^0.21.1",
     "gsap": "^3.6.1",
+    "jquery": "^3.6.0",
     "next": "10.1.3",
     "react": "17.0.2",
     "react-back-to-top-button": "0.0.14",
