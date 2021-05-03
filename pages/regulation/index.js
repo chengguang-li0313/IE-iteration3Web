@@ -8,12 +8,13 @@ export default function Regulation() {
         <Layout> 
       <RegulationHero> </RegulationHero>
       <div className={styles.container}>
+
       <div className={textStyle.body}>
           <div className={textStyle.div}>           
                     Regulations 
           </div>
       </div>
-
+   
       <div className={styles.band}>
         <div className={styles.item1}>
           <a href="https://www.legislation.gov.au/Details/C2016C00999" className={styles.card}  target="blank">
