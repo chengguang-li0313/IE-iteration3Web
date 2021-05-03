@@ -44,7 +44,8 @@ export default function map() {
               trackUserLocation={true}
               fitBoundsOptions={{maxZoom: 10}}
               label={'My Current Location'}
-               auto
+              showUserLocation={true}
+               auto={true}
              />
              </ReactMapGL>
 
