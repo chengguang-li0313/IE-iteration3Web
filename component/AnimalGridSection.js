@@ -2,6 +2,7 @@ import styles from "../styles/Animals.module.css";
 import cardStyles from '../styles/AnimalGrid.module.scss'
 import { AnimalGridCard } from "./AnimalGridCard";
 import { Accordion } from './Accordion'
+import { BioCard } from './BioCard'
 
 export const AnimalGridSection = (props) => {
   const { data } = props;
@@ -9,35 +10,41 @@ export const AnimalGridSection = (props) => {
   return (
     <Accordion title={'Biological Attributes'}>
       <div className={styles.infoSection}>
-        <AnimalGridCard
-          title={"Appearance"}
-          desc={data.appearance}
-        ></AnimalGridCard>
+        <BioCard
+         title={"Appearance"}
+         desc={data.appearance}
+         img={data.appearanceImage}
+         >
+        </BioCard>
 
-        <AnimalGridCard
+        <BioCard
           title={"Diet"}
           desc={data.diet}
+          img={data.image1}
 
-        ></AnimalGridCard>
+        ></BioCard>
 
-        <AnimalGridCard
+        <BioCard
           title={"Behaviour"}
           desc={data.behaviour}
+          img={data.image2}
 
-        ></AnimalGridCard>
+        ></BioCard>
       </div>
       <div className={styles.infoSection}>
-        <AnimalGridCard
+        <BioCard
           title={"Preffered Habitat"}
           desc={data.habitat}
+          img={data.image3}
 
-        ></AnimalGridCard>
+        ></BioCard>
 
-        <AnimalGridCard
+        <BioCard
           title={"Predation"}
           desc={data.prey}
+          img={data.image4}
 
-        ></AnimalGridCard>
+        ></BioCard>
       </div>
     </Accordion>
   );
