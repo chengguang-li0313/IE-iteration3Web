@@ -12,6 +12,7 @@ export const Nav = () => {
                 <Link href='/animals'>Animals</Link>
                 <Link href='/control'>Control Methods</Link>
                 <Link href="/regulation">Regulations</Link>
+                <Link href='/map'>Map </Link>
                 <Link href='/about'>About Us</Link>
             </div>
         </nav>

@@ -11,6 +11,7 @@ export const Footer = () => {
                      <li><a href="/animals">Animals</a></li>
                     <li><a href="/control">Control Methods</a></li>
                      <li><a href="/regulation">Regulations</a></li>
+                     <li><a href="/map">Map </a></li>
                       <li><a href="/about">About Us</a></li>
                  </ul>              
 
