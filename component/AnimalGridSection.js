@@ -1,12 +1,13 @@
 import styles from "../styles/Animals.module.css";
 import cardStyles from '../styles/AnimalGrid.module.scss'
 import { AnimalGridCard } from "./AnimalGridCard";
+import { Accordion } from './Accordion'
 
 export const AnimalGridSection = (props) => {
   const { data } = props;
 
   return (
-    <>
+    <Accordion title={'Biological Attributes'}>
       <div className={styles.infoSection}>
         <AnimalGridCard
           title={"Appearance"}
@@ -38,6 +39,6 @@ export const AnimalGridSection = (props) => {
 
         ></AnimalGridCard>
       </div>
-    </>
+    </Accordion>
   );
 };
