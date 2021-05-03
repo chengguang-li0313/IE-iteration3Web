@@ -10,7 +10,7 @@ export const MapSection = (props) => {
         longitude: 145.40121,
         width: "100%",
         height: "92vh",
-        zoom: 6
+        zoom: 8
       });
       //navigationControl style
       const navControlStyle= {
@@ -60,7 +60,7 @@ export const MapSection = (props) => {
             latitude={ani.lat}
             longitude={ani.lon}
           >
-               <img src="/cat.png" alt="row" width="50px" height="50px"></img>
+               <img src="/cat.png" alt="icon" width="30px" height="30px"></img>
           </Marker>
         ))}
 
