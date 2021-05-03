@@ -1,55 +1,57 @@
-import { Layout } from "../../component/Layout";
+
 import React, { useState, useEffect } from "react";
+import Axios from "axios";
+import { Layout } from "../../component/Layout";
+import { MapSection } from '../../component/MapSection'
 import ReactMapGL, { Marker, Popup,NavigationControl,ScaleControl,GeolocateControl} from "react-map-gl";
-export default function map() {
-    const [viewport, setViewport] = useState({
-        latitude: -38.04569,
-        longitude: 145.40121,
-        width: "100%",
-        height: "92vh",
-        zoom: 10
-      });
-      //navigationControl style
-      const navControlStyle= {
-        right: 10,
-        top: 40
+import styles from "../../styles/Map.module.css";
+import { Menu } from "semantic-ui-react";
+export default function map() {  
+
+      //fetch data from API
+    //   API url = "https://ie-animal-api.herokuapp.com/api3/pig";
+    const [data, setData] = useState([]);
+
+    useEffect(async () => {
+
+        const result = await Axios.get(
+          `https://ie-animal-api.herokuapp.com/api3/pig`
+        );
+        setData(result.data);
+        //test print it out 
+        // console.log(result.data.map(animal => (animal.lat)));
+
+      }, []); 
+      
+      //console.log(data);
+      //hand click 
+      const handleClick = async (e, { name }) => {
+        const result = await Axios.get(
+          `https://ie-animal-api.herokuapp.com/api3/${name}`
+        );
+    
+        setData(result.data);
       };
-      //ScaleControl style
-      const scaleControlStyle= {
-        right: 20,
-        bottom: 130
-      };
-      //geoLocation Control 
-      //can get the user's geolocation and display it on Map
-      const geolocateControlStyle= {
-        right: 10,
-        top: 10,
-      };
+
     return(
-        <Layout> 
-            <ReactMapGL 
-             {...viewport} 
-             mapboxApiAccessToken="pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw"
-             mapStyle="mapbox://styles/chengguangli/cko7r6w904er817msd1n9f8ao"
-             onViewportChange={viewport => {
-                setViewport(viewport);
-              }}
-             >
-             <NavigationControl style={navControlStyle} />
-             <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} />
+      <Layout>
+        <Menu vertical className={styles.menu}>
+        <Menu.Item name="fox" onClick={handleClick} />
+        <Menu.Item name="pig" onClick={handleClick} />
+        <Menu.Item name="goat" onClick={handleClick} />
+        <Menu.Item name="rabbit" onClick={handleClick} />
+        <Menu.Item name="dog" onClick={handleClick} />
+      </Menu>
 
-             <GeolocateControl
-              style={geolocateControlStyle}
-              positionOptions={{enableHighAccuracy: true}}
-              trackUserLocation={true}
-              fitBoundsOptions={{maxZoom: 10}}
-              label={'My Current Location'}
-              showUserLocation={true}
-               auto={true}
-             />
-             </ReactMapGL>
+       <MapSection data={data}>
+       </MapSection> 
 
-       </Layout>
+      </Layout>
+
     );
 
+
 } 
+
+
+
