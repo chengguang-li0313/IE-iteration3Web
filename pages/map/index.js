@@ -1,6 +1,6 @@
 import { Layout } from "../../component/Layout";
 import React, { useState, useEffect } from "react";
-import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import ReactMapGL, { Marker, Popup,NavigationControl,ScaleControl,GeolocateControl} from "react-map-gl";
 export default function map() {
     const [viewport, setViewport] = useState({
         latitude: -38.04569,
@@ -9,7 +9,22 @@ export default function map() {
         height: "92vh",
         zoom: 10
       });
-
+      //navigationControl style
+      const navControlStyle= {
+        right: 10,
+        top: 40
+      };
+      //ScaleControl style
+      const scaleControlStyle= {
+        right: 20,
+        bottom: 130
+      };
+      //geoLocation Control 
+      //can get the user's geolocation and display it on Map
+      const geolocateControlStyle= {
+        right: 10,
+        top: 10,
+      };
     return(
         <Layout> 
             <ReactMapGL 
@@ -20,8 +35,17 @@ export default function map() {
                 setViewport(viewport);
               }}
              >
-      
+             <NavigationControl style={navControlStyle} />
+             <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} />
 
+             <GeolocateControl
+              style={geolocateControlStyle}
+              positionOptions={{enableHighAccuracy: true}}
+              trackUserLocation={true}
+              fitBoundsOptions={{maxZoom: 10}}
+              label={'My Current Location'}
+               auto
+             />
              </ReactMapGL>
 
        </Layout>
