@@ -1,9 +1,7 @@
 import styles from "../styles/Animals.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useState, useEffect } from 'react'
-import axios from "axios";
-import { ControlCard } from '../component/ControlCard'
+import { CardWithButton } from '../component/CardWithButton'
 
 export const AnimalControlSection = (props) => {
     const { data } = props
@@ -11,12 +9,12 @@ export const AnimalControlSection = (props) => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5,
+            breakpoint: { max: 4000, min: 1500 },
+            items: 3,
         },
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3,
+            breakpoint: { max: 1500, min: 1024 },
+            items: 2,
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -28,21 +26,24 @@ export const AnimalControlSection = (props) => {
         },
     };
 
-    // const controlMethods = data.map((controlMethod) => {
-    //     <ControlCard title={controlMethod.eradication.name}></ControlCard>;
-    // });
+    const controlMethods = data ? data.map((controlMethod) => {
+        return <CardWithButton 
+        title={controlMethod.eradication.name}
+        img={controlMethod.eradication.image}
+        text={controlMethod.eradication.description}
+        href={controlMethod.eradication.readMore}
+        ></CardWithButton>;
+    }) : <CardWithButton title={'Loading'}></CardWithButton>;
 
+    console.log(data)
     return (
         <>
-        <div className={styles.controlSection}>
-            <h1>Hello</h1>
-        </div>
-        {/* <Carousel 
+        <Carousel 
             responsive={responsive} 
             showDots={true}
-            > */}
-            {/* {controlMethods} */}
-        {/* </Carousel> */}
+            > 
+            {controlMethods}
+         </Carousel>
         </>
     );
 };

@@ -65,9 +65,9 @@ export default function Animals() {
 
 
         <h1 className={homeStyles.heading2}>{data.commonName}'s Control Method</h1>
-        {/* <AnimalControlSection
+        <AnimalControlSection
         data={controlData}
-        ></AnimalControlSection> */}
+        ></AnimalControlSection>
       </div>
     </Layout>
   );
