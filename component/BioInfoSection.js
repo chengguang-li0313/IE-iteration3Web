@@ -5,8 +5,6 @@ export const BioInfoSection = (props) => {
   const { data } = props;
 
   return (
-    <Accordion
-    title={'Biology'}>
       <div className={styles.bioInfo}>
         <div className={styles.biologyCard}>
           <h1>{data.commonName}</h1>
@@ -20,6 +18,5 @@ export const BioInfoSection = (props) => {
           {data.distribution}
         </div>
       </div>
-    </Accordion>
   );
 };
