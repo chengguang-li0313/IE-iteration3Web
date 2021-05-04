@@ -1,7 +1,7 @@
 import styles from "../styles/Animals.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { CardWithButton } from '../component/CardWithButton'
+import {FlippingControlCard} from './FlippingControlCards'
 import { Accordion } from './Accordion'
 
 export const AnimalControlSection = (props) => {
@@ -28,15 +28,15 @@ export const AnimalControlSection = (props) => {
     };
 
     const controlMethods = data ? data.map((controlMethod) => {
-        return <CardWithButton 
+        return <FlippingControlCard 
         title={controlMethod.eradication.name}
         img={controlMethod.eradication.image}
         text={controlMethod.eradication.description}
         href={controlMethod.eradication.readMore}
         pros={controlMethod.eradication.advantages}
         cons={controlMethod.eradication.disadvantages}
-        ></CardWithButton>;
-    }) : <CardWithButton title={'Loading'}></CardWithButton>;
+        ></FlippingControlCard>;
+    }) : <FlippingControlCard title={'Loading'}></FlippingControlCard>;
 
     console.log(data)
     return (
