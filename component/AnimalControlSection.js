@@ -33,6 +33,8 @@ export const AnimalControlSection = (props) => {
         img={controlMethod.eradication.image}
         text={controlMethod.eradication.description}
         href={controlMethod.eradication.readMore}
+        pros={controlMethod.eradication.advantages}
+        cons={controlMethod.eradication.disadvantages}
         ></CardWithButton>;
     }) : <CardWithButton title={'Loading'}></CardWithButton>;
 
