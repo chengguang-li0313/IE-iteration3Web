@@ -14,20 +14,14 @@ export const MapSection = (props) => {
     latitude={ani.lat}
     longitude={ani.lon}
   > 
-        <button
-              width="10px" 
-              height="10px"
-              border="none"
-              className="marker-btn"
-              font-size="16px"
-              background="transparent"
-              onClick={e => {
+
+       <input type="image" src={ani.image} width="20px" height="20px" onClick={e => {
                 e.preventDefault();
                 setSelectedPark(ani);
-              }}
-          >
-             <img src={ani.image} alt="icon" width="20px" height="20px"></img>
-        </button>  
+              }}>
+        
+        </input>
+
 </Marker>
   )
 ), [props.data]);

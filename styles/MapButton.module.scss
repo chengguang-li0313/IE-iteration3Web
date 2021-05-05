@@ -37,6 +37,8 @@
   width: 17rem;
   margin-left: 84%;
   background-color: rgb(244, 248, 248);
+  position: absolute;
+  z-index: 10;
 }
 .controlItem {
   margin-left: 20px;
@@ -51,6 +53,9 @@
   margin-left: 84%;
   background-color: rgb(244, 248, 248);
   // margin-bottom: 50rem;
+  position: absolute;
+  margin-top: 10%;
+  z-index: 10;
 }
 .cameraItem {
   margin-left: 20px;
