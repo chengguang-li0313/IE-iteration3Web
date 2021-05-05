@@ -60,7 +60,7 @@ export const MapSection = (props) => {
             latitude={ani.lat}
             longitude={ani.lon}
           >
-               <img src={ani.image} alt="icon" width="50px" height="50px"></img>
+               <img src={ani.image} alt="icon" width="20px" height="20px"></img>
           </Marker>
         ))}
 
