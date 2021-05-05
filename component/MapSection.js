@@ -13,11 +13,58 @@ export const MapSection = (props) => {
      key={ani.id}
     latitude={ani.lat}
     longitude={ani.lon}
-  >
-     <img src={ani.image} alt="icon" width="20px" height="20px"></img>
+  > 
+        <button
+              width="10px" 
+              height="10px"
+              border="none"
+              className="marker-btn"
+              font-size="16px"
+              background="transparent"
+              onClick={e => {
+                e.preventDefault();
+                setSelectedPark(ani);
+              }}
+          >
+             <img src={ani.image} alt="icon" width="20px" height="20px"></img>
+        </button>  
 </Marker>
   )
 ), [props.data]);
+   //pop up message 
+   const [selectedPark, setSelectedPark] = useState(null);
+
+   useEffect(() => {
+     const listener = e => {
+       if (e.key === "Escape") {
+         setSelectedPark(null);
+       }
+     };
+     window.addEventListener("keydown", listener);
+ 
+     return () => {
+       window.removeEventListener("keydown", listener);
+     };
+   }, []);
+ 
+ const pops = React.useMemo(() => selectedPark ? (
+  <Popup
+    latitude={selectedPark.lat}
+    longitude={selectedPark.lon}
+    onClose={() => {
+      setSelectedPark(null);
+    }}
+  >
+    <div>
+      <h5>Name:  {selectedPark.scientificName}</h5>
+      <p>Number:  {selectedPark.count}</p>
+      <p>Local Gov:  {selectedPark.localGov} </p>
+      <p>Regions:  {selectedPark.regions} </p>
+      <p>Geolodation:  {selectedPark.lat}, {selectedPark.lon}</p>
+    </div>
+  </Popup>
+) : null,[selectedPark] );
+  
     
     //map config
     const [viewport, setViewport] = useState({
@@ -82,7 +129,7 @@ export const MapSection = (props) => {
     });
   }, []);
 
-   
+
 
       //console.log(data);
     return (
@@ -114,15 +161,18 @@ export const MapSection = (props) => {
                <img src={ani.image} alt="icon" width="20px" height="20px"></img>
           </Marker>
         ))} */}
-        {markers}
+        {markers} 
+
+        {/* pop up message  */}
+        {pops}
 
        
-<div className={style.controlContainer}>  
+   <div className={style.controlContainer}>  
 
-  <ControlPanel 
-    settings={settings}
-    interactionState={interactionState}
-    onChange={updateSettings}
+    <ControlPanel 
+     settings={settings}
+     interactionState={interactionState}
+     onChange={updateSettings}
      />
   </div>
 
