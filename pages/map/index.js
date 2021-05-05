@@ -20,7 +20,7 @@ export default function map()  {
     useEffect(async () => {
 
         const result = await Axios.get(
-          `https://ie-animal-api.herokuapp.com/api3/rabbit`
+          `https://ie-animal-api.herokuapp.com/api3/pig`
         );
         setData(result.data);
         //test print it out 
@@ -90,6 +90,7 @@ export default function map()  {
 
     
        {/* map  */}
+
        <div className={buttonStyle.containerMap}> 
        <MapSection data={data}>
        </MapSection> 

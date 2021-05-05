@@ -14,9 +14,8 @@
 .containerMap {
   height: 100%;
   overflow: hidden;
-  width: 99.3%;
+  width: 100%;
   position: center;
-  margin-left: 6px;
 }
 
 .title {
@@ -30,4 +29,20 @@
   align-items: center;
   font-family: "Oswald", sans-serif;
   font-size: xx-large;
+}
+
+.controlContainer {
+  height: 25rem;
+  // overflow: hidden;
+  width: 20rem;
+  margin-left: 85%;
+  background-color: rgb(244, 248, 248);
+}
+.cameraContainer {
+  height: 15rem;
+  // overflow: hidden;
+  width: 20rem;
+  margin-left: 85%;
+  background-color: rgb(244, 248, 248);
+  margin-bottom: 50rem;
 }
