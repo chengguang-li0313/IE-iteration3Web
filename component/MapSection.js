@@ -52,9 +52,9 @@ export const MapSection = (props) => {
     dragPan: true,
     dragRotate: true,
     scrollZoom: true,
-    touchZoom: true,
-    touchRotate: true,
     doubleClickZoom: true,
+    // touchZoom: true,
+    // touchRotate: true,
     // keyboard: true,
     // minZoom: 0,
     // maxZoom: 20,
@@ -121,6 +121,7 @@ export const MapSection = (props) => {
 
   <ControlPanel 
     settings={settings}
+    interactionState={interactionState}
     onChange={updateSettings}
      />
   </div>
