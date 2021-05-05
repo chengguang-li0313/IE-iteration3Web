@@ -14,6 +14,7 @@ export default function Animals() {
   const [data, setData] = useState("");
   const [controlData, setControlData] = useState('')
   const [isLoading, setIsLoading] = useState(true)
+  const [active, setActive] = useState('fox')
 
   useEffect(async () => {
     const result = await axios.get(
@@ -40,8 +41,9 @@ export default function Animals() {
     ).then((result) => {
         setControlData(result.data)
     })
+    setActive(name)
     setData(result.data);
-    setIsLoading(false)
+    setIsLoading(false);
   };
 
   const { containerProps, indicatorEl } = useLoading({
@@ -58,11 +60,11 @@ export default function Animals() {
       </div>
 
       <Menu vertical className={styles.menu}>
-        <Menu.Item name="fox" onClick={handleClick} />
-        <Menu.Item name="pig" onClick={handleClick} />
-        <Menu.Item name="goat" onClick={handleClick} />
-        <Menu.Item name="rabbit" onClick={handleClick} />
-        <Menu.Item name="dog" onClick={handleClick} />
+        <Menu.Item name="fox" active={active === 'fox'} onClick={handleClick} />
+        <Menu.Item name="pig" active={active === 'pig'} onClick={handleClick} />
+        <Menu.Item name="goat" active={active === 'goat'} onClick={handleClick} />
+        <Menu.Item name="rabbit" active={active === 'rabbit'} onClick={handleClick} />
+        <Menu.Item name="dog" active={active === 'dog'} onClick={handleClick} />
       </Menu>
 
       <div className={styles.controlContainer}>
