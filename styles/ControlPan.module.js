@@ -1,13 +1,14 @@
 import * as React from 'react';
+import style from "./MapButton.module.scss";
 
 const camelPattern = /(^|[A-Z])[a-z]*/g;
 function formatSettingName(name) {
-  return name.match(camelPattern).join(' ');
+  return  name.match(camelPattern).join(' ');
 }
 
 function Checkbox({name, value, onChange}) {
   return (
-    <div className="input">
+    <div className={style.controlItem}>
       <label>{formatSettingName(name)}</label>
       <input type="checkbox" checked={value} onChange={evt => onChange(name, evt.target.checked)} />
     </div>
@@ -43,8 +44,8 @@ function ControlPanel(props) {
 
   return (
     <div className="control-panel">
-      <h3>Limit Map Interaction</h3>
-      <p>Turn interactive features off/on.</p>
+      <h3 className={style.controlItem}>Limit Map Interaction</h3>
+      <p className={style.controlItem}>Turn interactive features off/on.</p>
       <hr />
 
       {Object.keys(settings).map(name => renderSetting(name, settings[name]))}

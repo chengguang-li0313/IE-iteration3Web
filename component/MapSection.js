@@ -46,19 +46,20 @@ export const MapSection = (props) => {
       // console.log(data);
 
       //limit the map interaction panel 
-      const [interactionState, setInteractionState] = useState({});
+    const [interactionState, setInteractionState] = useState({});
+
   const [settings, setSettings] = useState({
     dragPan: true,
     dragRotate: true,
     scrollZoom: true,
     touchZoom: true,
     touchRotate: true,
-    keyboard: true,
     doubleClickZoom: true,
-    minZoom: 0,
-    maxZoom: 20,
-    minPitch: 0,
-    maxPitch: 85
+    // keyboard: true,
+    // minZoom: 0,
+    // maxZoom: 20,
+    // minPitch: 0,
+    // maxPitch: 85
   });
 
   const updateSettings = useCallback(
@@ -120,7 +121,6 @@ export const MapSection = (props) => {
 
   <ControlPanel 
     settings={settings}
-    interactionState={interactionState}
     onChange={updateSettings}
      />
   </div>

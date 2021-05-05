@@ -32,17 +32,28 @@
 }
 
 .controlContainer {
-  height: 25rem;
+  height: 15rem;
   // overflow: hidden;
   width: 20rem;
   margin-left: 85%;
   background-color: rgb(244, 248, 248);
 }
+.controlItem {
+  margin-left: 20px;
+  background-color: rgb(244, 248, 248);
+  // margin-bottom: 50rem;
+}
+
 .cameraContainer {
   height: 15rem;
   // overflow: hidden;
   width: 20rem;
   margin-left: 85%;
   background-color: rgb(244, 248, 248);
-  margin-bottom: 50rem;
+  // margin-bottom: 50rem;
+}
+.cameraItem {
+  margin-left: 20px;
+  background-color: rgb(244, 248, 248);
+  // margin-bottom: 50rem;
 }
