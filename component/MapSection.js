@@ -129,8 +129,9 @@ export const MapSection = (props) => {
     });
   }, []);
 
-
-
+  
+   //dark style of the map page
+  //mapbox://styles/chengguangli/cko7r6w904er817msd1n9f8ao
       //console.log(data);
     return (
       <>
@@ -138,7 +139,7 @@ export const MapSection = (props) => {
          {...viewport} 
          {...settings}
          mapboxApiAccessToken="pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw"
-         mapStyle="mapbox://styles/chengguangli/cko7r6w904er817msd1n9f8ao"
+         mapStyle="mapbox://styles/chengguangli/ckobkb0wn0tsm18nvelzbv0zp"
          onViewportChange={viewport => {
             setViewport(viewport);
           }}
