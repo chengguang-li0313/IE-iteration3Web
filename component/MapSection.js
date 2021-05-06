@@ -205,6 +205,7 @@ export const MapSection = (props) => {
           collapsed="true"
           zoom={12}
           countries="Au"
+          placeholder="Enter Location"
         />
 
          </ReactMapGL>
