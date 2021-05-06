@@ -1,4 +1,4 @@
-import ReactMapGL, { Marker, Popup,NavigationControl,ScaleControl,GeolocateControl,Layer,FlyToInterpolator} from "react-map-gl";
+import ReactMapGL, { Marker, Popup,NavigationControl,ScaleControl,GeolocateControl,FlyToInterpolator} from "react-map-gl";
 import React, { useState, useEffect,useCallback} from "react";
 import ControlPanel from "../styles/ControlPan.module.js";
 import style from "../styles/MapButton.module.scss";
@@ -62,10 +62,10 @@ export const MapSection = (props) => {
     
     //map config
     const [viewport, setViewport] = useState({
-        latitude: -38.04569,
-        longitude: 145.40121,
+        latitude: -37.7277556,
+        longitude: 145.1733946,
 
-        zoom: 8
+        zoom: 10
       });
       //navigationControl style
       const navControlStyle= {
@@ -117,7 +117,7 @@ export const MapSection = (props) => {
     setViewport({
       longitude,
       latitude,
-      zoom: 8,
+      zoom: 9,
       transitionInterpolator: new FlyToInterpolator({speed: 1.2}),
       transitionDuration: 'auto'
     });
@@ -126,7 +126,11 @@ export const MapSection = (props) => {
   
    //dark style of the map page
   //mapbox://styles/chengguangli/cko7r6w904er817msd1n9f8ao
-      //console.log(data);
+      //current style
+     // 
+   
+ 
+
     return (
       <>
         <ReactMapGL 
@@ -144,7 +148,6 @@ export const MapSection = (props) => {
          >
          {/* <NavigationControl style={navControlStyle} />
          <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} /> */}
-
 
 
           {/* {data.map(ani => (
