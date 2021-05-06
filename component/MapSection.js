@@ -96,7 +96,7 @@ export const MapSection = (props) => {
   const [settings, setSettings] = useState({
     dragPan: true,
     dragRotate: true,
-    scrollZoom: true,
+    scrollZoom: false,
     doubleClickZoom: true,
     // touchZoom: true,
     // touchRotate: true,

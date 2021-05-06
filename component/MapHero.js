@@ -10,7 +10,7 @@ export const MapHero = () => {
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
-                xxxxxxxxxxxxxxxxxxxx                        
+             Check the feral animals around you                     
             </div>
             </p>   
         </div>
