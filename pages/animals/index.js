@@ -7,7 +7,7 @@ import { AnimalGridSection } from "../../component/AnimalGridSection";
 import { Menu } from "semantic-ui-react";
 import { BioInfoSection } from "../../component/BioInfoSection";
 import { AnimalControlSection } from '../../component/AnimalControlSection'
-import { useLoading, Circles } from '@agney/react-loading';
+import { useLoading, Bars } from '@agney/react-loading';
 
 export default function Animals() {
   const [data, setData] = useState("");
@@ -47,7 +47,7 @@ export default function Animals() {
 
   const { containerProps, indicatorEl } = useLoading({
     loading: true,
-    indicator: <Circles width="100" />,
+    indicator: <Bars width="100" />,
   });
 
   return (

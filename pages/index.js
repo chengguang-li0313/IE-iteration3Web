@@ -7,7 +7,6 @@ import  Desc  from '../component/Desc'
 import { HomeControlSection } from '../component/HomeControlSection'
 import { Footer } from '../component/Footer' 
 import Regulation from '../component/Regulation';
-import { Layout } from '../component/Layout'
 export default function Home() {
 
   return (
@@ -22,8 +21,6 @@ export default function Home() {
 
     <Desc></Desc>
 
-    <h1 className={styles.homeControlTitle}>Generic Control Methods</h1>
-    <HomeControlSection></HomeControlSection>
     <Regulation> </Regulation>
 
     <Footer></Footer>
