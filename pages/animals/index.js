@@ -7,7 +7,7 @@ import { AnimalGridSection } from "../../component/AnimalGridSection";
 import { Menu } from "semantic-ui-react";
 import { BioInfoSection } from "../../component/BioInfoSection";
 import { AnimalControlSection } from '../../component/AnimalControlSection'
-import { useLoading, Circles } from '@agney/react-loading';
+import { useLoading, Bars } from '@agney/react-loading';
 import {BarChart} from '../../component/BarChart';
 
 
