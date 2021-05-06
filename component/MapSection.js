@@ -15,7 +15,7 @@ export const MapSection = (props) => {
     longitude={ani.lon}
   > 
 
-       <input type="image" src={ani.image} width="20px" height="20px" onClick={e => {
+       <input type="image" src={ani.image} width="30px" height="30px" onClick={e => {
                 e.preventDefault();
                 setSelectedPark(ani);
               }}>
