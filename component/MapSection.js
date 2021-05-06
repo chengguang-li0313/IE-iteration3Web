@@ -57,7 +57,7 @@ export const MapSection = (props) => {
       <p>Number:  {selectedPark.count}</p>
       <p>Local Gov:  {selectedPark.localGov} </p>
       <p>Regions:  {selectedPark.regions} </p>
-      <p>Geolodation:  {selectedPark.lat}, {selectedPark.lon}</p>
+      <p>Geolocation: [ {selectedPark.lat}, {selectedPark.lon} ]</p>
     </div>
   </Popup>
 ) : null,[selectedPark] );
@@ -201,9 +201,9 @@ export const MapSection = (props) => {
           mapboxApiAccessToken={MAPBOX_TOKEN}
           position="top-left"
           language="en"
-          clearOnBlur="true"
-          collapsed="true"
-          zoom={12}
+          clearOnBlur={true}
+          collapsed={true}
+          zoom={8}
           countries="Au"
           placeholder="Enter Location"
         />
