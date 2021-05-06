@@ -1,9 +1,10 @@
 import styles from "../styles/Animals.module.css";
 import React, { Component } from "react";
-import Chart from "react-apexcharts";
+import dynamic from 'next/dynamic'
 
 
 export const BarChart = (props) => {
+  const Chart = dynamic(() => import('react-apexcharts'), {ssr:false})
     const { data } = props;
     var store = [];
     var i = 0;

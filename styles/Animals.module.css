@@ -102,6 +102,17 @@
   margin-bottom: -30px;
 }
 
+.barCard {
+  padding: 1rem;
+  background-color: rgba(167, 121, 68, 0.363);
+  width: 400px;
+  height: 100%;
+  color: rgb(85, 85, 85);
+  border-radius: 10px;
+  margin-left: 390px;
+  margin-bottom: -30px;
+}
+
 .infoCard p {
   font-size: 1.3rem;
 }
