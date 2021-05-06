@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
 
 .body {
-  display: flex;
-  width: 160px;
-  height: 60px;
+  display: block;
+  width: 800px;
+  height: 30px;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -13,11 +13,12 @@
   letter-spacing: 1px;
   margin-bottom: 20px;
   margin-left: 1%;
-  font-size: large;
+  font-size: normal;
 }
 
 .div {
   animation: glitch 0.9s linear infinite;
+  width: 300px;
 }
 
 @keyframes glitch {

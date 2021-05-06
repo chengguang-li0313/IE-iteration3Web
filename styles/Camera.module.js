@@ -7,7 +7,8 @@ import style from "./MapButton.module.scss";
 function ControlPanel(props) {
   return (
     <div className="control-panel">
-      <h3 className={style.cameraItem}>Camera Transition</h3>
+     
+      <h3 className={style.cameraItem} >Camera Transition</h3>
       <p className={style.cameraItem}>Smooth animate of the viewport.</p>
       <hr />
 

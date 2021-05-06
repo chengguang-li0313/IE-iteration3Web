@@ -139,7 +139,7 @@ export const MapSection = (props) => {
           }}
           onInteractionStateChange={s => setInteractionState({...s})}
           width="100%"
-          height="80vh"
+          height="100%"
 
          >
          {/* <NavigationControl style={navControlStyle} />
