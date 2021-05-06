@@ -49,9 +49,9 @@ export default function map()  {
         
       </p>   */}
       {/* title  */}
-      <div className={buttonStyle.body}>                   
+      {/* <div className={buttonStyle.body}>                   
                Feral Animals' Distribution Map            
-      </div>
+      </div> */}
 {/*       
        
       <label className={buttonStyle.label}>

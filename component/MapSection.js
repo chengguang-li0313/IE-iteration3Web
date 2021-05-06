@@ -1,12 +1,15 @@
 import ReactMapGL, { Marker, Popup,NavigationControl,ScaleControl,GeolocateControl,FlyToInterpolator} from "react-map-gl";
-import React, { useState, useEffect,useCallback} from "react";
+import React, { useState, useEffect,useCallback,useRef} from "react";
 import ControlPanel from "../styles/ControlPan.module.js";
 import style from "../styles/MapButton.module.scss";
 import CameraPanel from '../styles/Camera.module.js';
+import Geocoder from "react-map-gl-geocoder";
+import searchStyle from "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
 export const MapSection = (props) => {
      const { data } = props
-
+     //token 
+     const MAPBOX_TOKEN = "pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw";
        //markers
   const markers = React.useMemo(() => data.map(ani => (
     <Marker
@@ -119,7 +122,7 @@ export const MapSection = (props) => {
       longitude,
       latitude,
       zoom: 9,
-      transitionInterpolator: new FlyToInterpolator({speed: 0.6}),
+      transitionInterpolator: new FlyToInterpolator({speed: 0.5}),
       transitionDuration: 'auto'
     });
   }, []);
@@ -127,8 +130,25 @@ export const MapSection = (props) => {
   
    //dark style of the map page
   //mapbox://styles/chengguangli/cko7r6w904er817msd1n9f8ao
-      //current style
-     // 
+
+  //Search function 
+  const mapRef = useRef();
+  const handleViewportChange = useCallback(
+    (newViewport) => setViewport(newViewport),
+    []
+  );
+   // if you are happy with Geocoder default settings, you can just use handleViewportChange directly
+   const handleGeocoderViewportChange = useCallback(
+    (newViewport) => {
+      const geocoderDefaultOverrides = { transitionDuration: 1000 };
+
+      return handleViewportChange({
+        ...newViewport,
+        ...geocoderDefaultOverrides
+      });
+    },
+    [handleViewportChange]
+  );  
    
  
 
@@ -137,35 +157,29 @@ export const MapSection = (props) => {
         <ReactMapGL 
          {...viewport} 
          {...settings}
-         mapboxApiAccessToken="pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw"
+         ref={mapRef}
+         mapboxApiAccessToken={MAPBOX_TOKEN}
          mapStyle="mapbox://styles/chengguangli/ckobkmn3t16m917p8ajuissot"
-         onViewportChange={viewport => {
-            setViewport(viewport);
-          }}
+        //  onViewportChange={viewport => {
+        //     setViewport(viewport);
+        //   }}
+         onViewportChange={handleViewportChange}
           onInteractionStateChange={s => setInteractionState({...s})}
           width="100%"
           height="100%"
-
+          
          >
          {/* <NavigationControl style={navControlStyle} />
          <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} /> */}
 
 
-          {/* {data.map(ani => (
-          <Marker
-            key={ani.id}
-            latitude={ani.lat}
-            longitude={ani.lon}
-          >
-               <img src={ani.image} alt="icon" width="20px" height="20px"></img>
-          </Marker>
-        ))} */}
+         
         {markers} 
 
         {/* pop up message  */}
         {pops}
 
-       
+        
    <div className={style.controlContainer}>  
 
     <ControlPanel 
@@ -179,6 +193,15 @@ export const MapSection = (props) => {
           <CameraPanel onSelectCity={onSelectCity} />
 
   </div>
+        
+
+        <Geocoder
+          mapRef={mapRef}
+          onViewportChange={handleGeocoderViewportChange}
+          mapboxApiAccessToken={MAPBOX_TOKEN}
+          position="top-left"
+        />
+
          </ReactMapGL>
 
 

@@ -6,12 +6,13 @@
 .container {
   display: flex;
   height: 3rem;
-  width: 100%;
+  width: 600px;
   padding: 0.5rem 1rem;
   justify-content: center;
   align-items: center;
   position: absolute;
   z-index: 10;
+  margin-left: 30%;
 }
 
 .containerMap {
@@ -64,6 +65,18 @@
   margin-left: 20px;
   background-color: rgb(244, 248, 248);
   // margin-bottom: 50rem;
+}
+
+.searchContainer {
+  height: 6rem;
+  // overflow: hidden;
+  width: 17rem;
+  margin-left: 84%;
+  background-color: rgb(244, 248, 248);
+  // margin-bottom: 50rem;
+  position: absolute;
+  margin-top: 30%;
+  z-index: 10;
 }
 
 // title effect
