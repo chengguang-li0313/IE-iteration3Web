@@ -40,7 +40,7 @@ export const AnimalImpactSection = (props) => {
         ></AnimalImpactCard>
         <AnimalImpactCard
           img={"economics.jpeg"}
-          title={"Impact to Economics"}
+          title={"Impact to Economy"}
           text={data.economicImpact}
         ></AnimalImpactCard>
         <AnimalImpactCard

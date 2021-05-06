@@ -36,9 +36,6 @@ export default function Control() {
             <a href="#">Australian Pest Animal Strategy 2017-2027.pdf</a>
             <p>To learn more about strategies/regulations in place as provided by the Government</p> 
             <a href="/regulation">Click here.</a>
-            <h2>References:</h2>
-            <p>1. Centre for Invasive Species Solutions, 2014. Principles of pest animal management. Factsheet. PestSmart website. https://pestsmart.org.au/framework-overview/principles-of-pest-animal-management accessed 24-04-2121</p>
-            <p>2. https://agriculture.vic.gov.au/biosecurity/protecting-victoria/legislation-policy-and-permits/managing-pest-animals</p>
         </div>
     </Layout>
   )

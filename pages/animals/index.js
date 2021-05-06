@@ -1,6 +1,5 @@
 import { Layout } from "../../component/Layout";
 import styles from "../../styles/Animals.module.css";
-import homeStyles from "../../styles/Home.module.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { AnimalImpactSection } from "../../component/AnimalImpactSection";

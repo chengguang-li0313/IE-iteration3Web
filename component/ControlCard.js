@@ -7,7 +7,7 @@ export const ControlCard = (props) => {
         <div className={styles.controlCard}>
             <div className={styles.controlCardContainer}>
                 <div className={styles.controlCardInfo}>
-                    <h1>{title}</h1>
+                    <h2>{title}</h2>
                     <p>{sub}</p>
                     <a href={url}>Learn More</a>
                 </div>

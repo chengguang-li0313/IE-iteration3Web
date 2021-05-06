@@ -67,14 +67,22 @@
           position: relative;
   
           h1 {
-            font-size: 20px;
-            font-weight: bold;
+            padding-left: 1rem;
+            padding-top: 1rem;
+            color: gray;
+            font-size: 1.25rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
           }
   
           p {
-            font-size: 14px;
-            font-weight: normal;
-          }
+            padding: 1rem;
+            color: gray;
+            font-size: 1.1rem;
+            margin: 1rem;;
+            padding: 0;
+          }        
   
           .container_infos {
             width: 100%;

@@ -15,7 +15,7 @@ export const BioCard = (props) => {
                 <h1>{title}</h1>
                 {desc.split("•").map((i,key) => {
                     return key === 0 ?  <div></div> :
-                     <div key={key}>•{i}</div>;
+                     <p key={key}>•{i}</p>;
                 })}
             </div>
         </div>
