@@ -1,4 +1,4 @@
-import ReactMapGL, { Marker, Popup,NavigationControl,ScaleControl,GeolocateControl,FlyToInterpolator} from "react-map-gl";
+import ReactMapGL, { Marker, Popup,FullscreenControl,ScaleControl,GeolocateControl,FlyToInterpolator} from "react-map-gl";
 import React, { useState, useEffect,useCallback,useRef} from "react";
 import ControlPanel from "../styles/ControlPan.module.js";
 import style from "../styles/MapButton.module.scss";
@@ -140,7 +140,7 @@ export const MapSection = (props) => {
    // if you are happy with Geocoder default settings, you can just use handleViewportChange directly
    const handleGeocoderViewportChange = useCallback(
     (newViewport) => {
-      const geocoderDefaultOverrides = { transitionDuration: 1000 };
+      const geocoderDefaultOverrides = { transitionDuration: 3000 };
 
       return handleViewportChange({
         ...newViewport,
@@ -149,7 +149,11 @@ export const MapSection = (props) => {
     },
     [handleViewportChange]
   );  
-   
+  // funscreen control 
+  const fullscreenControlStyle= {
+    right: 10,
+    top: 170
+  };
  
 
     return (
@@ -159,7 +163,8 @@ export const MapSection = (props) => {
          {...settings}
          ref={mapRef}
          mapboxApiAccessToken={MAPBOX_TOKEN}
-         mapStyle="mapbox://styles/chengguangli/ckobkmn3t16m917p8ajuissot"
+          mapStyle="mapbox://styles/chengguangli/ckobkmn3t16m917p8ajuissot"
+        // mapStyle='mapbox://styles/mapbox/cjaudgl840gn32rnrepcb9b9g'
         //  onViewportChange={viewport => {
         //     setViewport(viewport);
         //   }}
@@ -169,9 +174,9 @@ export const MapSection = (props) => {
           height="100%"
           
          >
-         {/* <NavigationControl style={navControlStyle} />*/}
-         <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} /> 
 
+         {/* <NavigationControl style={navControlStyle} />*/}
+         <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} />         
 
          
         {markers} 
@@ -187,12 +192,13 @@ export const MapSection = (props) => {
      interactionState={interactionState}
      onChange={updateSettings}
      />
-  </div>
-
-   <div className={style.cameraContainer}> 
+        <div className={style.cameraContainer}> 
           <CameraPanel onSelectCity={onSelectCity} />
-
+             <FullscreenControl style={fullscreenControlStyle} />
+     </div>
   </div>
+
+
         
 
         <Geocoder
@@ -203,7 +209,7 @@ export const MapSection = (props) => {
           language="en"
           clearOnBlur={true}
           collapsed={true}
-          zoom={8}
+          zoom={10}
           countries="Au"
           placeholder="Enter Location"
         />
