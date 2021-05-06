@@ -8,7 +8,7 @@ import styles from "../../styles/Map.module.css";
 import buttonStyle from "../../styles/MapButton.module.scss";
 import { Menu } from "semantic-ui-react";
 import { Button, Icon } from 'semantic-ui-react'
-
+import { MapHero } from '../../component/MapHero'
 
 export default function map()  {  
   //button style
@@ -20,7 +20,7 @@ export default function map()  {
     useEffect(async () => {
 
         const result = await Axios.get(
-          `https://ie-animal-api.herokuapp.com/api3/rabbit`
+          `https://ie-animal-api.herokuapp.com/api3/goat`
         );
         setData(result.data);
         //test print it out 
@@ -40,12 +40,18 @@ export default function map()  {
 
     return(
       <Layout>
-      <p> 
+     <MapHero> </MapHero>
+<div className={buttonStyle.containerMap}> 
+        {/* <p> 
        <div className={buttonStyle.title}>
          Distribution map of the five feral animals     
        </div>  
         
-      </p>  
+      </p>   */}
+      {/* title  */}
+      {/* <div className={buttonStyle.body}>                   
+               Feral Animals' Distribution Map            
+      </div> */}
 {/*       
        
       <label className={buttonStyle.label}>
@@ -57,31 +63,31 @@ export default function map()  {
      </label> */}
      <div className={buttonStyle.container }> 
        <Button animated  color="red" name="pig" onClick={handleClick}>
-      <Button.Content visible>Pig</Button.Content>
+      <Button.Content visible>Feral Pig</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />
       </Button.Content>
     </Button>
     <Button animated  color="twitter" name="fox" onClick={handleClick}>
-      <Button.Content visible>Fox</Button.Content>
+      <Button.Content visible>Red Fox</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />
       </Button.Content>
     </Button>
     <Button animated  color="yellow" name="rabbit" onClick={handleClick}>
-      <Button.Content visible>Rabbit</Button.Content>
+      <Button.Content visible>European Rabbit</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />
       </Button.Content>
     </Button>
     <Button animated  color="green" name="goat" onClick={handleClick}>
-      <Button.Content visible>Goat</Button.Content>
+      <Button.Content visible>Feral Goat</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />
       </Button.Content>
     </Button>
     <Button animated  color="instagram" name="dog" onClick={handleClick}>
-      <Button.Content visible>Dog</Button.Content>
+      <Button.Content visible>Dingo</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />
       </Button.Content>
@@ -90,7 +96,8 @@ export default function map()  {
 
     
        {/* map  */}
-       <div className={buttonStyle.containerMap}> 
+
+       
        <MapSection data={data}>
        </MapSection> 
 

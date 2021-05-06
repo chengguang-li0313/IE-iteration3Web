@@ -2,7 +2,7 @@
 
 .body {
   display: flex;
-  width: 160px;
+  width: 150px;
   height: 60px;
   align-items: center;
   justify-content: center;
@@ -14,10 +14,14 @@
   margin-bottom: 20px;
   margin-left: 1%;
   font-size: large;
+  justify-content: center;
 }
 
 .div {
   animation: glitch 0.9s linear infinite;
+  width: 300px;
+  position: central;
+  margin-left: 10px;
 }
 
 @keyframes glitch {
