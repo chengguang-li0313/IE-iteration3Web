@@ -62,9 +62,10 @@ export const MapSection = (props) => {
     
     //map config
     const [viewport, setViewport] = useState({
-        latitude: -37.7277556,
-        longitude: 145.1733946,
-
+        latitude: -37.6706555,//-37.7277556, 
+        longitude: 144.9579117,//145.1733946,
+        bearing: 5,
+        pitch: 60,
         zoom: 10
       });
       //navigationControl style
@@ -118,7 +119,7 @@ export const MapSection = (props) => {
       longitude,
       latitude,
       zoom: 9,
-      transitionInterpolator: new FlyToInterpolator({speed: 1.2}),
+      transitionInterpolator: new FlyToInterpolator({speed: 0.6}),
       transitionDuration: 'auto'
     });
   }, []);

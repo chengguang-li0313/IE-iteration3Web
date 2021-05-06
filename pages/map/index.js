@@ -20,7 +20,7 @@ export default function map()  {
     useEffect(async () => {
 
         const result = await Axios.get(
-          `https://ie-animal-api.herokuapp.com/api3/pig`
+          `https://ie-animal-api.herokuapp.com/api3/goat`
         );
         setData(result.data);
         //test print it out 
