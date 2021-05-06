@@ -1,4 +1,5 @@
 import styles from "../styles/Animals.module.css";
+import {BarChart} from './BarChart';
 
 export const BioInfoSection = (props) => {
   const { data } = props;
@@ -15,7 +16,10 @@ export const BioInfoSection = (props) => {
           <p>{data.originPlace}</p>
           <h2>Distribution</h2>
           {data.distribution}
-        </div>
+        </div> 
+
+        {/* <BarChart> </BarChart> */}
+        
       </div>
   );
 };

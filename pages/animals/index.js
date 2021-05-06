@@ -8,13 +8,16 @@ import { Menu } from "semantic-ui-react";
 import { BioInfoSection } from "../../component/BioInfoSection";
 import { AnimalControlSection } from '../../component/AnimalControlSection'
 import { useLoading, Circles } from '@agney/react-loading';
+import {BarChart} from '../../component/BarChart';
+
 
 export default function Animals() {
   const [data, setData] = useState("");
   const [controlData, setControlData] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   const [active, setActive] = useState('fox')
-
+  //population 
+  const [charData, setCharData] = useState("");
   useEffect(async () => {
     const result = await axios.get(
       "https://ie-iteration1.herokuapp.com/api/fox"
@@ -22,12 +25,18 @@ export default function Animals() {
 
     const controlResult = await axios.get(
       `https://ie-iteration2.herokuapp.com/api2/fox`
+    );
+    const charResult = await axios.get(
+      `https://ie-animalpopulation.herokuapp.com/api/fox`
     )
-
+     
+ 
     setData(result.data);
     setControlData(controlResult.data)
+    setCharData(charResult.data)
+
     setIsLoading(false)
-    console.log(controlResult.data);
+    console.log(charResult.data);
   }, []);
 
   const handleClick = async (e, { name }) => {
@@ -39,9 +48,15 @@ export default function Animals() {
         `https://ie-iteration2.herokuapp.com/api2/${name}`
     ).then((result) => {
         setControlData(result.data)
-    })
+    });
+
+    const charResult = await axios.get(
+      `https://ie-animalpopulation.herokuapp.com/api/${name}`
+    )
+
     setActive(name)
     setData(result.data);
+    setCharData(charResult.data);
     setIsLoading(false);
   };
 
@@ -73,7 +88,29 @@ export default function Animals() {
             {indicatorEl} {/* renders only while loading */}
           </section>) : (
             <>
-          <BioInfoSection data={data}></BioInfoSection>
+
+          {/* <BioInfoSection data={data}> 
+         
+          </BioInfoSection>       */}        
+   {/* modify code  */}
+
+           <div className={styles.bioInfo}>
+                <div className={styles.biologyCard}>
+                  <img src={data.appearanceImage}></img>
+               </div>
+             <div className={styles.infoCard}>
+             <h1>{data.commonName}</h1>
+               <p>{data.scientificName}</p>
+               <h2>Origin</h2>
+                <p>{data.originPlace}</p>
+              <h2>Distribution</h2>
+                {data.distribution}
+             </div> 
+
+          <BarChart data={charData}> </BarChart>
+        
+         </div>
+   {/* modify code  */}
 
           <AnimalGridSection data={data}></AnimalGridSection>
 

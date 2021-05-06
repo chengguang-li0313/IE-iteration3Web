@@ -200,7 +200,7 @@ export const MapSection = (props) => {
 
 
         
-
+        {/* search button  */}
         <Geocoder
           mapRef={mapRef}
           onViewportChange={handleGeocoderViewportChange}
