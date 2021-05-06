@@ -169,8 +169,8 @@ export const MapSection = (props) => {
           height="100%"
           
          >
-         {/* <NavigationControl style={navControlStyle} />
-         <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} /> */}
+         {/* <NavigationControl style={navControlStyle} />*/}
+         <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} /> 
 
 
          
@@ -200,6 +200,11 @@ export const MapSection = (props) => {
           onViewportChange={handleGeocoderViewportChange}
           mapboxApiAccessToken={MAPBOX_TOKEN}
           position="top-left"
+          language="en"
+          clearOnBlur="true"
+          collapsed="true"
+          zoom={12}
+          countries="Au"
         />
 
          </ReactMapGL>
