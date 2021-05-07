@@ -28,7 +28,7 @@ export const CardSection = () => {
         <div className={styles.heading} id='impact'>
           <h1>Why are Invasive Species Harmful to Agriculture?</h1>
           <p>In 2009, it was estimated that Invasive Animals have cost</p>
-          <h1>$743.5 million via</h1>
+          <h1 display="inline">$743.5 million via</h1>
         </div>
 
         <Carousel 

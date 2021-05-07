@@ -6,7 +6,7 @@ export const RegulationHero = () => {
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 
-               Learn About The Regulations 
+               Pest Control Regulations In VIC
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>

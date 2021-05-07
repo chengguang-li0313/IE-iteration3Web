@@ -9,7 +9,7 @@ import { BioInfoSection } from "../../component/BioInfoSection";
 import { AnimalControlSection } from '../../component/AnimalControlSection'
 import { useLoading, Bars } from '@agney/react-loading';
 import {BarChart} from '../../component/BarChart';
-
+import { AnimalHero } from '../../component/AnimalHero'
 
 export default function Animals() {
   const [data, setData] = useState("");
@@ -67,11 +67,13 @@ export default function Animals() {
 
   return (
     <Layout>
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <div className={styles.animalText}>
           <h1>Learn About Pest Animals</h1>
         </div>
-      </div>
+      </div> */}
+      < AnimalHero> </AnimalHero>
+      
 
       <Menu vertical className={styles.menu}>
         <Menu.Item name="fox" active={active === 'fox'} onClick={handleClick} />
