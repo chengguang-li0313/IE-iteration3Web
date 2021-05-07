@@ -16,25 +16,47 @@ export const BarChart = (props) => {
         
       ))}
       // console.log(name);
-      name =  "Changes in the number of " +  name + " in five years";
+      name =  "Changes over time in Population of " +  name ;     
     const options = {
         chart: {
           id: "basic-bar"
         },
         xaxis: {
-          categories: [2016,2017,2018,2019,2020]
-        }, title : {
+          categories: [2016,2017,2018,2019,2020],
+          title: {
+            text: "Year",
+            style: {
+              color: "#888",
+              fontSize: "12px",
+              fontWeight:  'Italic'
+            }
+          }        
+        }, 
+        yaxis: {         
+          title: {
+            text: "Million",
+            style: {
+              color: "#888",
+              fontSize: "15px",
+              fontWeight:  'Italic'
+            }
+          }        
+        },
+        title : {
           text: name , 
           align: 'center',
           
           style:{
             fontSzie: '5px'
           }
+       },
+       fill: {
+        colors: ["#c1a17c"]
        }
       };
     const series = [
         {
-          name: "million",
+          name: "number",
           data: store
         }
       ];
