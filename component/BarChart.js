@@ -6,20 +6,31 @@ import dynamic from 'next/dynamic'
 export const BarChart = (props) => {
   const Chart = dynamic(() => import('react-apexcharts'), {ssr:false})
     const { data } = props;
+    var name = ''; 
     var store = [];
     var i = 0;
     {data.map(num => (
         store[i] = num.number,
-        i++
+        i++,
+        name = num.name
+        
       ))}
-
+      // console.log(name);
+      name =  "Changes in the number of " +  name + " in five years";
     const options = {
         chart: {
           id: "basic-bar"
         },
         xaxis: {
           categories: [2016,2017,2018,2019,2020]
-        }
+        }, title : {
+          text: name , 
+          align: 'center',
+          
+          style:{
+            fontSzie: '5px'
+          }
+       }
       };
     const series = [
         {
@@ -27,6 +38,10 @@ export const BarChart = (props) => {
           data: store
         }
       ];
+  
+
+
+
 
     return (
         <div className="app">
@@ -37,6 +52,7 @@ export const BarChart = (props) => {
                 series={series}
                 type="bar"
                 width="500"
+                
               />
             </div>
           </div>
