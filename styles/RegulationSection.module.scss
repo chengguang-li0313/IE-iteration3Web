@@ -7,12 +7,12 @@ $slide-width: 30rem;
   font-family: "Oswald", sans-serif;
   font-size: xx-large;
   margin-bottom: 35px;
-  margin-top: 30px;
+  // margin-top: 5px;
 }
 .text1 {
   font-family: "Oswald", sans-serif;
   font-size: x-large;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-left: 30%;
 }
 
@@ -58,7 +58,7 @@ $slide-width: 30rem;
   height: 50%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(167, 121, 68, 0.363);
+  // background-color: rgba(167, 121, 68, 0.363);
 }
 
 .carouselinner {
@@ -142,18 +142,20 @@ $slide-width: 30rem;
   bottom: 2rem; //--------------------------------change the title and text
   height: 10%;
   position: absolute;
-
+  // background-color: rgba(167, 121, 68, 0.363);
   .h4 {
     margin: 0.8rem 0 0;
     text-transform: uppercase;
     font-style: bold;
     font-size: 1.3rem;
+    // background-color: rgba(167, 121, 68, 0.363);
   }
 
   .p {
     font-size: 1rem;
     line-height: 1.3;
     margin: 0.7rem 0 0;
+    // background-color: rgba(167, 121, 68, 0.363);
   }
 }
 

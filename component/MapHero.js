@@ -6,7 +6,7 @@ export const MapHero = () => {
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 
-               Feral Animals' Distribution Map 
+                  Distrubution of Feral Animals
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
