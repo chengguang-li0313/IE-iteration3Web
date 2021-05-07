@@ -2,7 +2,9 @@ import styles from '../styles/Regulation.module.scss'
 
 export const RegulationHero = () => {
     return ( 
+        
         <div className={styles.regulationHero}>
+            
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 

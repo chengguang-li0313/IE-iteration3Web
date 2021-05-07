@@ -19,8 +19,11 @@ export const Footer = () => {
             </div>
             
             <div className={style.container}>
+                {/* <div className={style.contact}> 
+                <p>Contact Email：Cristianoronando777@gm </p>
+                </div>    */}
                <hr/>
-             <p className={style.copyrighttext}>Copyright &copy; 2021 All Rights Reserved by Feral Footprints Team.               
+             <p className={style.copyrighttext}>Copyright &copy; 2021 All Rights Reserved by 5ral Footprints Team.               
                     </p>
                 </div>
         </div>
