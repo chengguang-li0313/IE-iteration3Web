@@ -106,9 +106,9 @@ export default function Animals() {
               <h2>Distribution</h2>
                 {data.distribution}
              </div> 
-           {/* <div className={style.barCard}>  */}
+           <div className={styles.barCard}> 
                 <BarChart data={charData}> </BarChart>
-          {/* </div>  */}
+          </div> 
          </div>
    {/* modify code  */}
 
