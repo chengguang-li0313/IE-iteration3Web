@@ -99,7 +99,7 @@ export const MapHomepage = () => {
       };
 
   return (
-    <div className={styles.backgroundDiv}> 
+    <div className={styles.backgroundDiv} id='map'> 
      <div className={styles.container}> 
        <div className={styles.containerText}> 
         <div className={styles.containerContent}> 

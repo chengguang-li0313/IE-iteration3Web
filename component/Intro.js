@@ -39,7 +39,7 @@ export const Intro = () => {
             Pest Animals have significant impact on Agriculture in Victoria.
           </HeroText>
           <HeroBtn>
-          <a href='#impact'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <a href='#map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
               Get started {hover ? <ArrowForward/> : <ArrowRight/>}
             </Button> </a> 
           </HeroBtn>
