@@ -39,15 +39,15 @@ export const unclusteredPointLayer = {
 
 export const TextContent = styled.div`
 z-index: 10;
-max-width: 1700px;
-width: 100%;
+ max-width: 1700px;
+width: 70%;
 position: absolute;
 padding: 8px 24px;
 display: flex;
 flex-direction: column;
 // align-items: center;
-top: 10%;
-left: 0%;
+top: 2%;
+left: 18%;
 `;
 
 export const HeroText = styled.h2`

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState, useEffect, useMemo, useRef} from 'react';
 import {render} from 'react-dom';
-import MapGL, {Source, Layer} from 'react-map-gl';
+import MapGL, {Source, Layer,FullscreenControl,NavigationControl} from 'react-map-gl';
 import {clusterLayer, clusterCountLayer, unclusteredPointLayer,
     HeroTitle,
     HeroText,
@@ -10,6 +10,8 @@ import {clusterLayer, clusterCountLayer, unclusteredPointLayer,
     ArrowRight,
     TextContent}   from '../styles/ClusterMap.modules.js';
 import Axios from "axios";
+import styles from "../styles/MapHome.module.css"
+import Link from 'next/link'
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw'; // Set your mapbox token here
 
 
@@ -18,13 +20,11 @@ export const MapHomepage = () => {
   const [viewport, setViewport] = useState({
     latitude: -37.4903228,
     longitude: 144.1233123,
-    zoom: 8,
+    zoom: 2,
     bearing: 0,
     pitch: 0
   });
 
-
-  
   const [data, setData] = useState([]);
   useEffect(async () => {
 
@@ -87,11 +87,32 @@ export const MapHomepage = () => {
     });
   };
 
-
-
+       // funscreen control 
+       const fullscreenControlStyle= {
+        right: 10,
+        top: 100
+      };
+    // nativavtion control 
+    const navControlStyle= {
+        right: 10,
+        top: 10
+      };
 
   return (
-    <>
+    <div className={styles.backgroundDiv}> 
+     <div className={styles.container}> 
+       <div className={styles.containerText}> 
+        <div className={styles.containerContent}> 
+             <h2>  Do you want to explore more ? </h2>
+         </div>
+         <Link href='/map'> 
+                <button className={styles.button}>
+                    Start
+                </button>
+                </Link>
+       </div>
+        
+       <div className={styles.containerMap}>        
       <MapGL
         {...viewport}
         width="100%"
@@ -105,7 +126,7 @@ export const MapHomepage = () => {
         }
         mapboxApiAccessToken={MAPBOX_TOKEN}
         interactiveLayerIds={[clusterLayer.id]}
-
+        scrollZoom= {false}
         ref={mapRef}
       >
        <Source
@@ -123,7 +144,7 @@ export const MapHomepage = () => {
         <TextContent>
          
           <HeroText>
-            Distribution of Pest Animals in Victoria.
+            Distribution of Pest Animals in VIC.
           </HeroText>
           {/* <HeroBtn>
           <a href='#impact'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
@@ -132,9 +153,11 @@ export const MapHomepage = () => {
           </HeroBtn> */}
           {/* <a href='#impact'><BiDownArrowCircle size={40} color={'green'}/></a>  */}
           </TextContent>
-
+          <FullscreenControl style={fullscreenControlStyle} />
+          <NavigationControl style={navControlStyle} />
       </MapGL>
-
-    </>
+      </div>
+      </div>
+      </div>
   );
 };
