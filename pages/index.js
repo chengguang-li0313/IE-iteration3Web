@@ -7,6 +7,8 @@ import  Desc  from '../component/Desc'
 import { HomeControlSection } from '../component/HomeControlSection'
 import { Footer } from '../component/Footer' 
 import Regulation from '../component/Regulation';
+import { MapHomepage } from '../component/MapHomepage' 
+
 export default function Home() {
 
   return (
@@ -17,6 +19,7 @@ export default function Home() {
        <Intro></Intro>
        {/* </div> */}
 
+     <MapHomepage> </MapHomepage>
     <CardSection></CardSection>
 
     <Desc></Desc>

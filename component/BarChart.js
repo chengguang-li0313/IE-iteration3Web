@@ -27,7 +27,7 @@ export const BarChart = (props) => {
             text: "Year",
             style: {
               color: "#888",
-              fontSize: "12px",
+              fontSize: "15px",
               fontWeight:  'Italic'
             }
           }        

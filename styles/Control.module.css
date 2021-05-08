@@ -18,28 +18,28 @@
 .controlHeroInfo {
   height: 300px;
   width: 350px;
-  background-color: #EDD8C4;
+  background-color: #edd8c4;
   position: relative;
-  color: #C96C00;
+  color: #c96c00;
   display: flex;
   padding: 1rem;
   flex-direction: column;
   justify-content: flex-start;
-  top:400px;
-  left:30%;
+  top: 400px;
+  left: 30%;
   font-size: 1.2rem;
 }
 
 .controlSection {
-    display:flex;
-    flex-direction: column;
-    padding: 3rem;
-    font-size: 1.2rem
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 1.2rem;
 }
 
 .controlSection h1 {
   text-transform: uppercase;
-  color: #C96C00
+  color: #c96c00;
 }
 
 .controlRow {
@@ -60,8 +60,8 @@
 .controlVideo {
   display: flex;
   flex-direction: column;
-  background-image: url('/controlVideo.jpeg');
-  background-color: #EDD8C4;
+  background-image: url("/controlVideo.jpeg");
+  background-color: #edd8c4;
   padding: 1rem;
 }
 
@@ -71,15 +71,15 @@
 
 .h1Right {
   margin-left: auto;
-  color: #C96C00
+  color: #c96c00;
 }
 
 .controlProgram {
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 3rem;
   font-size: 1.2rem;
-  background-color: #EDD8C4;
+  background-color: #edd8c4;
   height: 45rem;
   margin-bottom: 10rem;
 }
@@ -128,13 +128,13 @@
 
 .controlCardInfo a {
   border: 1px solid rgba(167, 121, 68, 0.363);
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    padding: .5rem;
-    width: 93%;
-    color:rgb(85, 85, 85);
-    background-color: rgba(167, 121, 68, 0.363);
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 93%;
+  color: rgb(85, 85, 85);
+  background-color: rgba(167, 121, 68, 0.363);
 }
 
 .conventionalContainer {
