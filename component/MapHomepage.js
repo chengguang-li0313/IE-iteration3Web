@@ -2,7 +2,13 @@ import * as React from 'react';
 import {useState, useEffect, useMemo, useRef} from 'react';
 import {render} from 'react-dom';
 import MapGL, {Source, Layer} from 'react-map-gl';
-import {clusterLayer, clusterCountLayer, unclusteredPointLayer} from '../styles/ClusterMap.modules.js';
+import {clusterLayer, clusterCountLayer, unclusteredPointLayer,
+    HeroTitle,
+    HeroText,
+    HeroBtn,
+    ArrowForward,
+    ArrowRight,
+    TextContent}   from '../styles/ClusterMap.modules.js';
 import Axios from "axios";
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw'; // Set your mapbox token here
 
@@ -12,7 +18,7 @@ export const MapHomepage = () => {
   const [viewport, setViewport] = useState({
     latitude: -37.4903228,
     longitude: 144.1233123,
-    zoom: 6,
+    zoom: 8,
     bearing: 0,
     pitch: 0
   });
@@ -53,6 +59,7 @@ export const MapHomepage = () => {
      }
    };
 
+
   const newGeoJSONData = makeGeoJson(data);
   console.log(newGeoJSONData);
 
@@ -82,17 +89,23 @@ export const MapHomepage = () => {
 
 
 
+
   return (
     <>
       <MapGL
         {...viewport}
         width="100%"
         height="90vh"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
-        onViewportChange={setViewport}
+         mapStyle="mapbox://styles/mapbox/dark-v9"
+        //mapStyle="mapbox://styles/mapbox/light-v9"
+        onViewportChange={viewport => {
+                setViewport(viewport);
+               }
+
+        }
         mapboxApiAccessToken={MAPBOX_TOKEN}
         interactiveLayerIds={[clusterLayer.id]}
-        // onClick={onClick}
+
         ref={mapRef}
       >
        <Source
@@ -107,6 +120,18 @@ export const MapHomepage = () => {
           <Layer {...clusterCountLayer} />
           <Layer {...unclusteredPointLayer} />
         </Source>
+        <TextContent>
+         
+          <HeroText>
+            Distribution of Pest Animals in Victoria.
+          </HeroText>
+          {/* <HeroBtn>
+          <a href='#impact'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
+              Get started {hover ? <ArrowForward/> : <ArrowRight/>}
+            </Button> </a> 
+          </HeroBtn> */}
+          {/* <a href='#impact'><BiDownArrowCircle size={40} color={'green'}/></a>  */}
+          </TextContent>
 
       </MapGL>
 

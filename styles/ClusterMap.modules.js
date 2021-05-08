@@ -1,3 +1,6 @@
+import styled from 'styled-components'
+import {MdArrowForward,MdKeyboardArrowRight} from 'react-icons/md'
+
 export const clusterLayer = {
   id: 'clusters',
   type: 'circle',
@@ -33,3 +36,49 @@ export const unclusteredPointLayer = {
     'circle-stroke-color': '#fff'
   }
 };
+
+export const TextContent = styled.div`
+z-index: 10;
+max-width: 1700px;
+width: 100%;
+position: absolute;
+padding: 8px 24px;
+display: flex;
+flex-direction: column;
+// align-items: center;
+top: 10%;
+left: 0%;
+`;
+
+export const HeroText = styled.h2`
+margin-top: 4px;
+color: #fff;
+font-size: 2.4rem;
+text-align: center;
+max-width: 600px;
+
+@media only screen and (max-width: 768px){
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px){
+  font-size: 1.8rem;
+}
+`;
+
+export const HeroBtn = styled.div`
+margin-top: 32px;
+display: flex;
+flex-direction: column;
+align-items: center;
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+margin-left: 8px;
+font-size: 20px;
+`;
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+margin-left: 8px;
+font-size: 20px;
+`;
+
