@@ -164,8 +164,8 @@ export const MapHomepage = (props) => {
 
           <GeolocateControl
            style={geolocateControlStyle}
-          positionOptions={{enableHighAccuracy: false}}
-          trackUserLocation={false}
+          positionOptions={{enableHighAccuracy: true}}
+          trackUserLocation={true}
           fitBoundsOptions={{maxZoom: 8}}
           showUserLocation={false}
           label="Zoom In"
