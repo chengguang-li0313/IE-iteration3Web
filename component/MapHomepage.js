@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState, useEffect, useMemo, useRef} from 'react';
 import {render} from 'react-dom';
-import MapGL, {Source, Layer,FullscreenControl,NavigationControl} from 'react-map-gl';
+import MapGL, {Source, Layer,FullscreenControl,NavigationControl,GeolocateControl} from 'react-map-gl';
 import {clusterLayer, clusterCountLayer, unclusteredPointLayer,
     HeroTitle,
     HeroText,
@@ -15,7 +15,8 @@ import Link from 'next/link'
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw'; // Set your mapbox token here
 
 
-export const MapHomepage = () => { 
+export const MapHomepage = (props) => { 
+  const { data } = props
 
   const [viewport, setViewport] = useState({
     latitude: -37.4903228,
@@ -25,17 +26,17 @@ export const MapHomepage = () => {
     pitch: 0
   });
 
-  const [data, setData] = useState([]);
-  useEffect(async () => {
+  // const [data, setData] = useState([]);
+  // useEffect(async () => {
 
-    const result = await Axios.get(
-      `https://ie-animal-api.herokuapp.com/api3/rabbit`
-    );
-    setData(result.data);
-    //test print it out 
-    // console.log(result.data.map(animal => (animal.lat)));
+  //   const result = await Axios.get(
+  //     `https://ie-animal-api.herokuapp.com/api3/rabbit`
+  //   );
+  //   setData(result.data);
+  //   //test print it out 
+  //   // console.log(result.data.map(animal => (animal.lat)));
 
-  }, []);  
+  // }, []);  
    
 //   convert the array to geojson data 
    const makeGeoJson = (sourceData)=> {
@@ -90,12 +91,17 @@ export const MapHomepage = () => {
        // funscreen control 
        const fullscreenControlStyle= {
         right: 10,
-        top: 100
+        top: 130
       };
     // nativavtion control 
     const navControlStyle= {
         right: 10,
         top: 10
+      };
+      //geolocate control
+      const geolocateControlStyle= {
+        right: 10,
+        top: 100
       };
 
   return (
@@ -155,6 +161,16 @@ export const MapHomepage = () => {
           </TextContent>
           <FullscreenControl style={fullscreenControlStyle} />
           <NavigationControl style={navControlStyle} />
+
+          <GeolocateControl
+           style={geolocateControlStyle}
+          positionOptions={{enableHighAccuracy: false}}
+          trackUserLocation={false}
+          fitBoundsOptions={{maxZoom: 8}}
+          showUserLocation={false}
+          label="Zoom In"
+          // auto
+          />
       </MapGL>
       </div>
       </div>
