@@ -53,7 +53,7 @@ z-index: 3;
 max-width: 1700px;
 width: 100%;
 position: absolute;
-padding: 8px 24px;
+padding: 0px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
