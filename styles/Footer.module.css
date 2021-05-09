@@ -72,6 +72,10 @@
   margin-bottom: 30px;
   margin-left: 25rem;
 }
+.contact {
+  margin-top: 10px;
+  margin-left: 90%;
+}
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
     margin-bottom: 30px;

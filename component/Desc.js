@@ -35,28 +35,29 @@ function Desc() {
     //Remove initial flash
     TweenMax.to(app, 0, {css: {visibility: 'visible'}})
 
-    //Images Animation
-    tl.from(pigImage, 0.5, {y: 80, ease: Power3.easeOut},'Start')
-    .from(pigImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(foxImage, 0.6, {y: 100, ease: Power3.easeOut}, .2)
-    .from(foxImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(rabbitImage, 0.9, {y: 200, ease: Power3.easeOut}, .2)
-    .from(rabbitImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(goatImage, 1, {y: 170, ease: Power3.easeOut}, .2)
-    .from(goatImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
-    .from(dogImage, 0.8, {y: 200, ease: Power3.easeOut}, .2)
-    .from(dogImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
+    // //Images Animation
+    // tl.from(pigImage, 0.5, {y: 80, ease: Power3.easeOut},'Start')
+    // .from(pigImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
+    // .from(foxImage, 0.6, {y: 100, ease: Power3.easeOut}, .2)
+    // .from(foxImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
+    // .from(rabbitImage, 0.9, {y: 200, ease: Power3.easeOut}, .2)
+    // .from(rabbitImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
+    // .from(goatImage, 1, {y: 170, ease: Power3.easeOut}, .2)
+    // .from(goatImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
+    // .from(dogImage, 0.8, {y: 200, ease: Power3.easeOut}, .2)
+    // .from(dogImage.children[0], 2, {scale: 1.6, ease: Power3.easeOut}, .2)
 
-    //Content Animation
-    tl.staggerFrom([headlineFirst.children, headlineSecond.children ], 1, {
-      y: 44,
-      ease:Power3.easeOut,
-      delay: .8
-    }, .15, 'Start')
-    .from(contentP, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.4)
-    .from(contentButton, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.6)
+    // //Content Animation
+    // tl.staggerFrom([headlineFirst.children, headlineSecond.children ], 1, {
+    //   y: 44,
+    //   ease:Power3.easeOut,
+    //   delay: .8
+    // }, .15, 'Start')
+    // .from(contentP, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.4)
+    // .from(contentButton, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.6)
 
   }, [tl])
+  
   return (
     <div className={styles.hero} ref={el => app = el}>
       <div className={styles.container}>

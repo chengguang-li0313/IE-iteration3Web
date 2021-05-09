@@ -1,18 +1,16 @@
-import styles from '../styles/Regulation.module.scss'
+import styles from '../styles/AnimalHero.module.scss'
 
-export const RegulationHero = () => {
+export const AnimalHero = () => {
     return ( 
-        
         <div className={styles.regulationHero}>
-            
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 
-               Pest Control Regulations In VIC
+                Established Pest Animals In VIC
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
-                There are some regulations about eradicating activity you need to know                          
+                Certain Animals are declared as Pest Animals                         
             </div>
             </p>   
         </div>

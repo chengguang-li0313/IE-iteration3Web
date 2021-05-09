@@ -3,23 +3,19 @@
 
 .regulationHero {
   display: flex;
-
-  // background-image: url("https://i.loli.net/2021/05/06/EFNbOgr5dpIkeJS.jpg");
-  // background-image: url("https://i.loli.net/2021/05/08/lpuQrXIc8ULn2K7.jpg");
-  // background-image: url("https://i.loli.net/2021/05/08/UDKIAcmCu4FBMNO.jpg");
-  background-image: url("https://i.loli.net/2021/05/08/UDKIAcmCu4FBMNO.jpg");
-  background-size: 30px 10px;
+  background-image: url("https://i.loli.net/2021/05/07/mrTqdUpBS63tlQk.jpg");
   height: 48rem;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .regulationHeroInfo1 {
   height: 50px;
-  background-color: rgba(238, 247, 245, 0.034);
+  background-color: rgba(223, 213, 201, 0.048);
   position: relative;
   width: 700px;
   color: white;
@@ -32,8 +28,8 @@
 }
 .regulationHeroInfo {
   height: 70px;
-  // background-color: rgba(208, 221, 228, 0.589);
-  background-color: rgba(238, 247, 245, 0.034);
+  // background-color: rgba(223, 213, 201, 0.589);
+  background-color: rgba(223, 213, 201, 0.048);
   position: relative;
   width: 700px;
   color: white;

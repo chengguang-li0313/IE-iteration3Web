@@ -6,11 +6,11 @@ export const MapHero = () => {
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 
-               Feral Animals' Distribution Map 
+                  Distrubution of Fest Animals In VIC
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
-             Check the feral animals around you                     
+              Spot the feral animals around you                     
             </div>
             </p>   
         </div>

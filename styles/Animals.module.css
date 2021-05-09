@@ -50,17 +50,6 @@
   height: 40rem;
 }
 
-.biologyCard {
-  display: flex;
-  flex-direction: column;
-  /* border-radius: 30px; */
-  background-color: rgba(167, 121, 68, 0.363);
-  /* padding: 1rem; */
-  width: 30px;
-  height: 100%;
-  margin-bottom: -34px;
-}
-
 .biologyCard h1 {
   margin-left: 1rem;
   margin-bottom: 0rem;
@@ -87,29 +76,38 @@
 }
 
 .bioInfo img {
-  height: 320px;
-  width: 400px;
+  height: 300px;
+  width: 340px;
+}
+
+.biologyCard {
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 30px; */
+  background-color: rgba(167, 121, 68, 0.363);
+  /* padding: 1rem; */
+
+  margin-bottom: -34px;
 }
 
 .infoCard {
   padding: 1rem;
   background-color: rgba(167, 121, 68, 0.363);
-  width: 400px;
+  width: 37%;
   height: 100%;
   color: rgb(85, 85, 85);
   border-radius: 10px;
-  margin-left: 390px;
+  margin-left: 20px;
   margin-bottom: -30px;
 }
 
 .barCard {
-  padding: 1rem;
-  background-color: rgba(167, 121, 68, 0.363);
-  width: 400px;
+  /* padding: 1rem; */
+  /* background-color: rgba(197, 193, 188, 0.363); */
+  width: 40%;
   height: 100%;
-  color: rgb(85, 85, 85);
   border-radius: 10px;
-  margin-left: 390px;
+  margin-left: 10px;
   margin-bottom: -30px;
 }
 
