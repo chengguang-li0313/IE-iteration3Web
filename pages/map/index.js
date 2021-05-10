@@ -9,6 +9,7 @@ import buttonStyle from "../../styles/MapButton.module.scss";
 import { Menu } from "semantic-ui-react";
 import { Button, Icon } from 'semantic-ui-react'
 import { MapHero } from '../../component/MapHero'
+import { Footer } from '../../component/Footer' 
 
 export default function map()  {  
   //button style
@@ -39,7 +40,8 @@ export default function map()  {
       };
 
     return(
-      <Layout>
+      <>
+      {/* <Layout> */}
      <MapHero> </MapHero>
 <div className={buttonStyle.containerMap}> 
         {/* <p> 
@@ -102,8 +104,9 @@ export default function map()  {
        </MapSection> 
 
        </div>
-      </Layout>
-
+      {/* </Layout> */}
+       <Footer></Footer>
+       </>
     );
 
 } 
