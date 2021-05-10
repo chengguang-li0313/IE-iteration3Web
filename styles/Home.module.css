@@ -11,12 +11,11 @@
 .nav {
   display: flex;
   padding: 0.5rem 1rem;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: rgba(141, 139, 139, 0.349);
   height: 6rem;
   width: 100vw;
-  top: 0%;
 }
 
 .nav a {
@@ -329,3 +328,4 @@
     flex-direction: column;
   }
 }
+/* ////////////////// website name ////////////////// */
