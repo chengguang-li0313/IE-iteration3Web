@@ -1,8 +1,10 @@
 import styles from '../styles/Map.module.scss'
-
+import { Nav } from '../component/Nav'
 export const MapHero = () => {
-    return ( 
+    return (
+
         <div className={styles.regulationHero} >
+        <Nav></Nav>
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 
@@ -14,5 +16,6 @@ export const MapHero = () => {
             </div>
             </p>   
         </div>
+
     )
 }
