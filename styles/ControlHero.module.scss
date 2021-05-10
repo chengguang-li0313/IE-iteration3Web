@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+.regulationHero {
+  display: flex;
+  background-image: url("https://i.loli.net/2021/05/10/rYj723DeRw6aEAv.jpg");
+  height: 48rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.regulationHeroInfo1 {
+  height: 50px;
+  background-color: rgba(109, 109, 109, 0.288);
+  position: relative;
+  width: 700px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: xx-large;
+  font-style: inherit;
+  margin-top: 30%;
+}
+.regulationHeroInfo {
+  height: 70px;
+  // background-color: rgba(109, 109, 109, 0.589);
+  background-color: rgba(109, 109, 109, 0.288);
+  position: relative;
+  width: 700px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  font-style: italic;
+}
