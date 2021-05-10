@@ -167,7 +167,7 @@ export const MapHomepage = (props) => {
           positionOptions={{enableHighAccuracy: true}}
           trackUserLocation={true}
           fitBoundsOptions={{maxZoom: 8}}
-          showUserLocation={false}
+          showUserLocation={true}
           label="Zoom In"
           // auto
           />

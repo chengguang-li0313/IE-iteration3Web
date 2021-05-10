@@ -75,24 +75,26 @@ export default function Animals() {
         </div>
       </div> */}
       <AnimalHero> </AnimalHero>
-      
 
+        {
+          isLoading ? (
+          <section {...containerProps}>
+            {indicatorEl} {/* renders only while loading */}
+          </section>) : (
+             <>
+           {/* //menu af */}
+           <div className={styles.containerAll}>  
+           <div className={styles.containerMenu}>
       <Menu vertical className={styles.menu}>
         <Menu.Item name="fox" active={active === 'fox'} onClick={handleClick} />
         <Menu.Item name="pig" active={active === 'pig'} onClick={handleClick} />
         <Menu.Item name="goat" active={active === 'goat'} onClick={handleClick} />
         <Menu.Item name="rabbit" active={active === 'rabbit'} onClick={handleClick} />
         <Menu.Item name="dog" active={active === 'dog'} onClick={handleClick} />
-      </Menu>
+      </Menu>         
+         </div>
 
-      <div className={styles.controlContainer}>
-        {
-          isLoading ? (
-          <section {...containerProps}>
-            {indicatorEl} {/* renders only while loading */}
-          </section>) : (
-            <>
-
+            <div className={styles.controlContainer}>
           {/* <BioInfoSection data={data}> 
          
           </BioInfoSection>       */}        
@@ -121,9 +123,14 @@ export default function Animals() {
           <AnimalImpactSection data={data}></AnimalImpactSection>
 
           <AnimalControlSection data={controlData}></AnimalControlSection>
-          </>)
+          </div>
+          </div>
+          </>
+          )
         }
-      </div>
+     
+      
+      {/* </div> */}
     {/* </Layout> */}
     <Footer></Footer>
        </>

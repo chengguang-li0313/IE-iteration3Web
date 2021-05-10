@@ -4,11 +4,15 @@ import { ControlHero } from "../../component/ControlHero";
 import { ControlCard } from '../../component/ControlCard'
 import { YoutubePlayer } from "reactjs-media";
 import { AnimalImpactCard } from "../../component/AnimalImpactCard";
+import {ControlHeroNew } from '../../component/ControlHeroNew'
+import { Footer } from '../../component/Footer'
 
 export default function Conventional() {
     return (
-        <Layout>
-        <ControlHero></ControlHero>
+        // <Layout>
+        <>
+        {/* <ControlHero> </ControlHero> */}
+        <ControlHeroNew> </ControlHeroNew>
         <a href="/control" className={styles.backButton}>
             «Back
         </a>
@@ -92,6 +96,8 @@ export default function Conventional() {
             url={"/control/welfare"}
             ></ControlCard>
         </div>
-        </Layout>
+       {/* </Layout> */}
+        <Footer> </Footer>
+        </>
     );
 }

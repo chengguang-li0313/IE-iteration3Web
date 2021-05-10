@@ -208,7 +208,7 @@ export const MapSection = (props) => {
           position="top-left"
           language="en"
           clearOnBlur={true}
-          collapsed={true}
+          // collapsed={true}
           zoom={10}
           countries="Au"
           placeholder="Enter Location"
