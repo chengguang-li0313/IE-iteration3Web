@@ -72,7 +72,7 @@ export default function Animals() {
           <h1>Learn About Pest Animals</h1>
         </div>
       </div> */}
-      < AnimalHero> </AnimalHero>
+      <AnimalHero> </AnimalHero>
       
 
       <Menu vertical className={styles.menu}>

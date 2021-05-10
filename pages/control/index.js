@@ -53,7 +53,6 @@ export default function Control() {
 
       <div className={styles.controlSection}>
         <h1>Control Methods Available in Victoria</h1>
-        <div className={styles.controlRow}>
           <p>
             In order to reduce the impact caused by these animals, it is best to
             prevent them from occurring in the first place. As farmers, you can
@@ -61,7 +60,6 @@ export default function Control() {
             following methods:
           </p>
           <ControlCardSection></ControlCardSection>
-        </div>
       </div>
 
       <div className={styles.controlProgram}>

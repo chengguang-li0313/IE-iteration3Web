@@ -80,7 +80,7 @@
   padding: 3rem;
   font-size: 1.2rem;
   background-color: #edd8c4;
-  height: 45rem;
+  height: 60rem;
   margin-bottom: 10rem;
 }
 
@@ -94,6 +94,7 @@
   margin-left: 10rem;
   margin-right: 5rem;
   margin-top: 0rem;
+  height: 30rem;
 }
 
 .controlCard img {
