@@ -65,6 +65,14 @@ export default function Conventional() {
                     img={'/controlService.jpeg'}
                     url={'/control/services'}
         ></ControlCard>
+          <ControlCard
+          title={"Animal Welfare"}
+          sub={
+            "These methods include using natural enemies of the pest and biologically interfering with their ability to breed. Pesticides are not used."
+          }
+          img={"/welfare0.jpeg"}
+          url={"/control/welfare"}
+        ></ControlCard>
       </div>
     </Layout>
   )

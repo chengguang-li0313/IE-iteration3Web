@@ -94,7 +94,7 @@ export default function Conventional() {
 
       <div className={styles.conventionalContainer}>
         <ControlCard
-          title={"Conventional control methods"}
+          title={"Conventional Control Methods"}
           sub={
             "Conventional control methods for feral animals include trapping, baiting, fencing and shooting."
           }
@@ -108,6 +108,14 @@ export default function Conventional() {
           }
           img={"/bioControl.jpeg"}
           url={"/control/bio"}
+        ></ControlCard>
+        <ControlCard
+          title={"Animal Welfare"}
+          sub={
+            "These methods include using natural enemies of the pest and biologically interfering with their ability to breed. Pesticides are not used."
+          }
+          img={"/welfare0.jpeg"}
+          url={"/control/welfare"}
         ></ControlCard>
       </div>
     </Layout>
