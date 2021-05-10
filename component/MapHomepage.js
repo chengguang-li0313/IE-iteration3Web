@@ -109,7 +109,7 @@ export const MapHomepage = (props) => {
      <div className={styles.container}> 
        <div className={styles.containerText}> 
         <div className={styles.containerContent}> 
-             <h2>  Do you want to explore more ? </h2>
+             <h3>  Do you want to explore more ? </h3>
          </div>
          <Link href='/map'> 
                 <button className={styles.button}>

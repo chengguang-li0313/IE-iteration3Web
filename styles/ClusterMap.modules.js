@@ -47,7 +47,7 @@ display: flex;
 flex-direction: column;
 // align-items: center;
 top: 2%;
-left: 18%;
+left: 14%;
 `;
 
 export const HeroText = styled.h2`
