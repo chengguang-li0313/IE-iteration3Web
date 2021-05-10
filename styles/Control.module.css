@@ -70,7 +70,6 @@
 }
 
 .h1Right {
-  margin-left: auto;
   color: #c96c00;
 }
 
@@ -99,10 +98,10 @@
 
 .controlCard img {
   height: 200px;
-  width: 300px;
+  width: 250px;
   object-fit: cover;
   position: relative;
-  right: 160px;
+  right: 110px;
   bottom: 220px;
   box-shadow: 0 0.2em 1.2em hsla(20, 20, 20, 10%);
 }

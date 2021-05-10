@@ -39,7 +39,7 @@ export default function Conventional() {
       </div>
 
       <div className={styles.conventionalContainer}>
-        <h1>Some of the renowned Control Services Available in Victoria</h1>
+        <h1>Some of the Renowned Control Services Available in Victoria</h1>
       </div>
       <div className={styles.controlMethodCardSection}>
         <a href="https://www.victorianpestcontrol.com.au">

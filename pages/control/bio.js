@@ -32,12 +32,12 @@ export default function Conventional() {
         </div>
 
         <div className={styles.conventionalContainer}>
-            <h1>Some of the most commonly used Biological Control Methods</h1>
+            <h1>Some of the Most Commonly Used Biological Control Methods</h1>
         </div>
         <div className={styles.controlMethodCardSection}>
             <AnimalImpactCard
                 title={'RHD (Rabbit Haemorrhoid Disease)'}
-                text={'rabbit haemorrhagic disease (RHD, also known as rabbit calicivirus disease) established itself in Australia and reduced rabbit numbers, especially in arid areas.'}
+                text={'Rabbit haemorrhagic disease (RHD, also known as rabbit calicivirus disease) established itself in Australia and reduced rabbit numbers, especially in arid areas.'}
                 img={'/rhd.jpeg'}
             ></AnimalImpactCard>
              <AnimalImpactCard
