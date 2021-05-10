@@ -37,7 +37,7 @@ export default function Control() {
           <h1 className={styles.h1Right}>Managing Established Pest Animals: What Can You Do</h1>
           <div className={styles.controlRow}>
             <YoutubePlayer
-              src="https://www.youtube.com/watch?v=JJEMr2pM4U0&t=102s&ab_channel=CentreforInvasiveSpeciesSolutions" // Reqiured
+              src="https://www.youtube.com/watch?v=JJEMr2pM4U0" // Reqiured
               width={700}
               height={400}
               className={styles.invasion}
