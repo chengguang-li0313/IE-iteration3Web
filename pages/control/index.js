@@ -4,12 +4,16 @@ import { ControlCardSection } from '../../component/ControlCardSection'
 import { ControlHero } from '../../component/ControlHero'
 import { YoutubePlayer } from "reactjs-media";
 import { ProgramCardSection } from '../../component/ProgramCardSection'
+import { Footer } from '../../component/Footer'
+import {ControlHeroNew } from '../../component/ControlHeroNew'
 
 export default function Control() {
 
   return (
-    <Layout>
-      <ControlHero></ControlHero>
+    // <Layout>
+       <>     
+      {/* <ControlHero></ControlHero> */}
+      <ControlHeroNew> </ControlHeroNew>
       <div className={styles.controlSection}>
         <h1>Why is it Important to Control These Species?</h1>
         <div className={styles.controlRow}>
@@ -87,7 +91,9 @@ export default function Control() {
         </div>
         <img src="/pestStrategy.jpeg"></img>
       </div>
-
-    </Layout>
+{/* 
+    </Layout> */}
+    <Footer></Footer>
+     </> 
   );
 }

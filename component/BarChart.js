@@ -16,7 +16,7 @@ export const BarChart = (props) => {
         
       ))}
       // console.log(name);
-      name =  "Changes over time in Population of " +  name ;     
+      name =  "Change in Population of " + name + " Over Time " ;     
     const options = {
         chart: {
           id: "basic-bar"

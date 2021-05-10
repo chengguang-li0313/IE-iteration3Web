@@ -8,7 +8,7 @@ export const MapHero = () => {
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 
-                  Distrubution of Fest Animals In VIC
+                  Distribution of Pest Animals In VIC
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
