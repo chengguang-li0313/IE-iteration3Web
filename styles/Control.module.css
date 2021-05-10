@@ -70,7 +70,6 @@
 }
 
 .h1Right {
-  margin-left: auto;
   color: #c96c00;
 }
 
@@ -142,6 +141,7 @@
   display: flex;
   padding: 2rem;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .conventionalText {
