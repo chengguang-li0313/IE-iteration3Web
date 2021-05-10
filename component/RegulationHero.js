@@ -1,10 +1,11 @@
 import styles from '../styles/Regulation.module.scss'
+import { Nav } from '../component/Nav'
 
 export const RegulationHero = () => {
     return ( 
         
         <div className={styles.regulationHero}>
-            
+            <Nav></Nav> 
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 

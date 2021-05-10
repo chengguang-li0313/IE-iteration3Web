@@ -10,6 +10,7 @@ import { AnimalControlSection } from '../../component/AnimalControlSection'
 import { useLoading, Bars } from '@agney/react-loading';
 import {BarChart} from '../../component/BarChart';
 import { AnimalHero } from '../../component/AnimalHero'
+import { Footer } from '../../component/Footer' 
 
 export default function Animals() {
   const [data, setData] = useState("");
@@ -66,7 +67,8 @@ export default function Animals() {
   });
 
   return (
-    <Layout>
+    <>
+    {/* // <Layout> */}
       {/* <div className={styles.container}>
         <div className={styles.animalText}>
           <h1>Learn About Pest Animals</h1>
@@ -122,6 +124,8 @@ export default function Animals() {
           </>)
         }
       </div>
-    </Layout>
+    {/* </Layout> */}
+    <Footer></Footer>
+       </>
   );
 }

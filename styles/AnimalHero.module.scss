@@ -8,9 +8,9 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .regulationHeroInfo1 {
@@ -25,6 +25,7 @@
   font-family: "Oswald", sans-serif;
   font-size: xx-large;
   font-style: inherit;
+  margin-top: 30%;
 }
 .regulationHeroInfo {
   height: 70px;

@@ -2,10 +2,12 @@ import styles from "../../styles/Regulation.module.scss";
 import { RegulationHero } from '../../component/RegulationHero'
 import { Layout } from "../../component/Layout";
 import textStyle from "../../styles/Text.module.css";
+import { Footer } from '../../component/Footer'
 
 export default function Regulation() { 
     return ( 
-        <Layout> 
+        // <Layout> 
+        <>  
       <RegulationHero> </RegulationHero>
       <div className={styles.container}>
 
@@ -81,6 +83,8 @@ export default function Regulation() {
         </div> 
         </div> 
       </div>
-      </Layout>
+      {/* </Layout> */}
+      <Footer></Footer>
+       </>
     );
   }

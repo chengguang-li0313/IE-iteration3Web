@@ -1,12 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles/About.module.css'
 import { Layout } from '../component/Layout'
-
+import { Footer } from '../component/Footer' 
+import { Nav } from '../component/Nav'
 export default function Home() {
 
   return (
-    <Layout>
+     <> 
+    {/* <Layout> */}
+    <Nav></Nav>
         <div className={styles.aboutContainer}>
+        
             <img src='/logo.png'></img>
             <h1>Our Vision</h1>
             <p>We are a group of feral (non) enthusiasts and this is a joint initiative taken by us to help the lands of Farmers in Victoria being invaded by these species by providing information to identify and eradicate feral animals</p>
@@ -29,6 +33,8 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </Layout>
+        <Footer></Footer>
+    {/* </Layout> */}
+    </>
   )
 }
