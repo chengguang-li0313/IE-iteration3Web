@@ -82,7 +82,7 @@ export default function Conventional() {
           <AnimalImpactCard
             title={"Vertebrate Pest Management Association Australia"}
             text={
-              "The Vertebrate Pest Management Association Australia (VPMAA) is an independent, not–for-profit association.Members are  Commercial Operators in Vermin Destroyers or Commercial Wildlife Controllers or Professional Pest Controllers licensed by their state or territory departments to carry out land-based vertebrate pest management throughout Australia. Contact: 1300 257 774"
+              "The Vertebrate Pest Management Association Australia (VPMAA) is an independent, not–for-profit association. Contact: 1300 257 774"
             }
             img={"/vpmaa.png"}
           ></AnimalImpactCard>

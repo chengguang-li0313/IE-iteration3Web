@@ -173,6 +173,7 @@
   display: flex;
   overflow-x: auto;
   padding: 1rem;
+  justify-content: center;
 }
 
 .invasion {
