@@ -11,7 +11,7 @@ export default function Control() {
 
   return (
     // <Layout>
-       <>     
+    <>
       {/* <ControlHero></ControlHero> */}
       <ControlHeroNew> </ControlHeroNew>
       <div className={styles.controlSection}>
@@ -38,42 +38,45 @@ export default function Control() {
       </div>
 
       <div className={styles.controlVideo}>
-          <h1 className={styles.h1Right}>Managing Established Pest Animals: What Can You Do</h1>
-          <div className={styles.controlRow}>
-            <YoutubePlayer
-              src="https://www.youtube.com/watch?v=JJEMr2pM4U0" // Reqiured
-              width={700}
-              height={400}
-              className={styles.invasion}
-            />
-            <p>
-              This video describes the best practices to keep in mind while
-              developing and implementing a pest control plan:
-            </p>
-          </div>
-          <h1>Principles of Best Practice Pest Animal Management</h1>
-          <img src="/pestAnimalQuote.png" className={styles.invasion} />
-        </div>
+        <h1 className={styles.h1Right}>
+          Managing Established Pest Animals: What Can You Do
+        </h1>
+        <p>
+          This video describes the best practices to keep in mind while
+          developing and implementing a pest control plan:
+        </p>
+        <h1 className={styles.h1Right}>Principles of Best Practice Pest Animal Management</h1>
+
+        <YoutubePlayer
+          src="https://www.youtube.com/watch?v=JJEMr2pM4U0" // Reqiured
+          width={700}
+          height={400}
+          className={styles.invasion}
+        />
+        <img src="/pestAnimalQuote.png" className={styles.invasion} />
+      </div>
 
       <div className={styles.controlSection}>
         <h1>Control Methods Available in Victoria</h1>
-          <p>
-            In order to reduce the impact caused by these animals, it is best to
-            prevent them from occurring in the first place. As farmers, you can
-            help stop the introduction and spread of invasive species by using the
-            following methods:
-          </p>
-          <ControlCardSection></ControlCardSection>
+        <p>
+          In order to reduce the impact caused by these animals, it is best to
+          prevent them from occurring in the first place. As farmers, you can
+          help stop the introduction and spread of invasive species by using the
+          following methods:
+        </p>
+        <ControlCardSection></ControlCardSection>
       </div>
 
       <div className={styles.controlProgram}>
-        <h1 className={styles.h1Right}>Integrated Pest Animal Control Programs</h1>
+        <h1 className={styles.h1Right}>
+          Integrated Pest Animal Control Programs
+        </h1>
         <div className={styles.controlRow}>
           <ProgramCardSection></ProgramCardSection>
           <p>
             The Victorian Government has come up with different control programs
-            to advise and guide on the strategies to implement in order to control
-            established pest animals :
+            to advise and guide on the strategies to implement in order to
+            control established pest animals :
           </p>
         </div>
       </div>
@@ -91,9 +94,9 @@ export default function Control() {
         </div>
         <img src="/pestStrategy.jpeg"></img>
       </div>
-{/* 
+      {/* 
     </Layout> */}
-    <Footer></Footer>
-     </> 
+      <Footer></Footer>
+    </>
   );
 }

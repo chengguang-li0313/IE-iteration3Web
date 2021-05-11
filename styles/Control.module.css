@@ -4,6 +4,21 @@
   margin-top: 1rem;
 }
 
+.benefit {
+  width: 400px
+}
+
+.bioControlHero {
+  display: flex;
+  background-image: url("/bioControlHero.jpeg");
+  height: 70rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .controlHero {
   display: flex;
   background-image: url("/controlHero.jpeg");
@@ -73,6 +88,8 @@
   color: #c96c00;
 }
 
+
+
 .controlProgram {
   display: flex;
   flex-direction: column;
@@ -104,6 +121,17 @@
   right: 110px;
   bottom: 220px;
   box-shadow: 0 0.2em 1.2em hsla(20, 20, 20, 10%);
+}
+
+.conventionalHero {
+  display: flex;
+  background-image: url("/conventionalHero.jpeg");
+  height: 70rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .controlCardContainer {
@@ -178,6 +206,17 @@
 .invasion {
   width: 700px;
   align-self: flex-start;
+}
+
+.serviceHero {
+  display: flex;
+  background-image: url("/serviceHero.jpeg");
+  height: 70rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 750px) {

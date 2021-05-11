@@ -12,6 +12,10 @@
     font-size:1.2rem;
 }
 
+.conventionalContainer {
+    display: flex;
+}
+
 .section {
     display: flex;
     margin-bottom: 1rem;
