@@ -10,7 +10,7 @@ import { Menu } from "semantic-ui-react";
 import { Button, Icon } from 'semantic-ui-react'
 import { MapHero } from '../../component/MapHero'
 import { Footer } from '../../component/Footer' 
-
+import ScrollToTop from "react-scroll-up";
 export default function map()  {  
   //button style
 
@@ -105,6 +105,15 @@ export default function map()  {
 
        </div>
       {/* </Layout> */}
+      <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+
        <Footer></Footer>
        </>
     );

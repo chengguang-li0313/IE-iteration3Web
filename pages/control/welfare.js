@@ -1,6 +1,6 @@
 import styles from '../../styles/Welfare.module.css'
 import { Layout } from "../../component/Layout";
-
+import ScrollToTop from "react-scroll-up";
 export default function Welfare() {
     return (
       <Layout>
@@ -162,6 +162,15 @@ export default function Welfare() {
             </li>
           </ul>
         </div>
+        <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+
       </Layout>
     );
 }

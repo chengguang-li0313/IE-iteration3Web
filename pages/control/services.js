@@ -6,7 +6,7 @@ import { YoutubePlayer } from "reactjs-media";
 import { AnimalImpactCard } from '../../component/AnimalImpactCard'
 import {ControlHeroNew } from '../../component/ControlHeroNew'
 import { Footer } from '../../component/Footer'
-
+import ScrollToTop from "react-scroll-up";
 export default function Conventional() {
 
   return (
@@ -121,6 +121,15 @@ export default function Conventional() {
           url={"/control/welfare"}
         ></ControlCard>
       </div>
+      <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+ 
       <Footer> </Footer>
         </>
   );

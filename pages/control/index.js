@@ -6,7 +6,7 @@ import { YoutubePlayer } from "reactjs-media";
 import { ProgramCardSection } from '../../component/ProgramCardSection'
 import { Footer } from '../../component/Footer'
 import {ControlHeroNew } from '../../component/ControlHeroNew'
-
+import ScrollToTop from "react-scroll-up";
 export default function Control() {
 
   return (
@@ -93,6 +93,16 @@ export default function Control() {
       </div>
 {/* 
     </Layout> */}
+           <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+
+
     <Footer></Footer>
      </> 
   );
