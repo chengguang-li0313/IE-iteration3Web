@@ -6,7 +6,7 @@ import { YoutubePlayer } from "reactjs-media";
 import { ProgramCardSection } from '../../component/ProgramCardSection'
 import { Footer } from '../../component/Footer'
 import {ControlHeroNew } from '../../component/ControlHeroNew'
-
+import ScrollToTop from "react-scroll-up";
 export default function Control() {
 
   return (
@@ -90,13 +90,23 @@ export default function Control() {
             primarily the responsibility of the landholders of the state. It was
             revised in 2017 and is available as below:
           </p>
-          <a href="#">Australian Pest Animal Strategy 2017-2027.pdf</a>
+          <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiYpu7um7_wAhVQgtgFHRAtCC0QFjABegQIAxAD&url=https%3A%2F%2Fwww.agriculture.gov.au%2Fsites%2Fdefault%2Ffiles%2Fsitecollectiondocuments%2Fpests-diseases-weeds%2Fconsultation%2Fapas-final.docx&usg=AOvVaw1JHnMA8XuQc4Jn00MP0gz6" target="blank" >Australian Pest Animal Strategy 2017-2027.pdf</a>
         </div>
         <img src="/pestStrategy.jpeg"></img>
       </div>
       {/* 
     </Layout> */}
-      <Footer></Footer>
-    </>
+           <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+
+
+    <Footer></Footer>
+     </> 
   );
 }

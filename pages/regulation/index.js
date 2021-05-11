@@ -3,6 +3,7 @@ import { RegulationHero } from '../../component/RegulationHero'
 import { Layout } from "../../component/Layout";
 import textStyle from "../../styles/Text.module.css";
 import { Footer } from '../../component/Footer'
+import ScrollToTop from "react-scroll-up";
 
 export default function Regulation() { 
     return ( 
@@ -84,6 +85,16 @@ export default function Regulation() {
         </div> 
       </div>
       {/* </Layout> */}
+
+      <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+
       <Footer></Footer>
        </>
     );

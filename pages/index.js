@@ -10,6 +10,7 @@ import Regulation from '../component/Regulation';
 import { MapHomepage } from '../component/MapHomepage' 
 import Axios from "axios";
 import React, { useState, useEffect} from "react";
+import ScrollToTop from "react-scroll-up";
 export default function Home() {
   
   //fetching data of Map 
@@ -40,7 +41,21 @@ export default function Home() {
     <Desc></Desc>
 
     <Regulation> </Regulation>
+    <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
 
+     >
+    {/* <span>UP</span> */}
+   
+    {/* <span>   </span>    */}
+    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+    
+    
+  </ScrollToTop> 
     <Footer></Footer>
     </>
   )

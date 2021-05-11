@@ -1,7 +1,7 @@
-import styles from '../styles/ControlHero.module.scss'
+import styles from '../styles/AboutHero.module.scss'
 import { Nav } from '../component/Nav'
 
-export const ControlHeroNew = () => {
+export const AboutHero = () => {
     return ( 
         
         <div className={styles.regulationHero}>
@@ -9,11 +9,11 @@ export const ControlHeroNew = () => {
             <p>
             {/* <div className={styles.regulationHeroInfo}> */}
              <div className={styles.regulationHeroInfo1}> 
-               How To Control Pest Animals In VIC
+               About Us
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
-                Learn how to control pest animals on your farm                       
+              Who are we?                    
             </div>
             </p>   
         </div>

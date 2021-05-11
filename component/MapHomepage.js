@@ -12,6 +12,8 @@ import {clusterLayer, clusterCountLayer, unclusteredPointLayer,
 import Axios from "axios";
 import styles from "../styles/MapHome.module.css"
 import Link from 'next/link'
+
+
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw'; // Set your mapbox token here
 
 
@@ -109,7 +111,9 @@ export const MapHomepage = (props) => {
      <div className={styles.container}> 
        <div className={styles.containerText}> 
         <div className={styles.containerContent}> 
-             <h2>  Do you want to explore more ? </h2>
+     
+             <h3>  Do you want to explore more ? </h3>
+           
          </div>
          <Link href='/map'> 
                 <button className={styles.button}>
@@ -167,7 +171,7 @@ export const MapHomepage = (props) => {
           positionOptions={{enableHighAccuracy: true}}
           trackUserLocation={true}
           fitBoundsOptions={{maxZoom: 8}}
-          showUserLocation={false}
+          showUserLocation={true}
           label="Zoom In"
           // auto
           />

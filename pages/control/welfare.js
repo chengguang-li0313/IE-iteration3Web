@@ -6,6 +6,7 @@ import { AnimalImpactCard } from '../../component/AnimalImpactCard'
 import { YoutubePlayer } from "reactjs-media";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import ScrollToTop from "react-scroll-up";
 
 export default function Welfare() {
     return (
@@ -117,6 +118,15 @@ export default function Welfare() {
             url={"/control/welfare"}
           ></ControlCard>
         </div>
+        <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+
       </Layout>
     );
 }

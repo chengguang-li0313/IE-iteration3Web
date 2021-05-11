@@ -47,15 +47,15 @@ display: flex;
 flex-direction: column;
 // align-items: center;
 top: 2%;
-left: 18%;
+left: 14%;
 `;
 
 export const HeroText = styled.h2`
 margin-top: 4px;
 color: #fff;
-font-size: 2.4rem;
+font-size: 2.0rem;
 text-align: center;
-max-width: 600px;
+max-width: 620px;
 
 @media only screen and (max-width: 768px){
   font-size: 2rem;

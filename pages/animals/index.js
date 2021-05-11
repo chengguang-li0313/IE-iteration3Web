@@ -11,7 +11,7 @@ import { useLoading, Bars } from '@agney/react-loading';
 import {BarChart} from '../../component/BarChart';
 import { AnimalHero } from '../../component/AnimalHero'
 import { Footer } from '../../component/Footer' 
-
+import ScrollToTop from "react-scroll-up";
 export default function Animals() {
   const [data, setData] = useState("");
   const [controlData, setControlData] = useState('')
@@ -75,24 +75,26 @@ export default function Animals() {
         </div>
       </div> */}
       <AnimalHero> </AnimalHero>
-      
 
+        {
+          isLoading ? (
+          <section {...containerProps}>
+            {indicatorEl} {/* renders only while loading */}
+          </section>) : (
+             <>
+           {/* //menu af */}
+           <div className={styles.containerAll}>  
+           <div className={styles.containerMenu}>
       <Menu vertical className={styles.menu}>
         <Menu.Item name="fox" active={active === 'fox'} onClick={handleClick} />
         <Menu.Item name="pig" active={active === 'pig'} onClick={handleClick} />
         <Menu.Item name="goat" active={active === 'goat'} onClick={handleClick} />
         <Menu.Item name="rabbit" active={active === 'rabbit'} onClick={handleClick} />
         <Menu.Item name="dog" active={active === 'dog'} onClick={handleClick} />
-      </Menu>
+      </Menu>         
+         </div>
 
-      <div className={styles.controlContainer}>
-        {
-          isLoading ? (
-          <section {...containerProps}>
-            {indicatorEl} {/* renders only while loading */}
-          </section>) : (
-            <>
-
+            <div className={styles.controlContainer}>
           {/* <BioInfoSection data={data}> 
          
           </BioInfoSection>       */}        
@@ -100,7 +102,7 @@ export default function Animals() {
 
            <div className={styles.bioInfo}>
                 <div className={styles.biologyCard}>
-                  <img src={data.appearanceImage}></img>
+                  <img src={data.imageTitle}></img>
                </div>
              <div className={styles.infoCard}>
              <h1>{data.commonName}</h1>
@@ -121,9 +123,21 @@ export default function Animals() {
           <AnimalImpactSection data={data}></AnimalImpactSection>
 
           <AnimalControlSection data={controlData}></AnimalControlSection>
-          </>)
+          </div>
+          </div>
+          </>
+          )
         }
-      </div>
+            <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
+      
+      {/* </div> */}
     {/* </Layout> */}
     <Footer></Footer>
        </>

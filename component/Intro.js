@@ -15,6 +15,7 @@ import {
   TextContent
 } from '../styles/hero.module.js'
 import {Button} from '../styles/button.module.js'
+import style from "../styles/IntroText.module.scss"
 
 export const Intro = () => {
   const [hover, setHover] = useState(false);
@@ -34,13 +35,15 @@ export const Intro = () => {
         <HeroContent>
         <Nav></Nav>
         <TextContent>
-          <HeroTitle>We help secure your farm from Pest Animals</HeroTitle>
+          <HeroTitle><div className={style.regulationHeroInfo1}>  We Help Secure Your Farm from Pest Animals </div> </HeroTitle>
           <HeroText>
-            Pest Animals have significant impact on Agriculture in Victoria.
+          <div className={style.regulationHeroInfo}> 
+               Pest animals have significant impact on agriculture in Victoria.
+            </div>
           </HeroText>
           <HeroBtn>
-          <a href='#map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
-              Get started {hover ? <ArrowForward/> : <ArrowRight/>}
+          <a href='/map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
+          Ferret Your Ferals {hover ? <ArrowForward/> : <ArrowRight/>}
             </Button> </a> 
           </HeroBtn>
           {/* <a href='#impact'><BiDownArrowCircle size={40} color={'green'}/></a>  */}
