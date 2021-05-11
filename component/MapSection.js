@@ -76,18 +76,11 @@ export const MapSection = (props) => {
         right: 10,
         top: 40
       };
-      //ScaleControl style
-      const scaleControlStyle= {
-        right: 20,
-        bottom: 130
-      };
+      
 
       //geoLocation Control 
       //can get the user's geolocation and display it on Map
-      const geolocateControlStyle= {
-        right: 10,
-        top: 10,
-      };
+
       // console.log(data);
 
       //limit the map interaction panel 
@@ -154,7 +147,17 @@ export const MapSection = (props) => {
     right: 10,
     top: 170
   };
- 
+
+   //geolocate control
+   const geolocateControlStyle= {
+    right: 40,
+    top: 170
+  };
+   //ScaleControl style
+   const scaleControlStyle= {
+    right: 10,
+    top: 230
+  };
 
     return (
       <>
@@ -176,7 +179,7 @@ export const MapSection = (props) => {
          >
 
          {/* <NavigationControl style={navControlStyle} />*/}
-         <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} />         
+                
 
          
         {markers} 
@@ -195,6 +198,20 @@ export const MapSection = (props) => {
         <div className={style.cameraContainer}> 
           <CameraPanel onSelectCity={onSelectCity} />
              <FullscreenControl style={fullscreenControlStyle} />
+
+             {/* user current location  */}
+         <GeolocateControl
+           style={geolocateControlStyle}
+          positionOptions={{enableHighAccuracy: true}}
+          trackUserLocation={true}
+          fitBoundsOptions={{maxZoom: 13}}
+          showUserLocation={true}
+          // showAccuracyCircle={false}
+          label="My Current Location"
+          // auto
+          />
+
+<ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} />  
      </div>
   </div>
 
@@ -213,6 +230,8 @@ export const MapSection = (props) => {
           countries="Au"
           placeholder="Enter Location"
         />
+        
+         
 
          </ReactMapGL>
 
