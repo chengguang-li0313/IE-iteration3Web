@@ -3,12 +3,15 @@ import styles from '../styles/About.module.css'
 import { Layout } from '../component/Layout'
 import { Footer } from '../component/Footer' 
 import { Nav } from '../component/Nav'
+import {AboutHero} from '../component/AboutHero'
+
 export default function Home() {
 
   return (
      <> 
     {/* <Layout> */}
-    <Nav></Nav>
+    {/* <Nav></Nav> */}
+    <AboutHero> </AboutHero>
         <div className={styles.aboutContainer}>
         
             <img src='/logo.png'></img>

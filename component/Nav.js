@@ -8,10 +8,12 @@ export const Nav = () => {
 
     return (
         <nav className={styles.nav}>
-             {/* <Link href='/'><img src='/logo.png'></img></Link> */}
+            {/* <img src='/logo.png'></img> */}
+             <Link href='/'>
             <div className={style.regulationHeroInfo}> 
               Feral Footprints
             </div>
+            </Link>
             <div className={styles.navItem}>
                 <Link href='/'>Home</Link>
                 <Link href='/animals'>Animals</Link>
