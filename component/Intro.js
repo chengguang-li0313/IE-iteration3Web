@@ -35,10 +35,10 @@ export const Intro = () => {
         <HeroContent>
         <Nav></Nav>
         <TextContent>
-          <HeroTitle><div className={style.regulationHeroInfo1}>  We help secure your farm from Pest Animals </div> </HeroTitle>
+          <HeroTitle><div className={style.regulationHeroInfo1}>  We Help Secure Your Farm from Pest Animals </div> </HeroTitle>
           <HeroText>
           <div className={style.regulationHeroInfo}> 
-               Pest Animals have significant impact on Agriculture in Victoria.
+               Pest animals have significant impact on agriculture in Victoria.
             </div>
           </HeroText>
           <HeroBtn>
