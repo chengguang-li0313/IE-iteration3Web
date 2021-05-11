@@ -102,7 +102,7 @@ export default function Animals() {
 
            <div className={styles.bioInfo}>
                 <div className={styles.biologyCard}>
-                  <img src={data.appearanceImage}></img>
+                  <img src={data.imageTitle}></img>
                </div>
              <div className={styles.infoCard}>
              <h1>{data.commonName}</h1>
