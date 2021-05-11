@@ -11,7 +11,7 @@ import { useLoading, Bars } from '@agney/react-loading';
 import {BarChart} from '../../component/BarChart';
 import { AnimalHero } from '../../component/AnimalHero'
 import { Footer } from '../../component/Footer' 
-
+import ScrollToTop from "react-scroll-up";
 export default function Animals() {
   const [data, setData] = useState("");
   const [controlData, setControlData] = useState('')
@@ -128,7 +128,14 @@ export default function Animals() {
           </>
           )
         }
-     
+            <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
       
       {/* </div> */}
     {/* </Layout> */}

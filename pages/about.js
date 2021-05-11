@@ -4,7 +4,7 @@ import { Layout } from '../component/Layout'
 import { Footer } from '../component/Footer' 
 import { Nav } from '../component/Nav'
 import {AboutHero} from '../component/AboutHero'
-
+import ScrollToTop from "react-scroll-up";
 export default function Home() {
 
   return (
@@ -36,6 +36,14 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        <ScrollToTop 
+    showUnder={160}
+    // easing="easeInExpo"
+    duration={3000}
+    cursor="pointer"
+     >    
+    <img src="/upup.svg" width="30px" height="30px"/> 
+  </ScrollToTop> 
         <Footer></Footer>
     {/* </Layout> */}
     </>
