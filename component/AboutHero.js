@@ -13,7 +13,7 @@ export const AboutHero = () => {
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
-                Learn How To Control Pest Animals On Your Farm                       
+              Who are we?                    
             </div>
             </p>   
         </div>
