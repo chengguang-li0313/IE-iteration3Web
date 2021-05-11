@@ -90,7 +90,7 @@ margin-top: 4px;
 color: #fff;
 font-size: 2.4rem;
 text-align: center;
-max-width: 600px;
+max-width: 700px;
 
 @media only screen and (max-width: 768px){
   font-size: 2rem;
