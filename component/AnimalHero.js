@@ -12,7 +12,7 @@ export const AnimalHero = () => {
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
-                Certain Animals are declared as Pest Animals                         
+                Certain animals are declared as pest animals                         
             </div>
             </p>  
         </div>

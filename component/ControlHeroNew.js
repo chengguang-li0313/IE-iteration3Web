@@ -13,7 +13,7 @@ export const ControlHeroNew = () => {
               </div>                        
             {/* s */}
             <div className={styles.regulationHeroInfo}>
-                Learn How To Control Pest Animals On Your Farm                       
+                Learn how to control pest animals on your farm                       
             </div>
             </p>   
         </div>
