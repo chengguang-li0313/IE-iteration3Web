@@ -21,6 +21,7 @@ export default function Conventional() {
         <h1>Conventional Control Services</h1>
       </div>
 
+      <div className={styles.tabContainer}>
         <Tabs>
           <TabList>
             <Tab>Introduction </Tab>
@@ -96,6 +97,7 @@ export default function Conventional() {
             </div>
           </TabPanel>
         </Tabs>
+        </div>
 
         <div className={styles.conventionalContainer}>
           <h1>Also Check Out These Methods</h1>

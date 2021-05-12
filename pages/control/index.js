@@ -1,7 +1,6 @@
 import styles from '../../styles/Control.module.css'
 import { Layout } from "../../component/Layout";
 import { ControlCardSection } from '../../component/ControlCardSection'
-import { ControlHero } from '../../component/ControlHero'
 import { YoutubePlayer } from "reactjs-media";
 import { ProgramCardSection } from '../../component/ProgramCardSection'
 import { Footer } from '../../component/Footer'

@@ -2,16 +2,17 @@ import styles from '../../styles/Control.module.css'
 import { ControlCard } from '../../component/ControlCard'
 import { Layout } from "../../component/Layout";
 import { ControlHero } from '../../component/ControlHero'
-import { AnimalImpactCard } from '../../component/AnimalImpactCard'
+import {ControlHeroNew } from '../../component/ControlHeroNew'
 import { YoutubePlayer } from "reactjs-media";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ScrollToTop from "react-scroll-up";
+import { Footer } from '../../component/Footer'
 
 export default function Welfare() {
     return (
-      <Layout>
-        <ControlHero></ControlHero>
+      <>
+        <ControlHeroNew></ControlHeroNew>
         <a href="/control" className={styles.backButton}>
           «Back
         </a>
@@ -19,6 +20,8 @@ export default function Welfare() {
         <div className={styles.conventionalContainer}>
           <h1>Animal Welfare</h1>
         </div>
+
+        <div className={styles.tabContainer}>
 
         <Tabs>
           <TabList>
@@ -87,6 +90,7 @@ export default function Welfare() {
             </div>
           </TabPanel>
         </Tabs>
+        </div>
 
         <div className={styles.conventionalContainer}>
           <h1>Also Check Out These Methods</h1>
@@ -126,7 +130,7 @@ export default function Welfare() {
      >    
     <img src="/upup.svg" width="30px" height="30px"/> 
   </ScrollToTop> 
-
-      </Layout>
+            <Footer></Footer>
+      </>
     );
 }

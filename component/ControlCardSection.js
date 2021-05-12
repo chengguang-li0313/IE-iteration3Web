@@ -6,7 +6,7 @@ export const ControlCardSection = () => {
     <div className={styles.controlSection}>
         <div className={styles.controlCards}>
             <ControlCard
-                title={'Conventional control methods'}
+                title={'Conventional Control Methods'}
                 sub={'Conventional control methods for feral animals include trapping, baiting, fencing and shooting.'}
                 img={'/conventional.jpeg'}
                 url={'/control/conventional'}

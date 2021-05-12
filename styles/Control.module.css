@@ -219,6 +219,11 @@
   margin-bottom: 1rem;
 }
 
+.tabContainer {
+  padding: 3rem;
+  border: 10px;
+}
+
 @media only screen and (max-width: 750px) {
   .controlInfo {
     display: flex;

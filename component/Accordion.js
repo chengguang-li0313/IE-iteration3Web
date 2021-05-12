@@ -9,9 +9,8 @@ export const Accordion = (props) => {
       <div className={styles["accordion-item"]}>
         <div className={styles["accordion-title"]} onClick={() => setIsActive(!isActive)}>
           <div>{title}</div>
-          <div>{isActive ? "-" : "+"}</div>
         </div>
-        {isActive && <div className={styles["accordion-content"]}>{props.children}</div>}
+        <div className={styles["accordion-content"]}>{props.children}</div>
       </div>
     );
 }
