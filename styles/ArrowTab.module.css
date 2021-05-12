@@ -1,0 +1,51 @@
+.arrowTabContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.arrowTabContainer h1 {
+    align-self: center;
+}
+
+.arrowTabs {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+.arrowTab {
+    background: #ddd;
+    -webkit-clip-path: polygon(
+        95% 0,
+        100% 50%,
+        95% 100%,
+        0% 100%,
+        5% 50%,
+        0% 0%
+    );
+    clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 5% 50%, 0% 0%);
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    transition: all ease 0.3s;
+    font-family: Oswald, sans-serif;
+    font-weight: 500;
+}
+
+.active {
+    background: #14746c ;
+    z-index: 999;
+}
+
+.tabPane {
+    display: none;
+}
+
+.activePane {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.9em;
+    background-color: rgb(244, 248, 248);
+    padding: 5rem;
+}
