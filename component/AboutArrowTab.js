@@ -9,8 +9,11 @@ export const AboutArrowTab = () => {
     }
 
     return (
+        <>
       <div className={styles.arrowTabContainer}>
         <h1>Our Vision</h1>
+        </div>
+
         <div className={styles.arrowTabs}>
           <div
             name="about"
@@ -69,7 +72,6 @@ export const AboutArrowTab = () => {
             }`}>
             Increase Farmer's Productivity, Promote Urban Wilderness, Keep Livestock and Native animals safe
           </div>
-          
-      </div>
+        </>
     );
 }
