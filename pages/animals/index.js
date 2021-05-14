@@ -37,7 +37,7 @@ export default function Animals() {
     setCharData(charResult.data)
 
     setIsLoading(false)
-    console.log(charResult.data);
+    //console.log(charResult.data);
   }, []);
 
   const handleClick = async (e, { name }) => {

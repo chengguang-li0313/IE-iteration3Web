@@ -13,12 +13,28 @@ import Axios from "axios";
 import styles from "../styles/MapHome.module.css"
 import Link from 'next/link'
 import textStyle from "../styles/normalText.module.scss"
+import { useLoading, Bars } from '@agney/react-loading';
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw'; // Set your mapbox token here
 
 
 export const MapHomepage = (props) => { 
-  const { data } = props
+  const  {data}  = props
+  //const judge = props.judge
+  //console.log(judge);
+
+      // loading part ----------------------
+
+        // console.log(isLoading);
+  
+      // loading part ----------------
+      // useEffect(() => {
+      //   if(judge == true){
+      //     setIsLoading(false);
+      //   }
+      //  }, []);
+
+
 
   const [viewport, setViewport] = useState({
     latitude: -37.4903228,
@@ -27,7 +43,7 @@ export const MapHomepage = (props) => {
     bearing: 0,
     pitch: 0
   });
-
+  
   // const [data, setData] = useState([]);
   // useEffect(async () => {
 
@@ -61,9 +77,9 @@ export const MapHomepage = (props) => {
 
      }
    };
+   
+    const newGeoJSONData = makeGeoJson(data);
 
-
-  const newGeoJSONData = makeGeoJson(data);
   console.log(newGeoJSONData);
 
   /////////////////////////////////////////////////
@@ -106,6 +122,7 @@ export const MapHomepage = (props) => {
         top: 100
       };
 
+
   return (
     <div className={styles.backgroundDiv} id='map'> 
      <div className={styles.container}> 
@@ -141,18 +158,21 @@ export const MapHomepage = (props) => {
         scrollZoom= {false}
         ref={mapRef}
       >
-       <Source
-          id="animal"
-          type="geojson"
-          data={newGeoJSONData}
-          cluster={true}
-          clusterMaxZoom={14}
-          clusterRadius={10}
-        >
-          <Layer {...clusterLayer} />
-          <Layer {...clusterCountLayer} />
-          <Layer {...unclusteredPointLayer} />
-        </Source>
+     
+            <Source
+            id="animal"
+            type="geojson"
+            data={newGeoJSONData}
+            cluster={true}
+            clusterMaxZoom={14}
+            clusterRadius={10}
+          >
+            <Layer {...clusterLayer} />
+            <Layer {...clusterCountLayer} />
+            <Layer {...unclusteredPointLayer} />
+          </Source>
+
+
         <TextContent>
          
           <HeroText>
