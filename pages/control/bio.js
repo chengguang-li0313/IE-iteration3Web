@@ -13,9 +13,6 @@ export default function Conventional() {
   return (
     <Layout>
       <BioControlHero></BioControlHero>
-      <a href="/control" className={styles.backButton}>
-        «Back
-      </a>
 
       <div className={styles.conventionalContainer}>
         <h1>Biological Control</h1>
@@ -37,6 +34,7 @@ export default function Conventional() {
               width={650}
               height={400}
             />
+            <p>By Koppert Biological Systems</p>
           </div>
           <div className={styles.conventionalText}>
             <p>

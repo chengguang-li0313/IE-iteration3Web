@@ -51,6 +51,7 @@ export default function Control() {
           width={700}
           height={400}
         />
+        <p>By Centre for Invasive Species Solutions</p>
         <img src="/pestAnimalQuote.png" className={styles.invasion} />
       </div>
 

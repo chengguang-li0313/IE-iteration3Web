@@ -115,7 +115,6 @@
 .impactCard {
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
   height: 28rem;
   width: 250px;
   padding: 2rem;
@@ -124,7 +123,6 @@
 }
 
 .impactCard img {
-  border-radius: 15px;
   margin-top: 1rem;
   width: 200px;
   height: 120px;

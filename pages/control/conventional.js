@@ -13,10 +13,6 @@ export default function Conventional() {
     return (
       <Layout>
         <ConventionalHero></ConventionalHero>
-        <a href="/control" className={styles.backButton}>
-          «Back
-        </a>
-
         <div className={styles.conventionalContainer}>
         <h1>Conventional Control Services</h1>
       </div>
@@ -37,6 +33,7 @@ export default function Conventional() {
                   width={650}
                   height={400}
                 />
+                <p>By OklahomaGardening</p>
               </div>
               <p>
                 Conventional Control Methods involves digging, flooding,
