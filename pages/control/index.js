@@ -81,6 +81,7 @@ export default function Control() {
       <div className={styles.controlRow}>
         <div className={styles.controlSection}>
           <h1>Australian Pest Animal Strategy</h1>
+          <img src="/pestStrategy.jpeg"></img>
           <p>
             The Australian Pest Animal Strategy was developed in 2007 as to
             provide national guidance on pest animal management, which is
@@ -89,7 +90,6 @@ export default function Control() {
           </p>
           <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiYpu7um7_wAhVQgtgFHRAtCC0QFjABegQIAxAD&url=https%3A%2F%2Fwww.agriculture.gov.au%2Fsites%2Fdefault%2Ffiles%2Fsitecollectiondocuments%2Fpests-diseases-weeds%2Fconsultation%2Fapas-final.docx&usg=AOvVaw1JHnMA8XuQc4Jn00MP0gz6" target="blank" >Australian Pest Animal Strategy 2017-2027.pdf</a>
         </div>
-        <img src="/pestStrategy.jpeg"></img>
       </div>
       {/* 
     </Layout> */}
