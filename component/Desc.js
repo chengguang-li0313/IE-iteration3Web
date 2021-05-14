@@ -83,7 +83,6 @@ function Desc() {
 
 
               <div className={styles.btnrow}>
-
               <Link href='/animals'> 
                 <button className={styles.explorebutton}>  Learn More 
                   <div className={styles.arrowicon}>

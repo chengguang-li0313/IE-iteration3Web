@@ -11,24 +11,18 @@ import { MapHomepage } from '../component/MapHomepage'
 import Axios from "axios";
 import React, { useState, useEffect} from "react";
 import ScrollToTop from "react-scroll-up";
-import { useLoading, Bars } from '@agney/react-loading';
+
 export default function Home() {
   
   //fetching data of Map 
   const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const { containerProps, indicatorEl } = useLoading({
-    loading: true,
-    indicator: <Bars width="100" color="white" />,
-  });
-
+  
   useEffect(async () => {
 
     const result = await Axios.get(
       `https://ie-animal-api.herokuapp.com/api3/rabbit`
     );
     setData(result.data);
-    setIsLoading(false);
     //test print it out 
     // console.log(result.data.map(animal => (animal.lat)));
 
@@ -41,10 +35,8 @@ export default function Home() {
 
        <Intro></Intro>
        {/* </div> */}
-      {/* --------------------- loading part---------------------------------------------- */}
-      <MapHomepage data={data} > </MapHomepage>
 
-      {/* --------------------- loading part-------------------------- --------------------*/}
+      <MapHomepage data={data} > </MapHomepage>
 
      
     <CardSection></CardSection>

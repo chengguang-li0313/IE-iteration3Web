@@ -22,19 +22,14 @@ export const MapHomepage = (props) => {
   const  {data}  = props
   //const judge = props.judge
   //console.log(judge);
-
       // loading part ----------------------
-
+   const { containerProps, indicatorEl } = useLoading({
+    loading: true,
+    indicator: <Bars width="100" color="white" position="center"/>,
+   });
         // console.log(isLoading);
   
       // loading part ----------------
-      // useEffect(() => {
-      //   if(judge == true){
-      //     setIsLoading(false);
-      //   }
-      //  }, []);
-
-
 
   const [viewport, setViewport] = useState({
     latitude: -37.4903228,
@@ -158,7 +153,12 @@ export const MapHomepage = (props) => {
         scrollZoom= {false}
         ref={mapRef}
       >
-     
+   {/* --------------------- loading part---------------------------------------------- */}
+      {
+          data.length == 0 ? (
+          <section {...containerProps}>
+            {indicatorEl} {/* renders only while loading */}
+          </section>) : (      
             <Source
             id="animal"
             type="geojson"
@@ -171,8 +171,9 @@ export const MapHomepage = (props) => {
             <Layer {...clusterCountLayer} />
             <Layer {...unclusteredPointLayer} />
           </Source>
-
-
+         )
+       }
+             {/* --------------------- loading part---------------------------------------------- */}
         <TextContent>
          
           <HeroText>
