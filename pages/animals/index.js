@@ -12,6 +12,8 @@ import {BarChart} from '../../component/BarChart';
 import { AnimalHero } from '../../component/AnimalHero'
 import { Footer } from '../../component/Footer' 
 import ScrollToTop from "react-scroll-up";
+
+
 export default function Animals() {
   const [data, setData] = useState("");
   const [controlData, setControlData] = useState('')
@@ -78,9 +80,9 @@ export default function Animals() {
 
         {
           isLoading ? (
-          <section {...containerProps}>
-            {indicatorEl} {/* renders only while loading */}
-          </section>) : (
+            <div className={styles.loading}>
+               {indicatorEl} {/* renders only while loading */}
+          </div>) : (
              <>
            {/* //menu af */}
            <div className={styles.containerAll}>  
