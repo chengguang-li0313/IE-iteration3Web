@@ -36,7 +36,7 @@ export default function Home() {
        <Intro></Intro>
        {/* </div> */}
 
-      {/* <MapHomepage data={data} > </MapHomepage> */}
+      <MapHomepage data={data} > </MapHomepage>
 
      
     <CardSection></CardSection>

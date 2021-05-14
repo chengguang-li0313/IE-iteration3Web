@@ -174,8 +174,8 @@ export const MapSection = (props) => {
          {...settings}
          ref={mapRef}
          mapboxApiAccessToken={MAPBOX_TOKEN}
-          mapStyle="mapbox://styles/chengguangli/ckobkmn3t16m917p8ajuissot"
-        // mapStyle='mapbox://styles/mapbox/cjaudgl840gn32rnrepcb9b9g'
+          //mapStyle="mapbox://styles/chengguangli/ckobkmn3t16m917p8ajuissot"
+         mapStyle='mapbox://styles/mapbox/cjaudgl840gn32rnrepcb9b9g'
         //  onViewportChange={viewport => {
         //     setViewport(viewport);
         //   }}

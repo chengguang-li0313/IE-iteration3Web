@@ -75,7 +75,7 @@ export const MapHomepage = (props) => {
    
     const newGeoJSONData = makeGeoJson(data);
 
-    //console.log(newGeoJSONData);
+    console.log(newGeoJSONData);
 
   /////////////////////////////////////////////////
   const mapRef = useRef(null);
