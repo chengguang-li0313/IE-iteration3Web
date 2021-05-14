@@ -200,8 +200,7 @@ export const MapSection = (props) => {
            )}
 
         {pops}
-            
-                 
+                            
    <div className={style.controlContainer}>  
 
     <ControlPanel 
