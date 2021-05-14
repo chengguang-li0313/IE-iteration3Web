@@ -50,6 +50,7 @@
   flex-direction: column;
   padding: 3rem;
   font-size: 1.2rem;
+  align-items: center;
 }
 
 .controlSection h1 {
@@ -78,6 +79,7 @@
   background-image: url("/controlVideo.jpeg");
   background-color: #edd8c4;
   padding: 1rem;
+  align-items: center;
 }
 
 .controlVideo h1 {
@@ -86,6 +88,7 @@
 
 .h1Right {
   color: #c96c00;
+  margin-bottom: 3rem;
 }
 
 
@@ -98,6 +101,7 @@
   background-color: #edd8c4;
   height: 60rem;
   margin-bottom: 10rem;
+  align-items: center;
 }
 
 .controlCards {
@@ -169,6 +173,7 @@
   display: flex;
   padding: 2rem;
   justify-content: center;
+  border-radius: 15px;
 }
 
 .conventionalText {
@@ -205,7 +210,7 @@
 
 .invasion {
   width: 700px;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .serviceHero {
@@ -221,7 +226,15 @@
 
 .tabContainer {
   padding: 3rem;
-  border: 10px;
+}
+
+.tabPanel {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.tabs {
+  margin-bottom: 0rem;
 }
 
 @media only screen and (max-width: 750px) {

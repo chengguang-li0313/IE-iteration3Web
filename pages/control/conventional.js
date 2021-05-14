@@ -38,7 +38,7 @@ export default function Conventional() {
                   height={400}
                 />
               </div>
-              <p>M
+              <p>
                 Conventional Control Methods involves digging, flooding,
                 destruction and removal of nests, hand-pulling, burning and
                 general destruction of the invasive species by hand. This is

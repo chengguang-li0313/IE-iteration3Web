@@ -50,7 +50,6 @@ export default function Control() {
           src="https://www.youtube.com/watch?v=JJEMr2pM4U0" // Reqiured
           width={700}
           height={400}
-          className={styles.invasion}
         />
         <img src="/pestAnimalQuote.png" className={styles.invasion} />
       </div>
@@ -70,14 +69,13 @@ export default function Control() {
         <h1 className={styles.h1Right}>
           Integrated Pest Animal Control Programs
         </h1>
-        <div className={styles.controlRow}>
-          <ProgramCardSection></ProgramCardSection>
           <p>
             The Victorian Government has come up with different control programs
             to advise and guide on the strategies to implement in order to
             control established pest animals :
           </p>
-        </div>
+          <ProgramCardSection></ProgramCardSection>
+          
       </div>
 
       <div className={styles.controlRow}>
