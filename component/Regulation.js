@@ -98,8 +98,8 @@ const CarouselSlideItem = ({pos, idx, activeIdx}) => {
                 <img src={item.player.image} alt={item.player.title} />
             </div>
             <div className={styles.carouselslideitembody}>
-                <div className={styles.h4}>{item.player.title}</div>
-                <div className={styles.p}>{item.player.desc}</div>
+                <div className={styles.h4}> <div className={textStyle.infoBlack}>  {item.player.title}</div> </div>
+                <div className={styles.p}> <div className={textStyle.infoBlack}>  {item.player.desc}</div> </div>
             </div>
         </li>
     );
@@ -168,7 +168,9 @@ const Regulation = () => {
               {/* button  */}
               <Link href='/regulation'> 
                 <button className={styleButton.button}>
+                <div className={textStyle.infoBlack}> 
                     Learn More
+                    </div> 
                 </button>
                 </Link>
 

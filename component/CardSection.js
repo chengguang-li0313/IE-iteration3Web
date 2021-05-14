@@ -2,6 +2,7 @@ import { ImpactCard } from "../component/ImpactCard";
 import styles from "../styles/Home.module.css";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import textStyle from "../styles/normalText.module.scss"
 
 export const CardSection = () => {
     const responsive = {
@@ -26,9 +27,9 @@ export const CardSection = () => {
     return (
       <>
         <div className={styles.heading} id='impact'>
-          <h1>Why are Invasive Species Harmful to Agriculture?</h1>
-          <p>In 2009, it was estimated that Invasive Animals have cost</p>
-          <h1 display="inline">$743.5 million via</h1>
+          <h1><div className={textStyle.infoBlack}>  Why are Invasive Species Harmful to Agriculture? </div></h1>
+          <p><div className={textStyle.infoBlack}> In 2009, it was estimated that Invasive Animals have cost </div></p>
+          <h1 display="inline"><div className={textStyle.infoBlack}> $743.5 million via </div></h1>
         </div>
 
         <Carousel 

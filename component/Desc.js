@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from "react";
 import styles from "../styles/Desc.module.scss";
 import {TimelineLite ,TweenMax, Power3} from 'gsap';
 import Link from 'next/link'
-
+import textStyle from "../styles/normalText.module.scss"
 // import imgPig from "/pig2.jpg";
 // import imgFox from "/fox2.jpg";
 // import imgRabbit from "/rabbit2.jpg";
@@ -66,18 +66,18 @@ function Desc() {
             <div className={styles.herocontentinner} ref={el => content = el}>
               <h1>
                 <div className={styles.herocontentline}>
-                  <div className={styles.herocontentlineinner}>Established pest animals</div>
+                  <div className={styles.herocontentlineinner}>  <div className={textStyle.infoBlack}> Established pest animals</div> </div>
                 </div>
                 
                 <div className={styles.herocontentline}>
-                  <div className={styles.herocontentlineinner}>in the state of Victoria.</div>  
+                  <div className={styles.herocontentlineinner}> <div className={textStyle.infoBlack}> in the Victoria.</div> </div> 
                 </div>
                 
               </h1>
               <p>
-                
+              <div className={textStyle.infoBlack}>
                 These animals not only caused serious damage to the local ecological environment but also to the farmer’s economy. 
-                
+                </div>  
               </p>
 
 
@@ -85,7 +85,7 @@ function Desc() {
               <div className={styles.btnrow}>
 
               <Link href='/animals'> 
-                <button className={styles.explorebutton}>Learn More
+                <button className={styles.explorebutton}> <div className={textStyle.infoBlack}> Learn More </div> 
                   <div className={styles.arrowicon}>
                     <img src="/arrow-right.svg" alt="row"/>              
                   </div>

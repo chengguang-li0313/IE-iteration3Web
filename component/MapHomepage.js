@@ -12,7 +12,7 @@ import {clusterLayer, clusterCountLayer, unclusteredPointLayer,
 import Axios from "axios";
 import styles from "../styles/MapHome.module.css"
 import Link from 'next/link'
-
+import textStyle from "../styles/normalText.module.scss"
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw'; // Set your mapbox token here
 
@@ -112,12 +112,14 @@ export const MapHomepage = (props) => {
        <div className={styles.containerText}> 
         <div className={styles.containerContent}> 
      
-             <h3>  Do you want to explore more ? </h3>
+        <h3> <div className={textStyle.infoBlack}>     Do you want to explore more ?  </div> </h3>
            
          </div>
          <Link href='/map'> 
                 <button className={styles.button}>
+                <div className={textStyle.infoBlack}>
                     Start
+                    </div> 
                 </button>
                 </Link>
        </div>
@@ -154,7 +156,9 @@ export const MapHomepage = (props) => {
         <TextContent>
          
           <HeroText>
+          <div className={textStyle.infoWhite}> 
             Distribution of Pest Animals in VIC.
+            </div>
           </HeroText>
           {/* <HeroBtn>
           <a href='#impact'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
