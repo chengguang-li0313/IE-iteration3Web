@@ -21,6 +21,18 @@ export default function map()  {
     //   API url = "https://ie-animal-api.herokuapp.com/api3/pig";
     const [data, setData] = useState([]);
 
+    const Msg = ({ closeToast, toastProps }) => (
+      <div>
+        <p> 
+            Loading Success    
+        </p>
+        <p> 
+        🦄 You are in Mel. on the map. 
+        </p> 
+      </div>
+    )
+   
+
     useEffect(async () => {
 
         const result = await Axios.get(
@@ -29,15 +41,7 @@ export default function map()  {
         setData(result.data);
         //test print it out 
         // console.log(result.data.map(animal => (animal.lat)));
-        toast(' Loading Success !'+' 🦄 You are in Mel. on the Map!', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
+        toast(<Msg/>);
 
       }, []); 
       
