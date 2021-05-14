@@ -5,9 +5,17 @@ import style from "../styles/MapButton.module.scss";
 import CameraPanel from '../styles/Camera.module.js';
 import Geocoder from "react-map-gl-geocoder";
 import searchStyle from "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
+import { useLoading, Bars } from '@agney/react-loading';
 
 export const MapSection = (props) => {
      const { data } = props
+
+      // loading part ----------------------
+     const { containerProps, indicatorEl } = useLoading({
+       loading: true,
+      indicator: <Bars width="100" color="white" position="center"/>,
+     }); 
+
      //token 
      const MAPBOX_TOKEN = "pk.eyJ1IjoiY2hlbmdndWFuZ2xpIiwiYSI6ImNrZWlhenhpczBpbTMycW9obWRqMnUyZm0ifQ.Tn7MwEjw8fxCGFNyJtqWsw";
        //markers
@@ -180,12 +188,16 @@ export const MapSection = (props) => {
 
          {/* <NavigationControl style={navControlStyle} />*/}
                 
+        {/* --------------------- loading part---------------------------------------------- */}
 
          
-        {markers} 
+         {markers}
+         {pops}
+      
 
-        {/* pop up message  */}
-        {pops}
+           {/* pop up message  */}        
+       
+
 
         
    <div className={style.controlContainer}>  

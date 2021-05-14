@@ -81,16 +81,34 @@ function Desc() {
               </p>
 
 
-
+          {/* 
               <div className={styles.btnrow}>
               <Link href='/animals'> 
-                <button className={styles.explorebutton}>  Learn More 
+                <button className={styles.button}>  Learn More 
                   <div className={styles.arrowicon}>
                     <img src="/arrow-right.svg" alt="row"/>              
                   </div>
                 </button>
                 </Link>
-              </div>
+              </div> */}
+           
+             <div className={styles.buttonNew}>
+              
+             <div className={styles.buttonLine}> <hr/></div> 
+                <a href='/animals'>               
+                   <button className={styles.buttonText}>  
+                                     
+                   <div className={textStyle.infoBlack}> LEARN MORE 
+                   </div>    
+                   <div className={styles.buttonIcon}>  <img src="/arrow-right.svg" alt="row"/>  </div>       
+                   </button>       
+                   </a>   
+             </div>  
+            
+            
+
+
+
             </div>
           </div>
           <div className={styles.heroimages}>
