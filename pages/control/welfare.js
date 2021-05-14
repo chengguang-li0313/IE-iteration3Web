@@ -13,9 +13,6 @@ export default function Welfare() {
     return (
       <>
         <ControlHeroNew></ControlHeroNew>
-        <a href="/control" className={styles.backButton}>
-          «Back
-        </a>
 
         <div className={styles.conventionalContainer}>
           <h1>Animal Welfare</h1>
@@ -38,6 +35,7 @@ export default function Welfare() {
                   width={650}
                   height={400}
                 />
+                <p>By Peninsula Pest Management Pty Ltd</p>
               </div>
               <p>
                 Consideration of animal welfare in the management of invasive

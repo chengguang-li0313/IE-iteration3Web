@@ -25,10 +25,8 @@ export const AnimalGridSection = (props) => {
           title={"Behaviour"}
           desc={data.behaviour}
           img={data.image2}
-
         ></BioCard>
-      </div>
-      <div className={styles.infoSection}>
+
         <BioCard
           title={"Preffered Habitat"}
           desc={data.habitat}

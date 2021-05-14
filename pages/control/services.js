@@ -15,9 +15,6 @@ export default function Conventional() {
   return (
     <>
       <ControlHeroNew> </ControlHeroNew>
-      <a href="/control" className={styles.backButton}>
-        «Back
-      </a>
 
       <div className={styles.conventionalContainer}>
         <h1>Control Services</h1>
@@ -39,6 +36,7 @@ export default function Conventional() {
                 width={650}
                 height={400}
               />
+              <p>By Peninsula Pest Management Pty Ltd</p>
             </div>
             <p>
               Commercial pest control services are licensed and regulated by the

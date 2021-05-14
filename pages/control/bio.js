@@ -13,9 +13,6 @@ export default function Conventional() {
   return (
     <Layout>
       <BioControlHero></BioControlHero>
-      <a href="/control" className={styles.backButton}>
-        «Back
-      </a>
 
       <div className={styles.conventionalContainer}>
         <h1>Biological Control</h1>
@@ -24,19 +21,20 @@ export default function Conventional() {
         <div className={styles.tabContainer}>
 
       <Tabs>
-        <TabList>
+        <TabList className={styles.tabs}>
           <Tab>Introduction </Tab>
           <Tab>Key Benefits </Tab>
           <Tab>Common Biological Methods</Tab>
         </TabList>
 
-        <TabPanel>
+        <TabPanel className={styles.tabPanel}>
           <div className={styles.conventionalContainer}>
             <YoutubePlayer
               src="https://www.youtube.com/watch?v=mHXOefz8Pk0" // Reqiured
               width={650}
               height={400}
             />
+            <p>By Koppert Biological Systems</p>
           </div>
           <div className={styles.conventionalText}>
             <p>
@@ -48,7 +46,7 @@ export default function Conventional() {
             </p>
           </div>
         </TabPanel>
-        <TabPanel>
+        <TabPanel className={styles.tabPanel}>
         <div className={styles.conventionalContainer}>
               <img src="/keyBenefit2.jpeg" className={styles.benefit}></img>
           <div className={styles.conventionalInfo}>
@@ -64,7 +62,7 @@ export default function Conventional() {
           </div>
         </div>
         </TabPanel>
-        <TabPanel>
+        <TabPanel className={styles.tabPanel}>
           <div className={styles.conventionalContainer}>
             <h1>Some of the Most Commonly Used Biological Control Methods</h1>
           </div>
