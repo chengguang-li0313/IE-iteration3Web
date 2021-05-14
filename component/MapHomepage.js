@@ -158,7 +158,7 @@ export const MapHomepage = (props) => {
           data.length == 0 ? (
           <section {...containerProps}>
             {indicatorEl} {/* renders only while loading */}
-          </section>) : (      
+          </section>) : (     
             <Source
             id="animal"
             type="geojson"
