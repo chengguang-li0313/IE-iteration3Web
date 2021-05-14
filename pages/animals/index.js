@@ -77,7 +77,6 @@ export default function Animals() {
         </div>
       </div> */}
       <AnimalHero> </AnimalHero>
-
         {
           isLoading ? (
             <div className={styles.loading}>

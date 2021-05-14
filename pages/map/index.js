@@ -11,6 +11,9 @@ import { Button, Icon } from 'semantic-ui-react'
 import { MapHero } from '../../component/MapHero'
 import { Footer } from '../../component/Footer' 
 import ScrollToTop from "react-scroll-up";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function map()  {  
   //button style
 
@@ -26,6 +29,15 @@ export default function map()  {
         setData(result.data);
         //test print it out 
         // console.log(result.data.map(animal => (animal.lat)));
+        toast(' Loading Success !'+' 🦄 You are in Mel. on the Map!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
 
       }, []); 
       
@@ -39,11 +51,15 @@ export default function map()  {
         setData(result.data);
       };
 
+      //notication 
+      
+
     return(
       <>
       {/* <Layout> */}
      <MapHero> </MapHero>
-<div className={buttonStyle.containerMap}> 
+      <ToastContainer/>
+    <div className={buttonStyle.containerMap}> 
         {/* <p> 
        <div className={buttonStyle.title}>
          Distribution map of the five feral animals     
@@ -95,8 +111,8 @@ export default function map()  {
       </Button.Content>
     </Button>
     </div>  
-
-    
+      {/* notification  */}
+     
        {/* map  */}
 
        

@@ -7,6 +7,8 @@ import Geocoder from "react-map-gl-geocoder";
 import searchStyle from "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import { useLoading, Bars } from '@agney/react-loading';
 import styles from "../styles/MapLoading.module.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const MapSection = (props) => {
      const { data } = props
@@ -168,6 +170,11 @@ export const MapSection = (props) => {
     right: 10,
     top: 230
   };
+  ////------------------notification------------
+   
+
+
+
 
     return (
       <>
@@ -182,9 +189,9 @@ export const MapSection = (props) => {
         //     setViewport(viewport);
         //   }}
          onViewportChange={handleViewportChange}
-          onInteractionStateChange={s => setInteractionState({...s})}
-          width="100%"
-          height="100%"
+         onInteractionStateChange={s => setInteractionState({...s})}
+         width="100%"
+         height="100%"
          >
 
          {/* <NavigationControl style={navControlStyle} />*/}
@@ -199,8 +206,7 @@ export const MapSection = (props) => {
                [markers]
            )}
 
-        {pops}
-                            
+        {pops}                    
    <div className={style.controlContainer}>  
 
     <ControlPanel 
@@ -225,6 +231,7 @@ export const MapSection = (props) => {
           />
 
 <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} />  
+       
      </div>
   </div>
 
@@ -243,8 +250,9 @@ export const MapSection = (props) => {
           countries="Au"
           placeholder="Enter Location"
         />
+       
+       
 
-    
 
          </ReactMapGL>
 
