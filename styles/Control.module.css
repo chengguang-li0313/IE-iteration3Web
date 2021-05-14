@@ -58,6 +58,10 @@
   color: #c96c00;
 }
 
+.controlSection p {
+  font-size: 1.2rem;
+}
+
 .controlRow {
   display: flex;
   align-items: center;
@@ -71,6 +75,7 @@
 
 .controlRow p {
   margin-left: 1rem;
+  font-size: 1.2rem;
 }
 
 .controlVideo {
@@ -84,6 +89,10 @@
 
 .controlVideo h1 {
   text-transform: uppercase;
+}
+
+.controlVideo p {
+  font-size: 1.2rem;
 }
 
 .h1Right {
