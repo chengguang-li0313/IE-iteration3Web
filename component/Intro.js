@@ -16,7 +16,7 @@ import {
 } from '../styles/hero.module.js'
 import {Button} from '../styles/button.module.js'
 import style from "../styles/IntroText.module.scss"
-
+import textStyle from "../styles/normalText.module.scss"
 export const Intro = () => {
   const [hover, setHover] = useState(false);
 
@@ -42,8 +42,10 @@ export const Intro = () => {
             </div>
           </HeroText>
           <HeroBtn>
-          <a href='/map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
-          Ferret Your Ferals {hover ? <ArrowForward/> : <ArrowRight/>}
+          <a href='#map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
+            <div className={textStyle.infoBlack}>
+          Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
+          </div>
             </Button> </a> 
           </HeroBtn>
           {/* <a href='#impact'><BiDownArrowCircle size={40} color={'green'}/></a>  */}
