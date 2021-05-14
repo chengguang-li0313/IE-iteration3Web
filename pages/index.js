@@ -16,7 +16,7 @@ export default function Home() {
   
   //fetching data of Map 
   const [data, setData] = useState([]);
-  
+
   useEffect(async () => {
 
     const result = await Axios.get(
@@ -36,7 +36,7 @@ export default function Home() {
        <Intro></Intro>
        {/* </div> */}
 
-      <MapHomepage data={data} > </MapHomepage>
+      {/* <MapHomepage data={data} > </MapHomepage> */}
 
      
     <CardSection></CardSection>

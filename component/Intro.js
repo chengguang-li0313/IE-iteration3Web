@@ -31,7 +31,8 @@ export const Intro = () => {
           </VideoBg>
           {/* <VideoBg/> */}
         </HeroBg>
-
+        
+        
         <HeroContent>
         <Nav></Nav>
         <TextContent>
@@ -42,9 +43,9 @@ export const Intro = () => {
             </div>
           </HeroText>
           <HeroBtn>
-          <a href='#map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
+          <a href='/map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
             <div className={textStyle.infoBlack}>
-          Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
+          Ferret Ferals {hover ? <ArrowForward/> : <ArrowRight/>}
           </div>
             </Button> </a> 
           </HeroBtn>

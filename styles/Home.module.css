@@ -13,11 +13,12 @@
   padding: 0.5rem 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(141, 139, 139, 0.349);
-  height: 6rem;
+  /* background-color: rgba(141, 139, 139, 0.349); */
+  background-color: #26272b;
+  height: 5rem;
   width: 100vw;
-  /* position: fixed;
-  z-index: 12; */
+  position: fixed;
+  z-index: 12;
 }
 
 .nav a {
