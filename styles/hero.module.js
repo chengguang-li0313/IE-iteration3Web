@@ -68,7 +68,7 @@ padding: 8px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-top: 20%;
+margin-top: 17%;
 `;
 
 export const HeroTitle = styled.h1`

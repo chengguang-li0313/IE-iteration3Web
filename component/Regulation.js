@@ -160,10 +160,12 @@ const Regulation = () => {
                     Regulations 
                   </div>
                  </div> */}
+              <h1>  
               <div className={styles.text}>
                   Regulations
               </div>
-
+              </h1> 
+              
               <div className={styles.text1}>
               All legislations you need to know about erdicating feral animals
               </div>
