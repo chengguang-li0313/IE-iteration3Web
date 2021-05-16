@@ -32,6 +32,15 @@ export default function map()  {
       </div>
     )
    
+    const Panel = ({closeToast,toastProps} ) => (
+       <div>
+         <p> 
+          🚀 You can set these switches on the Interactive limit panel so that you can have a better experience.🚀
+         </p>
+          
+        <p> You can turn up the scroll zoom button,so that You can zoom in or zoom out the map</p>  
+       </div>
+    )
 
     useEffect(async () => {
 
@@ -42,7 +51,15 @@ export default function map()  {
         //test print it out 
         // console.log(result.data.map(animal => (animal.lat)));
         toast(<Msg/>);
-
+        toast(<Panel/>,{
+          position: "bottom-right",
+          autoClose: false,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       }, []); 
       
       //console.log(data);
