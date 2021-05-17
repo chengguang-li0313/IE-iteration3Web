@@ -12,11 +12,11 @@ export default function Regulation() {
       <RegulationHero> </RegulationHero>
       <div className={styles.container}>
 
-      <div className={textStyle.body}>
+      {/* <div className={textStyle.body}>
           <div className={textStyle.div}>           
                     Regulations 
           </div>
-      </div>
+      </div> */}
    
       <div className={styles.band}>
         <div className={styles.item1}>
@@ -88,7 +88,7 @@ export default function Regulation() {
 
       <ScrollToTop 
     showUnder={160}
-    // easing="easeInExpo"
+    easing="linear"
     duration={3000}
     cursor="pointer"
      >    

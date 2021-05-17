@@ -265,3 +265,8 @@
     flex-direction: column;
   }
 }
+
+.loading {
+  margin-top: 10px;
+  text-align: center;
+}

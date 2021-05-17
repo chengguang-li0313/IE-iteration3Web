@@ -11,12 +11,36 @@ import { Button, Icon } from 'semantic-ui-react'
 import { MapHero } from '../../component/MapHero'
 import { Footer } from '../../component/Footer' 
 import ScrollToTop from "react-scroll-up";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function map()  {  
   //button style
 
       //fetch data from API
     //   API url = "https://ie-animal-api.herokuapp.com/api3/pig";
     const [data, setData] = useState([]);
+
+    const Msg = ({ closeToast, toastProps }) => (
+      <div>
+        <p> 
+         🗺️ Map is ready    
+        </p>
+        <p> 
+        🦄 You are in Mel. on the map. 
+        </p> 
+      </div>
+    )
+   
+    const Panel = ({closeToast,toastProps} ) => (
+       <div>
+         <p> 
+          🚀 You can set these switches on the Interactive limit panel so that you can have a better experience.🚀
+         </p>
+          
+        <p> You can turn up the scroll zoom button,so that You can zoom in or zoom out the map</p>  
+       </div>
+    )
 
     useEffect(async () => {
 
@@ -26,7 +50,16 @@ export default function map()  {
         setData(result.data);
         //test print it out 
         // console.log(result.data.map(animal => (animal.lat)));
-
+        toast(<Msg/>);
+        toast(<Panel/>,{
+          position: "bottom-right",
+          autoClose: false,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       }, []); 
       
       //console.log(data);
@@ -39,11 +72,15 @@ export default function map()  {
         setData(result.data);
       };
 
+      //notication 
+      
+
     return(
       <>
       {/* <Layout> */}
      <MapHero> </MapHero>
-<div className={buttonStyle.containerMap}> 
+      <ToastContainer/>
+    <div className={buttonStyle.containerMap}> 
         {/* <p> 
        <div className={buttonStyle.title}>
          Distribution map of the five feral animals     
@@ -95,8 +132,8 @@ export default function map()  {
       </Button.Content>
     </Button>
     </div>  
-
-    
+      {/* notification  */}
+     
        {/* map  */}
 
        
@@ -107,7 +144,7 @@ export default function map()  {
       {/* </Layout> */}
       <ScrollToTop 
     showUnder={160}
-    // easing="easeInExpo"
+    easing="linear"
     duration={3000}
     cursor="pointer"
      >    

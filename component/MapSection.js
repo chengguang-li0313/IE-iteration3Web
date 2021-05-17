@@ -6,6 +6,9 @@ import CameraPanel from '../styles/Camera.module.js';
 import Geocoder from "react-map-gl-geocoder";
 import searchStyle from "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import { useLoading, Bars } from '@agney/react-loading';
+import styles from "../styles/MapLoading.module.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const MapSection = (props) => {
      const { data } = props
@@ -13,7 +16,8 @@ export const MapSection = (props) => {
       // loading part ----------------------
      const { containerProps, indicatorEl } = useLoading({
        loading: true,
-      indicator: <Bars width="100" color="white" position="center"/>,
+       indicator: <Bars width="100" />,
+
      }); 
 
      //token 
@@ -166,6 +170,11 @@ export const MapSection = (props) => {
     right: 10,
     top: 230
   };
+  ////------------------notification------------
+   
+
+
+
 
     return (
       <>
@@ -174,32 +183,30 @@ export const MapSection = (props) => {
          {...settings}
          ref={mapRef}
          mapboxApiAccessToken={MAPBOX_TOKEN}
-          mapStyle="mapbox://styles/chengguangli/ckobkmn3t16m917p8ajuissot"
-        // mapStyle='mapbox://styles/mapbox/cjaudgl840gn32rnrepcb9b9g'
+          //mapStyle="mapbox://styles/chengguangli/ckobkmn3t16m917p8ajuissot"
+         mapStyle='mapbox://styles/mapbox/cjaudgl840gn32rnrepcb9b9g'
         //  onViewportChange={viewport => {
         //     setViewport(viewport);
         //   }}
          onViewportChange={handleViewportChange}
-          onInteractionStateChange={s => setInteractionState({...s})}
-          width="100%"
-          height="100%"
-          
+         onInteractionStateChange={s => setInteractionState({...s})}
+         width="100%"
+         height="100%"
          >
 
          {/* <NavigationControl style={navControlStyle} />*/}
                 
         {/* --------------------- loading part---------------------------------------------- */}
+        {
+          data.length == 0 ? (
+          <div className={styles.loading}>
 
-         
-         {markers}
-         {pops}
-      
+            {indicatorEl} {/* renders only while loading */}
+          </div>) : (            
+               [markers]
+           )}
 
-           {/* pop up message  */}        
-       
-
-
-        
+        {pops}                    
    <div className={style.controlContainer}>  
 
     <ControlPanel 
@@ -224,6 +231,7 @@ export const MapSection = (props) => {
           />
 
 <ScaleControl maxWidth={100} unit="metric" style={scaleControlStyle} />  
+       
      </div>
   </div>
 
@@ -242,8 +250,9 @@ export const MapSection = (props) => {
           countries="Au"
           placeholder="Enter Location"
         />
-        
-         
+       
+       
+
 
          </ReactMapGL>
 

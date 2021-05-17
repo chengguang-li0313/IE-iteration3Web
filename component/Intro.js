@@ -44,8 +44,8 @@ export const Intro = () => {
           </HeroText>
           <HeroBtn>
           <a href='/map'> <Button primary dark to="Info" onMouseEnter={onHover} onMouseLeave={onHover}>
-            <div className={textStyle.infoBlack}>
-          Ferret Ferals {hover ? <ArrowForward/> : <ArrowRight/>}
+            <div className={textStyle.infoBlackNew}>
+          Ferret Your Ferals {hover ? <ArrowForward/> : <ArrowRight/>}
           </div>
             </Button> </a> 
           </HeroBtn>

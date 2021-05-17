@@ -67,6 +67,17 @@
   background-color: rgb(244, 248, 248);
   // margin-bottom: 50rem;
 }
+.cameraInputContainer {
+  flex-direction: row;
+  display: flex;
+  margin-left: 20px;
+  background-color: rgb(244, 248, 248);
+  align-items: center;
+}
+
+.cameraLabel {
+  margin-left: 10px;
+}
 
 .searchContainer {
   height: 6rem;

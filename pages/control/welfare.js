@@ -122,12 +122,12 @@ export default function Welfare() {
         </div>
         <ScrollToTop 
     showUnder={160}
-    // easing="easeInExpo"
+    easing="linear"
     duration={3000}
     cursor="pointer"
      >    
     <img src="/upup.svg" width="30px" height="30px"/> 
-  </ScrollToTop> 
+    </ScrollToTop> 
             <Footer></Footer>
       </>
     );

@@ -146,6 +146,7 @@ const Regulation = () => {
         setActiveIdx((length - (items[0] % length)) % length) // prettier-ignore
     }, [items]);
 
+
     return (
         <div className={styles.carouselwrap}>
             <div className={styles.carouselinner}>
@@ -159,9 +160,12 @@ const Regulation = () => {
                     Regulations 
                   </div>
                  </div> */}
+              <h1>  
               <div className={styles.text}>
                   Regulations
               </div>
+              </h1> 
+              
               <div className={styles.text1}>
               All legislations you need to know about erdicating feral animals
               </div>
