@@ -217,6 +217,17 @@
   justify-content: center;
 }
 
+.download {
+  border: 1px solid rgba(167, 121, 68, 0.363);
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 93%;
+  color: rgb(85, 85, 85);
+  background-color: rgba(167, 121, 68, 0.363);
+}
+
 .invasion {
   width: 700px;
   align-self: center;
