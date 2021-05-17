@@ -128,7 +128,7 @@ export default function Conventional() {
         </div>
        <ScrollToTop 
           showUnder={160}
-          // easing="easeInExpo"
+          easing="linear"
           duration={3000}
           cursor="pointer"
           >    
