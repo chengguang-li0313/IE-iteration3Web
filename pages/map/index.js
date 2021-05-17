@@ -24,7 +24,7 @@ export default function map()  {
     const Msg = ({ closeToast, toastProps }) => (
       <div>
         <p> 
-            Loading Success    
+         🗺️ Map is ready    
         </p>
         <p> 
         🦄 You are in Mel. on the map. 

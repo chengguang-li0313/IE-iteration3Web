@@ -8,9 +8,12 @@ function formatSettingName(name) {
 
 function Checkbox({name, value, onChange}) {
   return (
-    <div className={style.controlItem}>
-      <label>{formatSettingName(name)}</label>
+    <div className={style.cameraInputContainer} >
+      
       <input type="checkbox" checked={value} onChange={evt => onChange(name, evt.target.checked)} />
+      <div className={style.cameraLabel}> 
+      <label>{formatSettingName(name)}</label>
+      </div>
     </div>
   );
 }

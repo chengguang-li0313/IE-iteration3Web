@@ -13,16 +13,17 @@ function ControlPanel(props) {
       <hr />
 
       {DATA.filter(city => city.state === 'VIC').map((city, index) => (
-        <div key={`btn-${index}`} className={style.cameraItem} >
+        <div key={`btn-${index}`} className={style.cameraInputContainer} >
           <input 
             type="radio"
             name="city"
             id={`city-${index}`}
             defaultChecked={city.city === 'Center'}
-            onClick={() => props.onSelectCity(city)}
-            
-          />
+            onClick={() => props.onSelectCity(city)}            
+          /> 
+          <div className={style.cameraLabel}> 
           <label htmlFor={`city-${index}`} >{city.city}</label>
+          </div>   
         </div>
       ))}
     </div>
