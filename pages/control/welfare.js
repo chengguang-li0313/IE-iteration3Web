@@ -74,7 +74,7 @@ export default function Welfare() {
           <TabPanel>
             <div className={styles.conventionalContainer}>
               <img src="/humanPest.jpeg" className={styles.benefit}></img>
-              <div className={styles.conveIIntionalInfo}>
+              <div className={styles.conventionalInfo}>
                 <p>
                   The Victorian Government has come up with different strategies
                   to minimise damage to other animals/nature while conducting
