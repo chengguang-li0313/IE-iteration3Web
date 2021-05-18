@@ -11,7 +11,7 @@
 .bioControlHero {
   display: flex;
   background-image: url("/bioControlHero.jpeg");
-  height: 70rem;
+  height: 48rem;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -22,7 +22,7 @@
 .controlHero {
   display: flex;
   background-image: url("/controlHero.jpeg");
-  height: 70rem;
+  height: 48rem;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -139,7 +139,7 @@
 .conventionalHero {
   display: flex;
   background-image: url("/conventionalHero.jpeg");
-  height: 70rem;
+  height: 48rem;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -236,7 +236,7 @@
 .serviceHero {
   display: flex;
   background-image: url("/serviceHero.jpeg");
-  height: 70rem;
+  height: 48rem;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
