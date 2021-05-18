@@ -8,6 +8,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ScrollToTop from "react-scroll-up";
 import { Footer } from '../../component/Footer'
+import { WelfareArrowTab } from '../../component/WelfareArrowTab'
 
 export default function Welfare() {
     return (
@@ -20,40 +21,32 @@ export default function Welfare() {
 
         <div className={styles.tabContainer}>
 
-        <Tabs>
-          <TabList>
-            <Tab>Introduction </Tab>
-            <Tab>Ethics of Eradicating Feral Animals</Tab>
-            <Tab>Humane Vertebrae Pest Control</Tab>
-          </TabList>
-
-          <TabPanel>
-            <div className={styles.conventionalText}>
-              <div className={styles.conventionalContainer}>
-                <YoutubePlayer
-                  src="https://www.youtube.com/watch?v=Q_TG7YPW_gM" // Reqiured
-                  width={650}
-                  height={400}
-                />
-              </div>
-              <p>By Peninsula Pest Management Pty Ltd</p>
-              <p>
-                Consideration of animal welfare in the management of invasive
-                animals is essential to ensure that control techniques are
-                performed humanely. The welfare of native animals, and their
-                conservation, is often neglected when control programs or
-                methods are opposed due to animal welfare impacts on invasive
-                species. Therefore, while controlling and eradicating pest
-                animals from your farm, it is of the utmost importance that in
-                order to save your land from impacting agriculture and
-                livestock, it is equally important to make sure that no other
-                animals are harmed/injured while conducting pest control
-                activities.
-              </p>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className={styles.conventionalContainer}>
+        <WelfareArrowTab
+          tab1={<div className={styles.conventionalText}>
+          <div className={styles.conventionalContainer}>
+            <YoutubePlayer
+              src="https://www.youtube.com/watch?v=Q_TG7YPW_gM" // Reqiured
+              width={650}
+              height={400}
+            />
+          </div>
+          <p>By Peninsula Pest Management Pty Ltd</p>
+          <p>
+            Consideration of animal welfare in the management of invasive
+            animals is essential to ensure that control techniques are
+            performed humanely. The welfare of native animals, and their
+            conservation, is often neglected when control programs or
+            methods are opposed due to animal welfare impacts on invasive
+            species. Therefore, while controlling and eradicating pest
+            animals from your farm, it is of the utmost importance that in
+            order to save your land from impacting agriculture and
+            livestock, it is equally important to make sure that no other
+            animals are harmed/injured while conducting pest control
+            activities.
+          </p>
+        </div>}
+        tab2={
+          <div className={styles.conventionalContainer}>
               <img src="/ethics.png" className={styles.benefit}></img>
               <div className={styles.conventionalInfo}>
                 <p>
@@ -70,24 +63,25 @@ export default function Welfare() {
                 </p>
               </div>
             </div>
-          </TabPanel>
-          <TabPanel>
-            <div className={styles.conventionalContainer}>
-              <img src="/humanPest.jpeg" className={styles.benefit}></img>
-              <div className={styles.conventionalInfo}>
-                <p>
-                  The Victorian Government has come up with different strategies
-                  to minimise damage to other animals/nature while conducting
-                  pest control which is called as the Humane Vertebrate pest
-                  control. Humane Vertebrate Pest is the development and
-                  selection of feasible control programs and techniques that
-                  avoid or minimise pain, suffering and distress to target and
-                  non-target animals in vertebrate pest control programs.
-                </p>
-              </div>
-            </div>
-          </TabPanel>
-        </Tabs>
+        }
+        tab3={
+          <div className={styles.conventionalContainer}>
+          <img src="/humanPest.jpeg" className={styles.benefit}></img>
+          <div className={styles.conventionalInfo}>
+            <p>
+              The Victorian Government has come up with different strategies
+              to minimise damage to other animals/nature while conducting
+              pest control which is called as the Humane Vertebrate pest
+              control. Humane Vertebrate Pest is the development and
+              selection of feasible control programs and techniques that
+              avoid or minimise pain, suffering and distress to target and
+              non-target animals in vertebrate pest control programs.
+            </p>
+          </div>
+        </div>
+        }
+        ></WelfareArrowTab>
+
         </div>
 
         <div className={styles.conventionalContainer}>
