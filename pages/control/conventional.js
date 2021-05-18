@@ -33,8 +33,8 @@ export default function Conventional() {
                   width={650}
                   height={400}
                 />
-                <p>By OklahomaGardening</p>
               </div>
+              <p>By OklahomaGardening</p>
               <p>
                 Conventional Control Methods involves digging, flooding,
                 destruction and removal of nests, hand-pulling, burning and

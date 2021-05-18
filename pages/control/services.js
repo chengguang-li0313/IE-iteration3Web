@@ -36,8 +36,8 @@ export default function Conventional() {
                 width={650}
                 height={400}
               />
-              <p>By Peninsula Pest Management Pty Ltd</p>
             </div>
+            <p>By Peninsula Pest Management Pty Ltd</p>
             <p>
               Commercial pest control services are licensed and regulated by the
               department. Licensing protects pest control service operators,

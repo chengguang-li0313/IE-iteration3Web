@@ -35,8 +35,8 @@ export default function Welfare() {
                   width={650}
                   height={400}
                 />
-                <p>By Peninsula Pest Management Pty Ltd</p>
               </div>
+              <p>By Peninsula Pest Management Pty Ltd</p>
               <p>
                 Consideration of animal welfare in the management of invasive
                 animals is essential to ensure that control techniques are

@@ -27,16 +27,16 @@ export default function Conventional() {
           <Tab>Common Biological Methods</Tab>
         </TabList>
 
-        <TabPanel className={styles.tabPanel}>
+        <TabPanel>
           <div className={styles.conventionalContainer}>
             <YoutubePlayer
               src="https://www.youtube.com/watch?v=mHXOefz8Pk0" // Reqiured
               width={650}
               height={400}
             />
-            <p>By Koppert Biological Systems</p>
           </div>
           <div className={styles.conventionalText}>
+          <p>By Koppert Biological Systems</p>
             <p>
               Biological methods to control pests include the use of natural
               predators, parasites and disease-carrying bacteria or viruses.
@@ -46,7 +46,7 @@ export default function Conventional() {
             </p>
           </div>
         </TabPanel>
-        <TabPanel className={styles.tabPanel}>
+        <TabPanel>
         <div className={styles.conventionalContainer}>
               <img src="/keyBenefit2.jpeg" className={styles.benefit}></img>
           <div className={styles.conventionalInfo}>
@@ -62,7 +62,7 @@ export default function Conventional() {
           </div>
         </div>
         </TabPanel>
-        <TabPanel className={styles.tabPanel}>
+        <TabPanel>
           <div className={styles.conventionalContainer}>
             <h1>Some of the Most Commonly Used Biological Control Methods</h1>
           </div>
