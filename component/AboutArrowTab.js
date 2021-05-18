@@ -60,16 +60,19 @@ export const AboutArrowTab = () => {
           <div className={`${
               active === "vision" ? styles.activePane : styles.tabPane
             }`}>
+            <img src='/vision.jpeg'></img>
             We help identify, prevent, control and eradicate pest animals from farmlands in Victoria in order to increase Agriculture Productivity 
           </div>
           <div className={`${
               active === "mission" ? styles.activePane : styles.tabPane
             }`}>
+            <img src='/mission.png'></img>
             Raising awareness on the Impact of Invasive Animals on Agriculture by providing information on the declared established pest animals in Victori
           </div>
           <div className={`${
               active === "values" ? styles.activePane : styles.tabPane
             }`}>
+            <img src='/values.png'></img>
             Increase Farmer's Productivity, Promote Urban Wilderness, Keep Livestock and Native animals safe
           </div>
         </>
