@@ -60,16 +60,17 @@ export const MapSection = (props) => {
   <Popup
     latitude={selectedPark.lat}
     longitude={selectedPark.lon}
-    onClose={() => {
-      setSelectedPark(null);
-    }}
+    //  onClose={() => {
+    //   setSelectedPark(null);
+    // }}
   >
     <div>
-      <h5>Name:  {selectedPark.scientificName}</h5>
-      <p>Number:  {selectedPark.count}</p>
-      <p>Local Gov:  {selectedPark.localGov} </p>
-      <p>Regions:  {selectedPark.regions} </p>
-      <p>Geolocation: [ {selectedPark.lat}, {selectedPark.lon} ]</p>
+    <a href='/animals'> <h5>Scientific Name:   {selectedPark.scientificName}</h5> </a> 
+      <hr/>
+      <p>Number :  {selectedPark.count}</p>
+      <p>Local Gov :  {selectedPark.localGov} </p>
+      <p>Regions :  {selectedPark.regions} </p>
+      <p>Geolocation : [ {selectedPark.lat}, {selectedPark.lon} ]</p>
     </div>
   </Popup>
 ) : null,[selectedPark] );
