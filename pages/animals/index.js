@@ -106,12 +106,12 @@ export default function Animals() {
                   <img src={data.imageTitle}></img>
                </div>
              <div className={styles.infoCard}>
-             <h1>{data.commonName}</h1>
+             <h2>{data.commonName}</h2>
                <p>{data.scientificName}</p>
                <h2>Origin</h2>
                 <p>{data.originPlace}</p>
               <h2>Distribution</h2>
-                {data.distribution}
+              <p>{data.distribution}</p>
              </div> 
            <div className={styles.barCard}> 
                 <BarChart data={charData}> </BarChart>

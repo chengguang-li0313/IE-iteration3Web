@@ -8,8 +8,8 @@ function ControlPanel(props) {
   return (
     <div className="control-panel">
      
-      <h3 className={style.cameraItem} >Camera Transition</h3>
-      <p className={style.cameraItem}>Smooth animate of the viewport.</p>
+      <h3 className={style.cameraItem} >Map View Angle</h3>
+      <p className={style.cameraItem}>Choose which region of the map you’d like to focus on:</p>
       <hr />
 
       {DATA.filter(city => city.state === 'VIC').map((city, index) => (
@@ -22,7 +22,7 @@ function ControlPanel(props) {
             onClick={() => props.onSelectCity(city)}            
           /> 
           <div className={style.cameraLabel}> 
-          <label htmlFor={`city-${index}`} >{city.city}</label>
+          <label htmlFor={`city-${index}`} >{city.city} of VIC</label>
           </div>   
         </div>
       ))}

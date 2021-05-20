@@ -48,12 +48,12 @@ function ControlPanel(props) {
   return (
     <div className="control-panel">
       <h3 className={style.controlItem}>Limit Map Interaction</h3>
-      <p className={style.controlItem}>Turn interactive features off/on.</p>
+      <p className={style.controlItem}>Turn on/off features below:</p>
       <hr />
 
       {Object.keys(settings).map(name => renderSetting(name, settings[name]))}
 
-      <hr />
+     <hr/>
 
       {/* <div>
         <div>

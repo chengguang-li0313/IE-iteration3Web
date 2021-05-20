@@ -158,18 +158,18 @@ export const MapSection = (props) => {
   // funscreen control 
   const fullscreenControlStyle= {
     right: 10,
-    top: 170
+    top: 190
   };
 
    //geolocate control
    const geolocateControlStyle= {
     right: 40,
-    top: 170
+    top: 190
   };
    //ScaleControl style
    const scaleControlStyle= {
     right: 10,
-    top: 230
+    top: 250
   };
   ////------------------notification------------
    

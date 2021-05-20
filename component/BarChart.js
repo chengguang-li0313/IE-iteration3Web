@@ -16,7 +16,7 @@ export const BarChart = (props) => {
         
       ))}
       // console.log(name);
-      name =  "Change in Population of " + name + " Over Time " ;     
+      name =  "Change in Population of " + name + " in VIC Over Time " ;     
     const options = {
         chart: {
           id: "basic-bar"
@@ -34,7 +34,7 @@ export const BarChart = (props) => {
         }, 
         yaxis: {         
           title: {
-            text: "Million",
+            text: "Quantity",
             style: {
               color: "#888",
               fontSize: "15px",
@@ -56,7 +56,7 @@ export const BarChart = (props) => {
       };
     const series = [
         {
-          name: "number",
+          name: "count",
           data: store
         }
       ];
