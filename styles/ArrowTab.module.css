@@ -29,8 +29,6 @@
     text-align: center;
     padding: 20px;
     transition: all ease 0.3s;
-    font-family: Oswald, sans-serif;
-    font-weight: 500;
 }
 
 .active {

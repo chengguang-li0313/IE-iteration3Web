@@ -6,6 +6,7 @@ import { YoutubePlayer } from "reactjs-media";
 import { AnimalImpactCard } from '../../component/AnimalImpactCard'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { BioArrowTab } from '../../component/BioArrowTab'
 import ScrollToTop from "react-scroll-up";
 
 export default function Conventional() {
@@ -18,73 +19,62 @@ export default function Conventional() {
         <h1>Biological Control</h1>
       </div>
 
-        <div className={styles.tabContainer}>
-
-      <Tabs>
-        <TabList className={styles.tabs}>
-          <Tab>Introduction </Tab>
-          <Tab>Key Benefits </Tab>
-          <Tab>Common Biological Methods</Tab>
-        </TabList>
-
-        <TabPanel>
-          <div className={styles.conventionalContainer}>
-            <YoutubePlayer
-              src="https://www.youtube.com/watch?v=mHXOefz8Pk0" // Reqiured
-              width={650}
-              height={400}
-            />
-          </div>
-          <div className={styles.conventionalText}>
-          <p>By Koppert Biological Systems</p>
-            <p>
-              Biological methods to control pests include the use of natural
-              predators, parasites and disease-carrying bacteria or viruses.
-              Myxomatosis and rabbit calicivirus disease are examples of
-              biological controls that have been used in Australia to control
-              feral rabbits.
-            </p>
-          </div>
-        </TabPanel>
-        <TabPanel>
+      <BioArrowTab
+        tab1={
+        <>
         <div className={styles.conventionalContainer}>
-              <img src="/keyBenefit2.jpeg" className={styles.benefit}></img>
-          <div className={styles.conventionalInfo}>
-            <h1>Key Benefits</h1>
-            <ul>
-              <li>
-                Biological control has no adverse effect on human health or the
-                environment
-              </li>
-              <li>Biological control is self-sustaining.</li>
-              <li>It can provide a long-term solution to a pest problem.</li>
-            </ul>
-          </div>
-        </div>
-        </TabPanel>
-        <TabPanel>
-          <div className={styles.conventionalContainer}>
-            <h1>Some of the Most Commonly Used Biological Control Methods</h1>
-          </div>
-          <div className={styles.controlMethodCardSection}>
-            <AnimalImpactCard
-              title={"RHD (Rabbit Haemorrhoid Disease)"}
-              text={
-                "Rabbit haemorrhagic disease (RHD, also known as rabbit calicivirus disease) established itself in Australia and reduced rabbit numbers, especially in arid areas."
-              }
-              img={"/rhd.jpeg"}
-            ></AnimalImpactCard>
-            <AnimalImpactCard
-              title={"Myxomatosis"}
-              text={
-                "In the six months following the release of the virus, it was believed to have killed more than 90% of feral rabbits as it swept through the temperate zone."
-              }
-              img={"/mxy.jpeg"}
-            ></AnimalImpactCard>
-          </div>
-        </TabPanel>
-      </Tabs>
+        <YoutubePlayer
+          src="https://www.youtube.com/watch?v=mHXOefz8Pk0" // Reqiured
+          width={650}
+          height={400}
+        />
       </div>
+      <div className={styles.conventionalText}>
+      <p>By Koppert Biological Systems</p>
+        <p>
+          Biological methods to control pests include the use of natural
+          predators, parasites and disease-carrying bacteria or viruses.
+          Myxomatosis and rabbit calicivirus disease are examples of
+          biological controls that have been used in Australia to control
+          feral rabbits.
+        </p>
+      </div></>}
+        tab2={<div className={styles.conventionalContainer}>
+        <img src="/keyBenefit2.jpeg" className={styles.benefit}></img>
+    <div className={styles.conventionalInfo}>
+      <h1>Key Benefits</h1>
+      <ul>
+        <li>
+          Biological control has no adverse effect on human health or the
+          environment
+        </li>
+        <li>Biological control is self-sustaining.</li>
+        <li>It can provide a long-term solution to a pest problem.</li>
+      </ul>
+    </div>
+  </div>}
+        tab3={
+        <>
+        <div className={styles.conventionalContainer}>
+        <h1>Some of the Most Commonly Used Biological Control Methods</h1>
+      </div>
+      <div className={styles.controlMethodCardSection}>
+        <AnimalImpactCard
+          title={"RHD (Rabbit Haemorrhoid Disease)"}
+          text={
+            "Rabbit haemorrhagic disease (RHD, also known as rabbit calicivirus disease) established itself in Australia and reduced rabbit numbers, especially in arid areas."
+          }
+          img={"/rhd.jpeg"}
+        ></AnimalImpactCard>
+        <AnimalImpactCard
+          title={"Myxomatosis"}
+          text={
+            "In the six months following the release of the virus, it was believed to have killed more than 90% of feral rabbits as it swept through the temperate zone."
+          }
+          img={"/mxy.jpeg"}
+        ></AnimalImpactCard>
+      </div></>}
+      ></BioArrowTab>
 
       <div className={styles.conventionalContainer}>
         <h1>Also Check Out These Methods</h1>

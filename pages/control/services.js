@@ -7,6 +7,7 @@ import { AnimalImpactCard } from '../../component/AnimalImpactCard'
 import {ControlHeroNew } from '../../component/ControlHeroNew'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { ServiceArrowTab } from '../../component/ServiceArrowTab'
 import { Footer } from '../../component/Footer'
 import ScrollToTop from "react-scroll-up";
 
@@ -20,55 +21,44 @@ export default function Conventional() {
         <h1>Control Services</h1>
       </div>
 
-      <div className={styles.tabContainer}>
-      <Tabs>
-        <TabList>
-          <Tab>Introduction </Tab>
-          <Tab>Key Benefits </Tab>
-          <Tab>Control Services Available in Victoria</Tab>
-        </TabList>
-
-        <TabPanel>
-          <div className={styles.conventionalText}>
-            <div className={styles.conventionalContainer}>
-              <YoutubePlayer
-                src="https://www.youtube.com/watch?v=Olb81lzMres" // Reqiured
-                width={650}
-                height={400}
-              />
-            </div>
-            <p>By Peninsula Pest Management Pty Ltd</p>
-            <p>
-              Commercial pest control services are licensed and regulated by the
-              department. Licensing protects pest control service operators,
-              farmers who acquire these services, the public and also the
-              environment from the harmful effects of pest control– securing
-              your farm from pests without any collateral damage. Common
-              Services available to control feral foxes, dogs, pigs, rabbits and
-              goats.
-            </p>
-          </div>
-        </TabPanel>
-        <TabPanel>
+      <ServiceArrowTab
+        tab1={<div className={styles.conventionalText}>
         <div className={styles.conventionalContainer}>
-              <img src="/keyBenefit3.jpeg" className={styles.benefit}></img>
-          <div className={styles.conventionalInfo}>
-            <h1>Key Benefits</h1>
-            <ul>
-              <li>Help to manage pest animal invasion over a large scale</li>
-              <li>
-                Free services available to control Pest Animals for Farmers,
-                Land-owners
-              </li>
-              <li>
-                Certified, fully licensed and insured company specializing in
-                all Pest treatments
-              </li>
-            </ul>
-          </div>
+          <YoutubePlayer
+            src="https://www.youtube.com/watch?v=Olb81lzMres" // Reqiured
+            width={650}
+            height={400}
+          />
         </div>
-        </TabPanel>
-        <TabPanel>
+        <p>By Peninsula Pest Management Pty Ltd</p>
+        <p>
+          Commercial pest control services are licensed and regulated by the
+          department. Licensing protects pest control service operators,
+          farmers who acquire these services, the public and also the
+          environment from the harmful effects of pest control– securing
+          your farm from pests without any collateral damage. Common
+          Services available to control feral foxes, dogs, pigs, rabbits and
+          goats.
+        </p>
+      </div>}
+        tab2={<div className={styles.conventionalContainer}>
+        <img src="/keyBenefit3.jpeg" className={styles.benefit}></img>
+    <div className={styles.conventionalInfo}>
+      <h1>Key Benefits</h1>
+      <ul>
+        <li>Help to manage pest animal invasion over a large scale</li>
+        <li>
+          Free services available to control Pest Animals for Farmers,
+          Land-owners
+        </li>
+        <li>
+          Certified, fully licensed and insured company specializing in
+          all Pest treatments
+        </li>
+      </ul>
+    </div>
+  </div>}
+        tab3={          <>
           <div className={styles.conventionalContainer}>
             <h1>Some of the Renowned Control Services Available in Victoria</h1>
           </div>
@@ -119,10 +109,9 @@ export default function Conventional() {
               ></AnimalImpactCard>
             </a>
           </div>
-        </TabPanel>
-      </Tabs>
-      </div>
-
+          </>}
+      ></ServiceArrowTab>
+      
       <div className={styles.conventionalContainer}>
         <h1>Also Check Out These Methods</h1>
       </div>
